@@ -1,2 +1,0 @@
-# Concept Bible
-│   │   ├── README.md
