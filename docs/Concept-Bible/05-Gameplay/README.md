@@ -1,0 +1,17 @@
+# 05 — Gameplay
+
+- [Boucle de jeu](Boucle-de-Jeu.md)
+- [Déplacements](Deplacements.md)
+- [Combat](Combat.md)
+- [Shadow Sword](Shadow-Sword.md)
+- [Bouclier de lumière](Bouclier-de-Lumiere.md)
+- [Smash Tranchant](Smash-Tranchant.md)
+- [Dash](Dash.md)
+- [Double saut](Double-Saut.md)
+- [Coffres](Coffres.md)
+- [Clés](Cles.md)
+- [Boss](Boss.md)
+- [Points de contrôle](Points-de-Controle.md)
+- [Cœurs](Coeurs.md)
+- [Vies](Vies.md)
+- [Game Over](Game-Over.md)

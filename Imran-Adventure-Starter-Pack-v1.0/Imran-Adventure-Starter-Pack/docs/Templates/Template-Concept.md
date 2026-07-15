@@ -1,7 +1,0 @@
-# Titre
-
-## Objectif
-
-## Description
-
-## Notes
