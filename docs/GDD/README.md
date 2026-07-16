@@ -2,7 +2,7 @@
 
 > **Statut :** En cours
 >
-> **Etape actuelle :** Etape 4 a demarrer
+> **Etape actuelle :** Audit des etapes 3 et 4
 
 Le GDD decrit le fonctionnement precis du jeu : regles, valeurs, comportements, niveaux et equilibrage.
 

@@ -1,5 +1,29 @@
-# GDD — Controles
+# GDD - Controles
 
-- [Mapping Clavier](Mapping-Clavier.md)
-- [Mapping Manette](Mapping-Manette.md)
-- [Priorites des Actions](Priorites-des-Actions.md)
+> **Statut :** Valide
+
+## Objectif
+
+Cette section definit les commandes par defaut, le remappage et les priorites entre les actions du joueur.
+
+## Documents
+
+- [Mapping clavier](Mapping-Clavier.md)
+- [Mapping manette](Mapping-Manette.md)
+- [Remappage et appareils](Remappage-et-Appareils.md)
+- [Priorites des actions](Priorites-des-Actions.md)
+
+## Principes
+
+- Toutes les actions essentielles sont utilisables sans souris.
+- Le clavier et la manette permettent de terminer toute l'aventure.
+- Les commandes peuvent etre consultees et remappees dans les Options.
+- Une action debloquee utilise une commande deja assignee.
+- Le dernier appareil utilise determine les icones affichees.
+- Les commandes restent simples pour le public a partir de 7 ans.
+
+## Sources
+
+- [Deplacements](../../Concept-Game/05-Gameplay/Deplacements.md)
+- [Combat](../../Concept-Game/05-Gameplay/Combat.md)
+- [Options](../../Concept-Game/11-Interface/Options.md)
