@@ -56,7 +56,8 @@ Le Double saut doit se distinguer du premier saut par :
 - Une commande de saut conservee avant une reception declenche un saut normal, pas un Double saut.
 - Un plafond interrompt la montee sans restaurer la capacite.
 - Recevoir un degat ne restaure pas la capacite.
-- La disponibilite pendant une attaque aerienne sera definie pendant l'etape 6.
+- Le Double saut reste disponible pendant une attaque normale aerienne si son utilisation n'a pas deja ete consommee.
+- Son impulsion remplace alors la vitesse verticale sans interrompre l'animation du coup.
 
 ## Criteres de validation
 
@@ -65,6 +66,7 @@ Le Double saut est valide si :
 - une seule utilisation est possible avant une reception ;
 - il fonctionne apres un saut ou pendant une chute ;
 - il reprend le controle vertical pendant une chute ;
+- il reste utilisable pendant une attaque normale aerienne ;
 - il reste legerement moins haut que le saut normal ;
 - son effet est immediatement distinct du saut normal et de la magie du Chaos.
 

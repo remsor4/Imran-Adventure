@@ -32,10 +32,11 @@ Le visuel d'Imran peut depasser legerement du collider principal. Sa zone vulner
 |---|---:|
 | Coeurs au debut d'un niveau | `3` |
 | Vies au debut d'un niveau | `3` |
+| Degat ordinaire recu | `1 coeur` |
 | Invulnerabilite apres un degat | `1.00 s` |
 | Duree de reaction a un degat | `0.20 s` |
 
-Les degats exacts des ennemis, boss et dangers seront definis pendant les etapes Combat, Ennemis et Boss.
+Une attaque ennemie ordinaire, un contact dangereux ou un piege non mortel retire `1 coeur`. Une exception future devra etre annoncee et validee dans la fiche de la source concernee.
 
 ## Deplacement horizontal
 
@@ -91,6 +92,25 @@ Il n'existe aucune vitesse de course distincte.
 | Vitesse verticale initiale | `280 px/s` vers le haut |
 | Duree sans controle | `0.20 s` |
 
+## Combat et equipements
+
+| Element | Valeur |
+|---|---:|
+| Duree de l'attaque normale | `0.35 s` |
+| Fenetre active de l'attaque normale | `0.10 s` |
+| Portee de l'attaque normale | `48 px` depuis le centre d'Imran |
+| Degats de l'attaque normale | `1 degat` |
+| Dimensions de la Shadow Sword | `56 x 16 px` au maximum |
+| Charge complete du Smash | `1.50 s` |
+| Lancement automatique du Smash | `3.00 s` depuis la pression initiale |
+| Duree de l'animation de lancement | `0.35 s` |
+| Dimensions du projectile | `64 x 32 px` |
+| Vitesse du projectile | `600 px/s` |
+| Portee du projectile | `480 px` |
+| Duree de vie maximale du projectile | `0.80 s` |
+| Degats du projectile | `2 degats` |
+| Dimensions du Bouclier | `20 x 28 px` |
+
 ## Valeurs a tester dans le prototype
 
 Les valeurs suivantes doivent etre observees ensemble :
@@ -102,6 +122,10 @@ Les valeurs suivantes doivent etre observees ensemble :
 - distance du Dash par rapport a un trou ;
 - controle apres un saut et apres la fin d'un Dash ;
 - confort du recul et de l'invulnerabilite.
+- lisibilite de la portee de `48 px` par rapport a la pointe de la lame ;
+- rythme de l'attaque normale et de sa fenetre active ;
+- vitesse et distance du projectile du Smash ;
+- lisibilite de l'epee et du Bouclier a leur taille de gameplay.
 
 Un ajustement conserve les rapports generaux : le Dash reste plus rapide que la marche, le Double saut reste legerement moins haut que le premier saut et la chute reste plus rapide que la montee.
 
@@ -115,6 +139,7 @@ Les statistiques sont valides si :
 - un saut franchit confortablement une hauteur proche d'une grille logique ;
 - le Dash couvre environ deux grilles logiques ;
 - le Dash ne peut jamais etre declenche dans les airs ;
+- l'attaque normale, le Smash et le Bouclier utilisent les valeurs du dossier Combat ;
 - les coeurs et les vies correspondent au Concept Game.
 
 ## Sources
@@ -126,3 +151,4 @@ Les statistiques sont valides si :
 - [Double saut](../../Concept-Game/05-Gameplay/Double-Saut.md)
 - [Reference video Wonder Boy](Reference-Video-Wonder-Boy.md)
 - [Reference video du Dash Godot](Reference-Video-Dash-Godot.md)
+- [Reference video du combat Wonder Boy](../Combat/Reference-Video-Wonder-Boy-Combat.md)

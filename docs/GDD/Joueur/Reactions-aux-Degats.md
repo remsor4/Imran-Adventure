@@ -4,7 +4,7 @@
 
 ## Objectif
 
-Definir la reaction generale d'Imran apres un degat non bloque. Les degats infliges par chaque source seront definis dans les documents Combat, Ennemis et Boss.
+Definir la reaction generale d'Imran apres un degat non bloque. Une source ordinaire retire `1 coeur` selon la regle validee dans le dossier Combat. Une exception future devra etre indiquee dans la fiche de l'ennemi ou du boss concerne.
 
 ## Sequence d'un degat
 

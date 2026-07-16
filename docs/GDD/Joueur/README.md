@@ -25,6 +25,7 @@ Cette section definit les valeurs et les regles de mouvement d'Imran. Elle decri
 - La resolution de reference est `1920 x 1080` au format `16:9`.
 - Les valeurs utilisent une grille logique de `64 px`.
 - Les rapports de taille et de vitesse prennent pour reference les six premieres minutes de la video Wonder Boy validee par Rems.
+- Les proportions de la Shadow Sword, du Bouclier et de l'attaque normale utilisent aussi la capture de combat Wonder Boy a `60 images/s` fournie par Rems.
 - Le rapport de vitesse, la duree et l'intervalle du Dash prennent pour reference le tutoriel Godot valide par Rems.
 - Le Dash est strictement terrestre : une commande recue dans les airs est ignoree.
 - Les mesures du flux `640 x 360` sont normalisees dans la grille logique sans imposer une resolution interne au moteur.
@@ -38,5 +39,6 @@ Cette section definit les valeurs et les regles de mouvement d'Imran. Elle decri
 - [Controles](../Controles/README.md)
 - [Reference video Wonder Boy](Reference-Video-Wonder-Boy.md)
 - [Reference video du Dash Godot](Reference-Video-Dash-Godot.md)
+- [Reference video du combat Wonder Boy](../Combat/Reference-Video-Wonder-Boy-Combat.md)
 - [Deplacements du Concept Game](../../Concept-Game/05-Gameplay/Deplacements.md)
 - [Animation](../../Concept-Game/09-Direction-Artistique/Animation.md)
