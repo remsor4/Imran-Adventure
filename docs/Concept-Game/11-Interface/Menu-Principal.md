@@ -8,8 +8,8 @@ Permettre de commencer ou reprendre l'aventure en quelques actions, avec une pre
 
 ## Presentation
 
-- Le titre **Imran Adventure** apparait en haut de l'ecran.
-- Un logo ne remplace ce titre qu'apres validation de son visuel.
+- Le logo valide de **Imran Adventure** apparait en haut de l'ecran.
+- Sa taille conserve la lisibilite du titre sans masquer les boutons.
 - Le fond montre une scene animee calme du royaume ou du Village des Bles.
 - La musique principale commence sans transition brutale.
 - Les boutons sont regroupes dans une seule colonne.
