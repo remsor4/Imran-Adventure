@@ -1,12 +1,13 @@
 # Game Design Document - Imran Adventure
 
-> **Statut :** En cours - Etape 2 a demarrer
+> **Statut :** En cours - Etape 3 a demarrer
 
 Le GDD decrit le fonctionnement precis du jeu : regles, valeurs, comportements, niveaux et equilibrage.
 
 ## Plan de redaction
 
 - [Plan etape par etape](PLAN-GDD.md)
+- [Fiche generale du jeu](Fiche-Generale.md)
 
 ## Sections
 

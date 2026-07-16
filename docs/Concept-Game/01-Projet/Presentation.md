@@ -6,6 +6,7 @@
 |---|---|
 | Titre | Imran Adventure |
 | Genre | Jeu de plateforme 2D d'action-aventure |
+| Mode de jeu | Solo |
 | Structure | Linéaire, un seul chemin par niveau |
 | Moteur | Godot Engine |
 | Plateforme | PC |

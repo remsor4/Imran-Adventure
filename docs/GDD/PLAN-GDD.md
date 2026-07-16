@@ -1,6 +1,6 @@
 # Plan de redaction du GDD - Imran Adventure
 
-> **Statut :** Etape 1 valide - Etape 2 a demarrer
+> **Statut :** Etape 2 valide - Etape 3 a demarrer
 
 ## Reference
 
@@ -13,7 +13,7 @@ Le projet est realise uniquement par Rems et Codex. Le jeu ne sera pas vendu. Le
 | Numero | Etape | Statut |
 |---:|---|---|
 | 1 | Cadre du GDD | Valide |
-| 2 | Fiche generale du jeu | A rediger |
+| 2 | Fiche generale du jeu | Valide |
 | 3 | Boucle de jeu et experience du joueur | A rediger |
 | 4 | Controles et priorites des actions | A rediger |
 | 5 | Regles du joueur | A rediger |
