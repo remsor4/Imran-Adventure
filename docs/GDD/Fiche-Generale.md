@@ -42,7 +42,7 @@ Apres le sixieme niveau, Imran affronte Tata Lisa devant la porte du donjon. Sa 
 5. Imran traverse le niveau 0 de tutoriel et quitte le village.
 6. La Foret enchantee devient le premier niveau principal.
 
-Le Village des Bles est un niveau 0 jouable, lineaire et consacre a l'apprentissage des commandes de base. Il ne contient aucun golem, aucun coffre de fin et aucune cle.
+Le Village des Bles est un niveau 0 jouable, lineaire et consacre a l'apprentissage des actions et des regles de base. Le Dash et le Double saut y sont disponibles, et le Bouclier y protege automatiquement contre les projectiles frontaux. Il ne contient aucun golem, aucun coffre de fin et aucune cle.
 
 ## Structure de l'aventure
 
@@ -50,9 +50,9 @@ Le Village des Bles est un niveau 0 jouable, lineaire et consacre a l'apprentiss
 |---:|---|---|
 | 0 | Village des Bles | Fin du tutoriel et acces a la Foret enchantee |
 | 1 | Foret enchantee | Golem, coffre et premiere cle |
-| 2 | Grotte mysterieuse | Golem, coffre, deuxieme cle et Dash |
+| 2 | Grotte mysterieuse | Golem, coffre et deuxieme cle |
 | 3 | Lac gele | Golem, coffre et troisieme cle |
-| 4 | Desert oublie | Golem, coffre, quatrieme cle et Double saut |
+| 4 | Desert oublie | Golem, coffre et quatrieme cle |
 | 5 | Volcan | Golem, coffre et cinquieme cle |
 | 6 | Chateau de Tata Lisa | Golem, coffre et sixieme cle |
 | Finale | Porte du donjon | Combat contre Tata Lisa et liberation d'Aliyah |

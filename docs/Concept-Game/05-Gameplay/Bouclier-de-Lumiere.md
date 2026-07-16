@@ -2,7 +2,19 @@
 
 > **Statut :** Valide
 
-Le Bouclier de lumiere est offert a Imran par Amelie. Il bloque les attaques ennemies et contraste avec l'energie sombre de la Shadow Sword.
+Le Bouclier de lumiere est offert a Imran par Amelie. Il bloque automatiquement les projectiles ennemis venant de face, meme lorsque Imran est en mouvement, et contraste avec l'energie sombre de la Shadow Sword.
+
+## Protection automatique
+
+- Le joueur n'utilise aucune commande dediee au Bouclier.
+- Imran doit regarder vers le projectile ennemi au moment de l'impact.
+- Un projectile arrivant de face est bloque automatiquement, ne retire aucun coeur et disparait au point d'impact.
+- Le projectile bloque n'est jamais renvoye vers un ennemi.
+- La protection fonctionne pendant un deplacement, un saut, une chute, un Double saut, un Dash ou une attaque normale.
+- La protection ne fonctionne jamais pendant la preparation ou la charge du Smash Tranchant.
+- Un projectile arrivant de dos inflige ses degats normalement.
+- Le Bouclier ne bloque pas les contacts avec un ennemi, les attaques de corps a corps, les pieges ou les chutes dangereuses.
+- La protection ne cree aucun etat de blocage manuel et ne limite pas les mouvements d'Imran.
 
 ## Apparence
 
@@ -22,7 +34,8 @@ Le bois rappelle l'origine familiale de l'objet. Le symbole solaire et sa lumier
 
 ## Role visuel
 
-- La silhouette doit rester lisible lorsqu'Imran bloque une attaque.
+- La silhouette doit rester lisible lorsqu'Imran fait face a un projectile.
+- Un impact frontal bloque active brievement la lumiere doree et blanche.
 - La lumiere doree doit se distinguer de la lave du Volcan et de la magie violette de Tata Lisa.
 - Le symbole solaire reste visible meme lorsque l'effet magique est inactif.
 - Les details du bois ne doivent pas produire de bruit visuel a la taille du personnage.

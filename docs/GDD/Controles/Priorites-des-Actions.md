@@ -26,27 +26,29 @@ La commande Pause peut suspendre le gameplay pendant l'exploration ou un combat.
 Lorsque plusieurs actions valides commencent exactement au meme instant, l'ordre suivant est utilise :
 
 1. interaction disponible ;
-2. blocage ;
-3. Dash ;
-4. attaque ;
-5. saut ;
-6. deplacement horizontal.
+2. Dash ;
+3. attaque ;
+4. saut ;
+5. deplacement horizontal.
 
 L'interaction n'est prioritaire que si un message d'interaction est visible. Sans cible valide, sa commande est ignoree et les autres actions restent disponibles.
 
-Le blocage est place avant l'attaque afin de favoriser une reaction defensive claire pour le public cible.
+La protection du Bouclier ne figure pas dans cette liste, car elle est automatique et ne correspond a aucune commande.
+
+## Protection automatique du Bouclier
+
+Avant d'appliquer les degats d'un projectile ennemi, le jeu verifie l'orientation et l'absence de charge d'Imran. Un projectile venant de face est bloque automatiquement, meme pendant un mouvement, si Imran ne prepare pas le Smash Tranchant. Le Bouclier ne force jamais l'arret d'une action ou d'un mouvement.
 
 ## Etats prioritaires d'Imran
 
 | Etat | Actions annulees ou bloquees |
 |---|---|
 | Mort | Toutes les actions sont annulees jusqu'a la reapparition |
-| Degat recu | L'attaque, la charge, le Dash, le blocage et l'interaction sont interrompus |
-| Interaction en cours | Le deplacement, le saut, le Dash, l'attaque et le blocage sont bloques |
-| Dash en cours | Une nouvelle attaque, un blocage et une interaction sont bloques |
-| Attaque en cours | Un nouveau Dash, un blocage et une interaction sont bloques |
-| Charge du Smash | Un Dash, un blocage et une interaction sont bloques |
-| Blocage maintenu | Une attaque, un Dash et une interaction sont bloques |
+| Degat recu | L'attaque, la charge, le Dash et l'interaction sont interrompus |
+| Interaction en cours | Le deplacement, le saut, le Dash et l'attaque sont bloques |
+| Dash en cours | Une nouvelle attaque et une interaction sont bloquees |
+| Attaque en cours | Un nouveau Dash et une interaction sont bloques |
+| Charge du Smash | Un Dash et une interaction sont bloques |
 
 La disponibilite du saut, du deplacement ou de l'attaque dans les airs sera precisee dans les etapes 5 et 6. Le present document s'applique uniquement lorsqu'une action est autorisee par l'etat du joueur.
 
@@ -73,7 +75,7 @@ Une interaction commence uniquement si :
 
 - un element interactif valide est a portee ;
 - son message est visible ;
-- Imran n'est pas mort, touche, en Dash, en attaque ou en blocage ;
+- Imran n'est pas mort, touche, en Dash ou en attaque ;
 - aucun menu ou contexte verrouille n'est actif.
 
 Pendant l'ouverture d'un coffre, le controle d'Imran reste bloque jusqu'a la fin de la courte sequence d'ouverture et de recompense.
@@ -104,7 +106,7 @@ Les priorites sont valides si :
 
 - un seul contexte principal recoit les commandes ;
 - une interaction ne commence jamais sans cible valide ;
-- le blocage gagne contre une attaque simultanee ;
+- la protection automatique ne demande aucune commande et ne modifie pas la priorite des actions ;
 - deux directions opposees produisent un resultat neutre ;
 - une action deja engagee ne peut pas etre annulee sans regle explicite ;
 - les commandes maintenues pendant une cinematique ne declenchent rien au retour du controle ;

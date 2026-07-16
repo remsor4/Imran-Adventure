@@ -39,7 +39,7 @@ Lorsqu'Imran s'approche, les racines qui entourent son corps commencent à bouge
 
 Le Golem de la Forêt se déplace lentement et utilise des actions puissantes clairement annoncées. Le combat doit permettre au joueur d'apprendre à utiliser le saut, la Shadow Sword et le Bouclier de lumière.
 
-Aucun pouvoir débloqué plus tard dans l'aventure n'est nécessaire pour le vaincre.
+Le Dash et le Double saut sont deja disponibles, mais ils ne sont pas obligatoires pour vaincre ce premier golem.
 
 ## Récompense
 

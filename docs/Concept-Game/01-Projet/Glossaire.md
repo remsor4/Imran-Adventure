@@ -7,15 +7,15 @@ Ce glossaire rassemble les termes que nous utiliserons pendant la conception et 
 | Terme | Definition |
 |---|---|
 | Boss | Adversaire puissant affronte a la fin d'un niveau ou a la fin de l'aventure |
-| Bouclier de lumiere | Bouclier magique offert a Imran par Amelie et utilise pour bloquer les attaques |
+| Bouclier de lumiere | Bouclier magique offert a Imran par Amelie et bloquant automatiquement les projectiles ennemis venant de face, sauf pendant la charge du Smash |
 | Checkpoint | Fonction associee a une pancarte activee et servant de point de reprise apres la perte d'une vie |
 | Cinematique | Sequence narrative pendant laquelle le joueur ne controle pas Imran |
 | Cle | Objet contenu dans le coffre protege par un golem et servant a ouvrir un verrou du donjon |
 | Coeur | Unite de sante d'Imran, qui en possede trois |
 | Coffre | Conteneur protege par un golem et ouvert par le joueur apres le combat |
-| Dash | Capacite obtenue apres le deuxieme golem et permettant un deplacement rapide sur une courte distance |
+| Dash | Capacite disponible des le debut et permettant un deplacement rapide au sol sur une courte distance |
 | Donjon | Lieu ou Aliyah est retenue et qui sert uniquement de decor a la scene finale |
-| Double saut | Capacite obtenue apres le quatrieme golem et permettant un second saut dans les airs |
+| Double saut | Capacite disponible des le debut et permettant un second saut dans les airs |
 | Game Over | Ecran affiche lorsque toutes les vies sont perdues, avant la reprise du niveau depuis le debut |
 | Golem | Gardien cree et controle par Tata Lisa, servant de boss a la fin de chacun des six niveaux principaux |
 | HUD | Interface visible pendant le gameplay et affichant notamment les coeurs, les vies, les cles et la vie du boss |

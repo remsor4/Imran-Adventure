@@ -9,8 +9,8 @@ Definir la reaction generale d'Imran apres un degat non bloque. Les degats infli
 ## Sequence d'un degat
 
 1. Une source valide touche la zone vulnerable d'Imran.
-2. Le blocage est verifie avant d'appliquer le degat.
-3. Si le degat n'est pas bloque, l'action en cours est interrompue.
+2. Si la source est un projectile, la protection automatique du Bouclier est verifiee avant d'appliquer le degat.
+3. Si le projectile n'est pas bloque ou si la source est d'un autre type, l'action en cours est interrompue.
 4. Le nombre de coeurs correspondant est retire.
 5. Imran entre dans l'etat `Degat` pendant `0.20 s`.
 6. Le recul horizontal et vertical est applique.
@@ -51,14 +51,16 @@ Definir la reaction generale d'Imran apres un degat non bloque. Les degats infli
 - Aucun son en boucle ne joue pendant l'invulnerabilite.
 - La perte du dernier coeur utilise un retour distinct avant la perte de vie.
 
-## Degat bloque
+## Projectile bloque automatiquement
 
-Un degat correctement bloque :
+Un projectile frontal correctement bloque, meme pendant un mouvement :
 
 - ne retire aucun coeur ;
 - ne declenche pas l'invulnerabilite de degat ;
 - utilise la reaction propre au bouclier ;
-- peut produire un recul de blocage qui sera defini pendant l'etape 6.
+- ne declenche aucun recul de degat ;
+- ne coupe pas l'action en cours ;
+- fait disparaitre le projectile au point d'impact sans le renvoyer.
 
 ## Cas particuliers
 
@@ -75,7 +77,7 @@ La reaction est valide si :
 - le recul eloigne Imran de la source sans traverser le decor ;
 - le controle revient avant la fin de l'invulnerabilite ;
 - les retours restent lisibles sans clignotement rapide ;
-- un blocage reussi ne retire aucun coeur ;
+- une protection automatique reussie contre un projectile frontal ne retire aucun coeur, meme pendant un mouvement ;
 - Pause ne consomme aucune duree de reaction ou d'invulnerabilite.
 
 ## Sources

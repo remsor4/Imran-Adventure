@@ -4,7 +4,7 @@
 
 ## Rôle
 
-Le Golem du Lac gelé est le troisième gardien affronté par Imran. Il constitue le premier boss conçu pour vérifier la maîtrise du Dash obtenu après le Golem de la Grotte.
+Le Golem du Lac gele est le troisieme gardien affronte par Imran. Il verifie la maitrise des deplacements sur une surface glacee avec les capacites disponibles depuis le niveau 0.
 
 ## Apparence
 
@@ -48,7 +48,7 @@ Le combat doit vérifier que le joueur maîtrise :
 - le Dash ;
 - le positionnement sur une surface glacée.
 
-Le Double saut n'est pas encore disponible et ne doit pas être nécessaire.
+Le Double saut est disponible. Son caractere obligatoire ou facultatif pendant ce combat sera precise dans l'etape consacree aux boss.
 
 ## Récompense
 

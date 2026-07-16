@@ -4,7 +4,7 @@
 
 ## Rôle
 
-Le Golem du Désert est le quatrième gardien affronté par Imran. Il vérifie la maîtrise du Dash avant de permettre au joueur de débloquer une nouvelle capacité de déplacement.
+Le Golem du Desert est le quatrieme gardien affronte par Imran. Il verifie une maitrise plus avancee du Dash et du Double saut, disponibles depuis le niveau 0.
 
 ## Apparence
 
@@ -43,13 +43,12 @@ Le combat doit vérifier que le joueur maîtrise :
 - la Shadow Sword et le Smash Tranchant ;
 - le Bouclier de lumière ;
 - le Dash ;
+- le Double saut ;
 - le positionnement et les contre-attaques.
-
-Le Double saut n'est pas encore disponible et ne doit pas être nécessaire.
 
 ## Récompense
 
-Après sa victoire, Imran peut ouvrir le coffre et récupérer la quatrième clé. Il débloque également le Double saut.
+Apres sa victoire, Imran peut ouvrir le coffre et recuperer la quatrieme cle. Aucun nouveau pouvoir n'est debloque.
 
 Ses trois cœurs et ses trois vies sont ensuite restaurés avant le niveau suivant.
 

@@ -11,7 +11,7 @@ Afficher uniquement les informations utiles pendant l'exploration et les combats
 | Zone | Contenu | Visibilite |
 |---|---|---|
 | Coin superieur gauche | Coeurs et vies | Toujours pendant le gameplay |
-| Coin superieur droit | Cles et capacites debloquees | Pendant l'exploration et les combats |
+| Coin superieur droit | Cles et capacites de deplacement | Pendant l'exploration et les combats |
 | Haut au centre | Barre de vie du boss | Uniquement pendant un combat de boss |
 | Bas au centre | Message contextuel | Uniquement pres d'une interaction |
 | Coin inferieur droit | Sauvegarde automatique | Pendant la sauvegarde et sa confirmation |
@@ -49,12 +49,10 @@ Le compteur de cles utilise une icone de cle doree suivie du nombre obtenu sur s
 
 ## Capacites
 
-Seules les capacites deja debloquees sont affichees.
+Le Dash et le Double saut sont affiches des le debut du niveau 0.
 
-- L'icone du Dash apparait apres la deuxieme cle.
-- L'icone du Double saut apparait apres la quatrieme cle.
-- Chaque nouvelle icone est presentee une premiere fois avec son nom et son action.
-- Les capacites verrouillees ne sont pas affichees sous forme d'icone grisee.
+- La pancarte du Dash presente son icone, son nom et sa commande.
+- La pancarte du Double saut presente son icone, son nom et sa commande.
 - Les icones servent de rappel et ne doivent pas suggerer une jauge ou un temps de recharge inexistant.
 
 ## Boss
@@ -87,7 +85,7 @@ Exemples d'actions :
 
 Le message apparait uniquement lorsque l'action est possible. Il disparait si Imran s'eloigne, si un combat commence ou si l'action est terminee.
 
-Dans le niveau 0, le message d'une pancarte affiche automatiquement la commande adaptee au dernier appareil utilise et au remappage actuel.
+Dans le niveau 0, le message d'une pancarte de commande affiche automatiquement l'entree adaptee au dernier appareil utilise et au remappage actuel. La pancarte du Bouclier affiche une direction et precise que la protection automatique fonctionne meme en mouvement.
 
 ## Sauvegarde automatique
 
@@ -104,7 +102,7 @@ Le HUD confirme clairement :
 - la perte d'une vie ;
 - l'activation d'une pancarte ;
 - la recuperation d'une cle ;
-- le deblocage d'une capacite ;
+- l'apprentissage d'une capacite sur une pancarte de tutoriel ;
 - la sauvegarde ;
 - la victoire contre un boss.
 

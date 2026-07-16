@@ -120,11 +120,11 @@ Livrables :
 - Dash ;
 - attaque normale ;
 - Smash Tranchant ;
-- blocage avec le Bouclier de lumiere ;
+- absence de commande pour la protection automatique du Bouclier de lumiere ;
 - interaction avec les coffres et les menus ;
 - priorites, annulations et actions impossibles simultanement.
 
-Validation : toutes les actions possedent une commande et une reponse attendue.
+Validation : toutes les actions controlees possedent une commande et la protection automatique possede une reponse attendue.
 
 ### Etape 5 - Regles du joueur
 
@@ -152,11 +152,11 @@ Livrables :
 
 - portee, duree et degats de l'attaque normale ;
 - charge, projectile et degats du Smash Tranchant ;
-- blocage, orientation et limites du bouclier ;
+- protection automatique, orientation et limites du bouclier ;
 - reactions aux impacts ;
 - degats recus ;
 - recul et invulnerabilite ;
-- priorites entre mouvement, attaque et defense.
+- priorites entre mouvement et attaque, puis verification automatique de la defense.
 
 Validation : chaque attaque et chaque defense possedent des valeurs, des limites et un retour visuel ou sonore.
 
@@ -220,7 +220,7 @@ Livrables :
 
 - courbe de difficulte ;
 - introduction progressive des ennemis ;
-- obtention du Dash et du Double saut ;
+- utilisation progressive du Dash et du Double saut disponibles des le niveau 0 ;
 - valeurs de reference ;
 - temps vise par niveau ;
 - nombre et repartition des dangers ;

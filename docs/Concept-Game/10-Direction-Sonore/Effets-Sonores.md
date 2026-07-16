@@ -53,11 +53,12 @@ Le Smash Tranchant conserve un element aigu afin de rester audible dans le Chate
 ### Bouclier de lumiere
 
 - apparition courte de la protection ;
-- impact rond et lumineux lors d'un blocage reussi ;
+- impact rond et lumineux lors d'une protection automatique reussie ;
 - variation plus lourde contre une attaque de boss ;
-- fin discrete lorsque le bouclier est range.
+- disparition courte du projectile bloque, sans son de renvoi ;
+- disparition discrete de la lumiere apres l'impact.
 
-Un blocage reussi doit etre immediatement reconnaissable sans regarder l'interface.
+Une protection automatique reussie doit etre immediatement reconnaissable sans regarder l'interface.
 
 ## Ennemis
 
@@ -79,7 +80,7 @@ Le son de preparation d'une attaque reste different du son d'attente. La dispari
 - La recuperation des coeurs et des vies utilise un accord ascendant et chaleureux.
 - L'invulnerabilite temporaire ne produit pas de boucle sonore fatigante.
 
-Le joueur doit distinguer un degat subi, un blocage reussi et une attaque infligee.
+Le joueur doit distinguer un degat subi, un projectile bloque automatiquement et une attaque infligee.
 
 ## Coffres, cles et progression
 
@@ -89,8 +90,8 @@ Le joueur doit distinguer un degat subi, un blocage reussi et une attaque inflig
 | Ouverture du coffre | Bois, metal et montee magique |
 | Cle revelee | Accord clair avec tintement dore |
 | Cle recuperee | Motif court de victoire |
-| Dash debloque | Impulsion rapide suivie d'un accord positif |
-| Double saut debloque | Deux notes ascendantes et effet aerien |
+| Pancarte du Dash comprise | Impulsion rapide suivie d'un accord positif |
+| Pancarte du Double saut comprise | Deux notes ascendantes et effet aerien |
 | Six verrous ouverts | Six reactions courtes puis accord final |
 
 La musique de recompense peut remplacer une partie des effets pour eviter une accumulation excessive.

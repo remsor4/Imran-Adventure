@@ -33,14 +33,14 @@ Il doit permettre au joueur de connaître :
 - le nombre de cœurs restants ;
 - le nombre de vies restantes ;
 - le nombre de clés récupérées ;
-- les capacités débloquées ;
+- les capacites de deplacement disponibles ;
 - la vie restante du boss pendant chaque affrontement.
 
 Les cœurs et les vies doivent rester visibles pendant l'exploration et les combats.
 
 Le compteur de clés peut être affiché de manière discrète, puisqu'une seule clé est obtenue à la fin de chaque niveau.
 
-Les icônes du Dash et du Double saut doivent apparaître après leur déblocage afin de rappeler au joueur qu'elles sont disponibles.
+Les icones du Dash et du Double saut sont visibles des le niveau 0 afin de rappeler qu'elles sont disponibles.
 
 Pendant un combat de boss, une barre de vie horizontale est centree en haut de l'ecran. Elle affiche aussi la valeur numerique actuelle afin de rester comprehensible sans dependre uniquement de la couleur.
 
@@ -57,9 +57,9 @@ Exemples :
 - utiliser une nouvelle capacité pour la première fois ;
 - reprendre après une sauvegarde.
 
-Les messages doivent indiquer clairement la touche ou le bouton correspondant a l'appareil utilise.
+Les messages doivent indiquer clairement la touche ou le bouton correspondant a l'appareil utilise lorsqu'une commande est necessaire.
 
-Dans le niveau 0, chaque pancarte de tutoriel affiche la commande remappee correspondant au dernier appareil utilise.
+Dans le niveau 0, chaque pancarte de commande affiche le remappage correspondant au dernier appareil utilise. La pancarte du Bouclier montre une orientation et precise que la protection est automatique, meme en mouvement, sans afficher de touche de blocage.
 
 Ils disparaissent automatiquement lorsqu'ils ne sont plus nécessaires.
 
@@ -71,11 +71,11 @@ Le joueur doit recevoir un retour clair lorsqu'il :
 
 - perd un cœur ;
 - perd une vie ;
-- bloque une attaque avec le Bouclier de lumière ;
+- bloque automatiquement un projectile frontal avec le Bouclier de lumiere, meme en mouvement ;
 - active une pancarte ;
 - récupère une clé ;
-- débloque le Dash ;
-- débloque le Double saut ;
+- apprend le Dash sur sa pancarte de tutoriel ;
+- apprend le Double saut sur sa pancarte de tutoriel ;
 - déclenche une sauvegarde automatique ;
 - vainc un boss.
 

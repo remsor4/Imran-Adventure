@@ -40,7 +40,7 @@ Les ennemis doivent représenter un défi sans provoquer de dégâts injustes.
 
 - Un ennemi ne doit pas attaquer Imran avant d’être visible à l’écran.
 - Le joueur doit disposer d’un temps raisonnable pour réagir.
-- Les attaques doivent pouvoir être évitées, bloquées ou contournées.
+- Les projectiles venant de face peuvent etre bloques automatiquement par le Bouclier, meme si Imran est en mouvement. Les autres attaques doivent pouvoir etre evitees ou contournees.
 - Les ennemis ne doivent pas maintenir Imran bloqué dans une succession ininterrompue d’attaques.
 - Plusieurs ennemis peuvent combattre ensemble, mais leurs attaques doivent rester lisibles.
 - Après avoir attaqué, un ennemi laisse une courte occasion au joueur de riposter.
@@ -53,7 +53,7 @@ La difficulté des rencontres augmente progressivement au cours de l’aventure.
 - Les premiers niveaux présentent les ennemis dans des situations simples.
 - Chaque nouveau comportement est découvert avant d’être combiné avec d’autres menaces.
 - Les niveaux suivants associent progressivement les ennemis terrestres, aériens et à distance.
-- Les capacités débloquées par Imran peuvent être nécessaires pour gérer certaines rencontres plus avancées.
+- Le Dash et le Double saut, disponibles des le niveau 0, peuvent etre necessaires pour gerer certaines rencontres plus avancees.
 - Dans les deux derniers niveaux, les zombies remplacent les squelettes afin de representer la montee en puissance de la magie du Chaos de Tata Lisa.
 - L’augmentation de la difficulté doit venir de nouvelles combinaisons et d’une pression plus importante, sans rendre les comportements imprévisibles.
 

@@ -4,7 +4,7 @@
 
 ## Objectif
 
-Le système de sauvegarde permet au joueur de reprendre son aventure sans perdre les niveaux terminés, les clés récupérées ni les capacités débloquées.
+Le systeme de sauvegarde permet au joueur de reprendre son aventure sans perdre les niveaux termines ni les cles recuperees.
 
 Il reste volontairement simple afin d'être facile à comprendre pour les enfants à partir de 7 ans.
 
@@ -28,8 +28,6 @@ La sauvegarde conserve :
 - le dernier niveau terminé ;
 - les niveaux débloqués ;
 - les clés récupérées ;
-- le Dash, après la victoire contre le deuxième golem ;
-- le Double saut, après la victoire contre le quatrième golem ;
 - l'acces au combat final, apres la recuperation de la sixieme cle ;
 - l'etat `Aventure terminee`, apres la liberation d'Aliyah ;
 - la progression générale de l'aventure.
@@ -56,7 +54,7 @@ Lors du prochain lancement, il recommence le niveau depuis le début avec :
 
 - trois cœurs ;
 - trois vies ;
-- les capacités déjà débloquées lors des niveaux précédents.
+- le Dash et le Double saut, toujours disponibles des le debut de l'aventure.
 
 La sixieme cle constitue une exception : si elle a deja ete sauvegardee, `Continuer` replace Imran devant la porte du donjon avec trois coeurs et trois vies, juste avant le combat contre Tata Lisa.
 
@@ -64,7 +62,7 @@ La sixieme cle constitue une exception : si elle a deja ete sauvegardee, `Contin
 
 Si Imran perd ses trois vies, un écran Game Over apparaît.
 
-Le joueur recommence alors le niveau depuis le début. Les clés et les capacités obtenues dans les niveaux précédemment terminés restent sauvegardées.
+Le joueur recommence alors le niveau depuis le debut. Les cles obtenues dans les niveaux precedemment termines restent sauvegardees. Le Dash et le Double saut restent disponibles car ils ne dependent pas de la sauvegarde.
 
 ## Emplacement de sauvegarde
 

@@ -4,7 +4,7 @@
 
 Apres la cinematique d'introduction, le joueur prend le controle d'Imran dans le niveau 0 du Village des Bles.
 
-Ce tutoriel est court, lineaire et sans golem ni cle. Des pancartes successives expliquent les commandes deja disponibles. Quelques phases de plateforme et quelques ennemis permettent de pratiquer avant de quitter le village.
+Ce tutoriel est court, lineaire et sans golem ni cle. Des pancartes successives expliquent les actions disponibles, dont le Dash et le Double saut, puis la protection automatique du Bouclier. Quelques phases de plateforme et quelques ennemis permettent de pratiquer avant de quitter le village.
 
 Imran traverse ensuite les six niveaux principaux :
 
@@ -17,6 +17,6 @@ Imran traverse ensuite les six niveaux principaux :
 
 Chaque niveau principal se termine par un golem qui protege un coffre. Imran doit vaincre le gardien puis ouvrir lui-meme le coffre pour recuperer la cle.
 
-Il debloque le Dash apres le deuxieme golem et le Double saut apres le quatrieme golem.
+Le Dash et le Double saut sont disponibles des la premiere prise de controle dans le niveau 0. Les six golems protegent uniquement les six cles necessaires pour ouvrir le donjon.
 
 Le niveau 0 ne compte pas parmi les six niveaux principaux. Le donjon apparait uniquement dans la scene finale apres le combat contre Tata Lisa et ne constitue pas un niveau supplementaire.

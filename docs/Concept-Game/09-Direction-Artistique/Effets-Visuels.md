@@ -30,7 +30,7 @@ Definir des effets spectaculaires mais lisibles, adaptes a un jeune public. Chaq
 ### Bouclier de lumiere
 
 - Le bouclier produit un arc dore et blanc devant Imran.
-- Un blocage reussi affiche un anneau bref au point d'impact.
+- Un projectile frontal bloque automatiquement affiche un anneau bref, puis disparait au point d'impact sans ricochet.
 - La lumiere reste differente du jaune orange des dangers du Volcan.
 - L'effet disparait rapidement afin de ne pas masquer l'attaque suivante.
 

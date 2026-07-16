@@ -4,7 +4,7 @@
 
 ## Rôle
 
-Le Golem du Volcan est le cinquième gardien affronté par Imran. Il constitue la première épreuve demandant une maîtrise combinée du Dash et du Double saut.
+Le Golem du Volcan est le cinquieme gardien affronte par Imran. Il constitue une epreuve plus exigeante dans l'utilisation combinee du Dash et du Double saut.
 
 ## Apparence
 

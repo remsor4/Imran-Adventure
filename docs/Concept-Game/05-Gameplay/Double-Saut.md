@@ -1,5 +1,5 @@
 # Double saut
 
-> **Statut :** Validé
+> **Statut :** Valide
 
-Capacité obtenue après le quatrième golem. Elle permet d'effectuer un second saut dans les airs.
+Capacite disponible des le debut de l'aventure et enseignee par une pancarte du niveau 0. Elle permet d'effectuer un second saut dans les airs.

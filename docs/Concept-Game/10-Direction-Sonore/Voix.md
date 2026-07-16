@@ -27,8 +27,8 @@ Intentions principales :
 - petit effort pendant le saut, mais pas a chaque saut ;
 - effort plus marque pour le Dash et le Smash Tranchant ;
 - reaction courte lors d'un degat ;
-- soulagement apres un blocage ou une victoire ;
-- surprise devant un boss ou une nouvelle capacite ;
+- soulagement apres une protection automatique ou une victoire ;
+- surprise devant un boss ou lors de la decouverte d'une nouvelle commande du tutoriel ;
 - joie lors des retrouvailles avec Aliyah.
 
 Les efforts ne doivent pas rendre Imran agressif. Plusieurs variations evitent la repetition pendant les combats.

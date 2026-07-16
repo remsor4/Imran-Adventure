@@ -10,7 +10,7 @@ Lister les etats visibles d'Imran et les transitions autorisees entre ses action
 
 | Etat | Entree | Sortie normale |
 |---|---|---|
-| Attente | Imran est au sol sans direction ni action | Deplacement, Saut, Dash, Attaque, Charge, Blocage ou Interaction |
+| Attente | Imran est au sol sans direction ni action | Deplacement, Saut, Dash, Attaque, Charge ou Interaction |
 | Deplacement | Une direction horizontale est maintenue au sol | Attente, Saut, Dash ou action de combat autorisee |
 | Saut | Le saut est declenche | Chute, Double saut ou action aerienne autorisee |
 | Chute | La vitesse verticale est dirigee vers le bas | Reception, Double saut ou action aerienne autorisee |
@@ -19,7 +19,6 @@ Lister les etats visibles d'Imran et les transitions autorisees entre ses action
 | Attaque | Une attaque autorisee commence | Etat de mouvement compatible apres la fin de l'attaque |
 | Charge du Smash | La commande d'attaque est maintenue assez longtemps | Smash Tranchant, Degat ou Mort |
 | Smash Tranchant | La charge validee est relachee | Etat de mouvement compatible apres l'attaque |
-| Blocage | La commande de blocage est maintenue dans un etat compatible | Attente ou Deplacement apres relachement |
 | Interaction | Une cible valide accepte l'interaction | Attente apres la sequence |
 | Degat | Imran recoit un degat non bloque | Saut, Chute, Attente ou Mort |
 | Mort | Les trois coeurs sont perdus et une vie doit etre retiree | Reapparition ou Game Over |
@@ -43,7 +42,7 @@ Les disponibilites exactes des attaques au sol et dans les airs seront definies 
 - Une direction neutre ne change pas son orientation.
 - Le Dash sans direction utilise l'orientation actuelle.
 - Une action verrouillant son orientation conserve la direction choisie au debut de l'action.
-- Les regles propres aux attaques et au blocage seront precisees pendant l'etape 6.
+- Le Bouclier utilise l'orientation actuelle sans creer un etat de blocage. Sa protection automatique reste active pendant les etats de mouvement et devient inactive uniquement pendant la preparation ou la charge du Smash Tranchant.
 
 ## Reapparition
 

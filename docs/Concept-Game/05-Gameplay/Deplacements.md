@@ -1,5 +1,5 @@
-# Déplacements
+# Deplacements
 
-> **Statut :** Validé
+> **Statut :** Valide
 
-Imran se déplace à gauche ou à droite à une vitesse constante. Il ne possède pas de commande de course. Il peut sauter, puis débloquer le Dash et le Double saut.
+Imran se deplace a gauche ou a droite a une vitesse constante. Il ne possede pas de commande de course. Le saut, le Double saut et le Dash au sol sont disponibles des le debut de l'aventure.

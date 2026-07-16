@@ -4,14 +4,14 @@
 
 ## Objectif
 
-Definir un second saut aerien obtenu apres le quatrieme golem.
+Definir un second saut aerien disponible des le debut de l'aventure.
 
-## Deblocage
+## Disponibilite initiale
 
-- Le Double saut devient disponible apres la recuperation de la quatrieme cle.
+- Le Double saut est disponible des la premiere prise de controle dans le niveau 0.
+- Une pancarte du tutoriel explique la seconde pression en l'air avant la premiere situation qui la demande.
 - Il partage toujours la commande du saut normal.
-- Avant son deblocage, une seconde pression en l'air ne produit aucune action.
-- Le message de deblocage rappelle la commande de saut de l'appareil actif.
+- Il ne depend d'aucune cle, d'aucun golem et d'aucune donnee de sauvegarde.
 
 ## Disponibilite
 

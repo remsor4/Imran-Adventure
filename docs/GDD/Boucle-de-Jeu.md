@@ -37,7 +37,7 @@ Le joueur peut :
 
 - les combattre avec la Shadow Sword ;
 - charger le Smash Tranchant ;
-- bloquer une attaque avec le Bouclier de lumiere ;
+- faire face a un projectile pour que le Bouclier de lumiere le bloque automatiquement, meme en mouvement ;
 - les eviter lorsque le parcours et leur position le permettent.
 
 Un ennemi peut temporairement controler un passage par sa position ou ses attaques, mais le jeu ne demande jamais de vaincre tous les ennemis d'un niveau.
@@ -49,9 +49,9 @@ Les golems et Tata Lisa sont les seuls ennemis obligatoires.
 Le Village des Bles utilise une boucle speciale de tutoriel :
 
 1. Imran entre dans une courte zone sure.
-2. Une pancarte presente une commande deja disponible.
-3. Le message affiche la touche ou le bouton correspondant a l'appareil actif.
-4. Le joueur pratique la commande dans une situation simple.
+2. Une pancarte presente une commande ou une regle deja disponible.
+3. Le message affiche la touche ou le bouton correspondant, ou une direction pour la protection automatique.
+4. Le joueur pratique l'apprentissage dans une situation simple.
 5. Une courte zone de respiration confirme la reussite.
 6. Imran atteint la pancarte suivante et recommence cette boucle.
 7. Apres la derniere mise en pratique, Imran atteint la sortie du village.
@@ -59,9 +59,9 @@ Le Village des Bles utilise une boucle speciale de tutoriel :
 
 Le parcours reste lineaire. Il contient quelques plateformes et quelques ennemis ordinaires, mais aucun golem, aucun coffre de fin et aucune cle.
 
-Les pancartes du niveau 0 sont des pancartes de tutoriel. Elles expliquent les commandes et n'activent pas de checkpoint.
+Les pancartes du niveau 0 sont des pancartes de tutoriel. Elles expliquent les actions et les regles de gameplay sans activer de checkpoint.
 
-Les commandes sont presentees dans cet ordre : deplacement, saut, attaque normale, Smash Tranchant et blocage. Le Dash et le Double saut restent absents du tutoriel, car ils ne sont pas encore debloques.
+Les apprentissages sont presentes dans cet ordre : deplacement, saut, Double saut, Dash au sol, attaque normale, Smash Tranchant et protection automatique du Bouclier. Le Dash et le Double saut sont disponibles des la premiere prise de controle.
 
 ## Boucle complete d'un niveau
 
@@ -75,10 +75,10 @@ Chaque niveau principal suit cet ordre :
 6. Une seconde partie reprend la boucle courte avec une pression progressivement plus forte.
 7. Imran atteint l'arene du golem.
 8. Une courte presentation annonce le boss sans ralentir durablement le rythme.
-9. Le joueur observe les attaques du golem, evite ou bloque les dangers et attaque pendant les ouvertures.
+9. Le joueur observe les attaques du golem, evite les dangers ou fait face aux projectiles pour les bloquer automatiquement, puis attaque pendant les ouvertures.
 10. Le golem est vaincu et le coffre devient accessible.
 11. Le joueur ouvre lui-meme le coffre.
-12. Imran recupere la cle du niveau et la capacite eventuelle.
+12. Imran recupere la cle du niveau.
 13. La progression est sauvegardee automatiquement.
 14. Les coeurs et les vies sont restaures.
 15. Le niveau suivant devient accessible.
@@ -106,7 +106,7 @@ La pancarte de controle ne cree aucune sauvegarde permanente. Quitter le jeu pen
 Chaque combat de golem repose sur la sequence suivante :
 
 1. identifier le comportement et les attaques du boss ;
-2. eviter ou bloquer une attaque clairement annoncee ;
+2. eviter une attaque ou faire face a un projectile clairement annonce pour le bloquer automatiquement ;
 3. reperer une ouverture ;
 4. attaquer sans rester inutilement expose ;
 5. observer la reaction du boss ;
@@ -120,18 +120,18 @@ Les phases, attaques, valeurs et ouvertures propres a chaque boss seront definie
 
 | Progression | Action principale | Recompense permanente |
 |---:|---|---|
-| Niveau 0 | Traverser le Village des Bles et apprendre les commandes de base | Acces a la Foret enchantee |
+| Niveau 0 | Traverser le Village des Bles et apprendre les actions et les regles de base | Acces a la Foret enchantee |
 | Niveau 1 | Traverser la Foret enchantee et vaincre son golem | Cle 1 |
-| Niveau 2 | Traverser la Grotte mysterieuse et vaincre son golem | Cle 2 et Dash |
+| Niveau 2 | Traverser la Grotte mysterieuse et vaincre son golem | Cle 2 |
 | Niveau 3 | Traverser le Lac gele et vaincre son golem | Cle 3 |
-| Niveau 4 | Traverser le Desert oublie et vaincre son golem | Cle 4 et Double saut |
+| Niveau 4 | Traverser le Desert oublie et vaincre son golem | Cle 4 |
 | Niveau 5 | Traverser le Volcan et vaincre son golem | Cle 5 |
 | Niveau 6 | Traverser le Chateau de Tata Lisa et vaincre son golem | Cle 6 |
 | Finale | Vaincre Tata Lisa devant le donjon | Liberation d'Aliyah et fin de l'aventure |
 
-Le Dash enrichit la boucle courte a partir du troisieme niveau. Le Double saut l'enrichit a partir du cinquieme niveau.
+Le Dash et le Double saut enrichissent la boucle courte des le niveau 0. Les niveaux suivants combinent progressivement ces capacites avec les plateformes, les dangers et les ennemis.
 
-Les capacites obtenues et les cles recuperees restent disponibles apres la sauvegarde automatique.
+Les deux capacites restent toujours disponibles. Les cles recuperees restent disponibles apres la sauvegarde automatique.
 
 ## Boucle du combat final
 
@@ -140,7 +140,7 @@ Apres la recuperation de la sixieme cle :
 1. la progression est sauvegardee ;
 2. Imran est place devant la porte du donjon avec trois coeurs et trois vies ;
 3. Tata Lisa engage le combat final ;
-4. le joueur applique les apprentissages de deplacement, d'attaque, de blocage et d'observation ;
+4. le joueur applique les apprentissages de deplacement, d'attaque, de protection automatique et d'observation ;
 5. Tata Lisa est vaincue ;
 6. la Pierre du Chaos se brise et Tata Lisa prend la fuite ;
 7. Imran ouvre les six verrous avec les six cles ;
@@ -223,10 +223,10 @@ L'aventure est terminee lorsque Tata Lisa est vaincue, que les six verrous sont 
 | Une vie est perdue apres le checkpoint | Reapparition a la pancarte de controle avec trois coeurs |
 | Les trois vies sont perdues | Game Over et reprise du niveau depuis le debut |
 | Le jeu est ferme pendant un niveau | Reprise du niveau depuis le debut lors du prochain lancement |
-| Le jeu est ferme apres une cle sauvegardee | Reprise au niveau suivant avec les capacites deja obtenues |
+| Le jeu est ferme apres une cle sauvegardee | Reprise au niveau suivant avec le Dash et le Double saut disponibles |
 | Le jeu est ferme apres la sixieme cle | Reprise devant le donjon avant Tata Lisa |
 
-Un echec ne retire jamais une cle ou une capacite deja sauvegardee.
+Un echec ne retire jamais une cle sauvegardee. Le Dash et le Double saut restent toujours disponibles.
 
 ## Sources
 

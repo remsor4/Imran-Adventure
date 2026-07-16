@@ -4,7 +4,7 @@
 
 ## Rôle
 
-Le Golem de la Grotte est le deuxième gardien affronté par Imran. Il vérifie que le joueur maîtrise les principes appris contre le premier golem avant de lui donner accès à une nouvelle capacité.
+Le Golem de la Grotte est le deuxieme gardien affronte par Imran. Il verifie que le joueur maitrise les principes appris contre le premier golem dans un environnement plus contraignant.
 
 ## Apparence
 
@@ -45,11 +45,11 @@ Le combat doit vérifier que le joueur maîtrise :
 - le Bouclier de lumière ;
 - les contre-attaques au bon moment.
 
-Le Dash n'est pas nécessaire pour vaincre ce golem, puisqu'il est débloqué après le combat.
+Le Dash et le Double saut sont deja disponibles. Leur utilisation peut faciliter le combat, mais aucune de ces capacites n'est obtenue apres la victoire.
 
 ## Récompense
 
-Après sa victoire, Imran peut ouvrir le coffre et récupérer la deuxième clé. Il débloque également le Dash.
+Apres sa victoire, Imran peut ouvrir le coffre et recuperer la deuxieme cle. Aucun nouveau pouvoir n'est debloque.
 
 Ses trois cœurs et ses trois vies sont ensuite restaurés avant le niveau suivant.
 

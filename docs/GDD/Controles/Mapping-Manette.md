@@ -14,15 +14,16 @@ Les noms Xbox et PlayStation servent uniquement d'exemples. Le jeu affiche l'ico
 |---|---|---|---|---|
 | Se deplacer | Stick gauche ou croix directionnelle | Stick gauche ou D-pad | Stick gauche ou croix | Maintenue |
 | Sauter | Bouton bas | `A` | `Croix` | Pression |
-| Double saut | Bouton bas | `A` | `Croix` | Seconde pression en l'air apres deblocage |
-| Dash | Bouton droit | `B` | `Rond` | Pression apres deblocage |
+| Double saut | Bouton bas | `A` | `Croix` | Seconde pression en l'air |
+| Dash | Bouton droit | `B` | `Rond` | Pression au sol |
 | Attaque normale | Bouton gauche | `X` | `Carre` | Pression courte |
 | Charger le Smash Tranchant | Bouton gauche | `X` | `Carre` | Maintien puis relachement |
-| Bloquer | Gachette gauche | `LT` | `L2` | Maintenue |
 | Interagir | Bouton haut | `Y` | `Triangle` | Pression pres d'un element interactif |
 | Pause | Bouton Menu | `Menu` | `Options` | Pression |
 
 Le stick gauche ne modifie pas la vitesse d'Imran. Une inclinaison suffisante vers la gauche ou la droite produit la meme vitesse constante que la croix directionnelle.
+
+Le Bouclier de lumiere ne possede aucun bouton. Il bloque automatiquement un projectile ennemi venant du cote vers lequel Imran regarde, meme pendant un mouvement.
 
 ## Menus
 
@@ -35,12 +36,11 @@ Le stick gauche ne modifie pas la vitesse d'Imran. Une inclinaison suffisante ve
 
 Le bouton droit sert au Dash pendant le gameplay et au retour dans les menus. Les contextes ne sont jamais actifs simultanement.
 
-## Capacites verrouillees
+## Capacites disponibles
 
-- Le Dash conserve son bouton avant et apres son deblocage.
+- Le Dash est utilisable des le debut de l'aventure.
 - Le Double saut partage toujours le bouton du saut.
-- Une commande verrouillee ne produit aucune action de gameplay.
-- Un message de deblocage affiche l'icone adaptee a la manette active.
+- Les pancartes du niveau 0 affichent l'icone adaptee a la manette active.
 
 ## Cas particuliers
 
@@ -57,7 +57,8 @@ Le mapping manette est valide si :
 
 - toutes les actions essentielles sont accessibles ;
 - toute l'aventure peut etre terminee sans clavier ni souris ;
-- les boutons de saut, attaque, Dash, blocage et interaction sont distincts ;
+- les boutons de saut, attaque, Dash et interaction sont distincts ;
+- aucune commande de blocage n'est affichee ou demandee ;
 - le stick et la croix directionnelle permettent les memes deplacements ;
 - les icones correspondent au dernier appareil utilise ;
 - la deconnexion ne laisse jamais Imran sans controle pendant une action en cours.

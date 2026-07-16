@@ -4,14 +4,14 @@
 
 ## Objectif
 
-Definir un deplacement horizontal court et rapide au sol, obtenu apres le deuxieme golem.
+Definir un deplacement horizontal court et rapide au sol, disponible des le debut de l'aventure.
 
-## Deblocage
+## Disponibilite initiale
 
-- Le Dash devient disponible apres la recuperation de la deuxieme cle.
-- Sa commande peut etre consultee et remappee avant son deblocage.
-- Avant le deblocage, utiliser la commande ne produit aucune action.
-- Le message de deblocage rappelle la commande de l'appareil actif.
+- Le Dash est disponible des la premiere prise de controle dans le niveau 0.
+- Une pancarte du tutoriel explique sa commande avant la premiere situation qui le demande.
+- Sa commande peut etre consultee et remappee des le debut.
+- Il ne depend d'aucune cle, d'aucun golem et d'aucune donnee de sauvegarde.
 
 ## Declenchement
 
@@ -56,7 +56,7 @@ Une commande utilisee dans les airs est ignoree. Elle n'est pas memorisee pour d
 - Un mur solide interrompt immediatement le Dash.
 - Imran ne traverse ni un ennemi solide, ni un danger, ni une limite de niveau.
 - Un contact dangereux pendant le Dash peut infliger un degat et declencher un recul.
-- Le Dash ne peut pas commencer pendant une attaque, une charge, un blocage, une interaction, un degat, une mort ou un etat verrouille.
+- Le Dash ne peut pas commencer pendant une attaque, une charge, une interaction, un degat, une mort ou un etat verrouille.
 - Une commande de Dash recue dans les airs ne produit aucun mouvement, effet ou son complet.
 
 ## Reutilisation

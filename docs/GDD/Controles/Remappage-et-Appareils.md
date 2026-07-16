@@ -25,14 +25,15 @@ Les actions suivantes doivent toujours posseder au moins une commande valide sur
 - saut ;
 - Dash ;
 - attaque ;
-- blocage ;
 - interaction ;
 - Pause ;
 - navigation dans les menus ;
 - confirmation ;
 - retour.
 
-Le Dash reste assignable avant son deblocage. Le Double saut partage la commande du saut et le Smash Tranchant partage celle de l'attaque.
+Le Dash est assignable et utilisable des le debut. Le Double saut partage la commande du saut et le Smash Tranchant partage celle de l'attaque.
+
+Le Bouclier de lumiere ne figure pas dans le remappage, car sa protection contre les projectiles frontaux est automatique.
 
 ## Detection des conflits
 

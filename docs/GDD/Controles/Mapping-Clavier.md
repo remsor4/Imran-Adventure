@@ -13,17 +13,18 @@ Definir les commandes clavier par defaut pour le gameplay et les menus sur un cl
 | Aller a gauche | `Q` | `Fleche gauche` | Maintenue |
 | Aller a droite | `D` | `Fleche droite` | Maintenue |
 | Sauter | `Espace` | Aucune | Pression |
-| Double saut | `Espace` | Aucune | Seconde pression en l'air apres deblocage |
-| Dash | `Maj gauche` | Aucune | Pression apres deblocage |
+| Double saut | `Espace` | Aucune | Seconde pression en l'air |
+| Dash | `Maj gauche` | Aucune | Pression au sol |
 | Attaque normale | `J` | Aucune | Pression courte |
 | Charger le Smash Tranchant | `J` | Aucune | Maintien puis relachement |
-| Bloquer | `K` | Aucune | Maintenue |
 | Interagir | `E` | Aucune | Pression pres d'un element interactif |
 | Pause | `Echap` | Aucune | Pression |
 
 Il n'existe aucune commande de course. Imran conserve la vitesse de deplacement definie par les regles du joueur.
 
 Le Double saut partage la commande du saut. Le Smash Tranchant partage la commande de l'attaque normale.
+
+Le Bouclier de lumiere ne possede aucune commande. Il bloque automatiquement un projectile ennemi venant du cote vers lequel Imran regarde, meme pendant un mouvement.
 
 ## Menus
 
@@ -49,12 +50,11 @@ La souris peut :
 
 Aucune action essentielle du gameplay ne depend de la souris.
 
-## Capacites verrouillees
+## Capacites disponibles
 
-- La commande du Dash apparait dans les Options avant son deblocage, avec la mention `Capacite verrouillee`.
+- Le Dash est utilisable et remappable des le debut de l'aventure.
 - La commande du Double saut reste celle du saut et ne possede pas une ligne de remappage separee.
-- Une pression sur la commande d'une capacite verrouillee ne produit aucune action de gameplay.
-- Lors du deblocage, un message rappelle la commande associee.
+- Les pancartes du niveau 0 affichent les commandes correspondant au dernier appareil utilise.
 
 ## Cas particuliers
 

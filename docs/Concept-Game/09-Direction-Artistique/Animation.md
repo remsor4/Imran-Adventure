@@ -39,8 +39,8 @@ Animations principales :
 - Double saut avec pose distincte ;
 - Dash avec silhouette et direction tres claires ;
 - attaque normale, charge et Smash Tranchant ;
-- sortie et rangement du Bouclier de lumiere ;
-- blocage reussi et recul sous un impact ;
+- position frontale lisible du Bouclier de lumiere selon l'orientation d'Imran ;
+- protection automatique reussie et reaction sous un impact ;
 - degat, perte d'une vie et retour au point de controle ;
 - interaction avec un coffre, une cle ou une pancarte ;
 - victoire et liberation d'Aliyah.
