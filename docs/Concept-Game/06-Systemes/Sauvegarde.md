@@ -1,6 +1,6 @@
 # Sauvegarde
 
-> **Statut :** Validé
+> **Statut :** Valide
 
 ## Objectif
 
@@ -9,6 +9,8 @@ Le système de sauvegarde permet au joueur de reprendre son aventure sans perdre
 Il reste volontairement simple afin d'être facile à comprendre pour les enfants à partir de 7 ans.
 
 ## Sauvegarde automatique
+
+La fin du niveau 0 declenche une premiere sauvegarde automatique. Elle enregistre la fin du tutoriel et debloque la Foret enchantee sans ajouter de cle.
 
 La partie est sauvegardee automatiquement apres chaque victoire contre un golem, une fois la cle du niveau recuperee.
 
@@ -22,6 +24,7 @@ Une sauvegarde finale est effectuee apres la liberation d'Aliyah et avant les cr
 
 La sauvegarde conserve :
 
+- la fin du niveau 0 et l'acces a la Foret enchantee ;
 - le dernier niveau terminé ;
 - les niveaux débloqués ;
 - les clés récupérées ;
@@ -35,13 +38,17 @@ Les cœurs et les vies ne sont pas conservés entre deux niveaux, car ils sont a
 
 ## Points de contrôle
 
-Les pancartes laissées par Rémi et Amélie servent uniquement de points de réapparition temporaires dans le niveau en cours.
+Les pancartes de controle laissees par Remi et Amelie servent uniquement de points de reapparition temporaires dans le niveau principal en cours.
 
-Elles ne créent pas de sauvegarde permanente.
+Elles ne creent pas de sauvegarde permanente.
 
-Lorsqu'Imran perd une vie après avoir activé une pancarte, il réapparaît à cet endroit avec ses trois cœurs.
+Lorsqu'Imran perd une vie apres avoir active une pancarte de controle, il reapparait a cet endroit avec ses trois coeurs.
+
+Les pancartes de tutoriel du niveau 0 ne sont pas des points de controle.
 
 ## Fermeture du jeu pendant un niveau
+
+Si le joueur quitte pendant le niveau 0 avant d'atteindre sa sortie, il reprend le tutoriel depuis son debut.
 
 Si le joueur quitte le jeu avant d'avoir vaincu le boss du niveau, sa progression à l'intérieur de ce niveau n'est pas conservée.
 
@@ -66,7 +73,7 @@ Le jeu utilise un seul emplacement de sauvegarde.
 Le menu principal propose :
 
 - **Continuer**, pour reprendre depuis le dernier niveau débloqué ;
-- **Nouvelle partie**, pour effacer la progression existante et recommencer l'aventure depuis le début.
+- **Nouvelle partie**, pour effacer la progression existante et recommencer au debut du niveau 0.
 
 Lorsque la sauvegarde porte l'etat `Aventure terminee`, `Continuer` est remplace par `Revoir la fin`. Cette action rejoue la liberation d'Aliyah et les credits sans relancer le combat final.
 
@@ -76,10 +83,11 @@ Avant l'effacement d'une sauvegarde, le jeu demande une confirmation au joueur a
 
 | Situation | Résultat |
 |---|---|
+| Niveau 0 termine | Sauvegarde automatique et acces a la Foret enchantee |
 | Golem vaincu et cle recuperee | Sauvegarde automatique |
 | Sixieme cle recuperee | Sauvegarde et reprise devant la porte du donjon |
 | Tata Lisa vaincue et Aliyah liberee | Sauvegarde finale `Aventure terminee` |
-| Pancarte activée | Point de réapparition temporaire |
+| Pancarte de controle activee | Point de reapparition temporaire |
 | Vie perdue | Retour à la pancarte activée avec trois cœurs |
 | Trois vies perdues | Game Over et reprise au début du niveau |
 | Jeu fermé pendant un niveau | Reprise au début de ce niveau |

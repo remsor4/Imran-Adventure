@@ -24,7 +24,7 @@ Cette fiche transforme la vision du Concept Game en contraintes generales pour t
 | Public secondaire | Joueurs recherchant une aventure familiale simple et lisible |
 | Structure | Progression lineaire avec un seul chemin principal par niveau |
 | Difficulte | Une difficulte unique avec une progression graduelle |
-| Contenu principal | Six niveaux, six golems et un combat final contre Tata Lisa |
+| Contenu principal | Un niveau 0 de tutoriel, six niveaux principaux, six golems et un combat final contre Tata Lisa |
 | Modele du projet | Projet personnel non commercial et sans vente |
 
 ## Principe general
@@ -38,15 +38,17 @@ Apres le sixieme niveau, Imran affronte Tata Lisa devant la porte du donjon. Sa 
 1. Une cinematique montre Remi et Amelie confiant les equipements a Imran.
 2. Les parents partent en exploration.
 3. Tata Lisa enleve Aliyah.
-4. Imran quitte le Village des Bles pour sauver sa soeur.
-5. Le joueur prend le controle d'Imran au debut de la Foret enchantee.
+4. Le joueur prend le controle d'Imran dans le Village des Bles.
+5. Imran traverse le niveau 0 de tutoriel et quitte le village.
+6. La Foret enchantee devient le premier niveau principal.
 
-Le Village des Bles apparait uniquement dans la cinematique d'introduction et ne constitue pas une zone jouable.
+Le Village des Bles est un niveau 0 jouable, lineaire et consacre a l'apprentissage des commandes de base. Il ne contient aucun golem, aucun coffre de fin et aucune cle.
 
 ## Structure de l'aventure
 
 | Ordre | Zone | Conclusion |
 |---:|---|---|
+| 0 | Village des Bles | Fin du tutoriel et acces a la Foret enchantee |
 | 1 | Foret enchantee | Golem, coffre et premiere cle |
 | 2 | Grotte mysterieuse | Golem, coffre, deuxieme cle et Dash |
 | 3 | Lac gele | Golem, coffre et troisieme cle |
@@ -55,7 +57,7 @@ Le Village des Bles apparait uniquement dans la cinematique d'introduction et ne
 | 6 | Chateau de Tata Lisa | Golem, coffre et sixieme cle |
 | Finale | Porte du donjon | Combat contre Tata Lisa et liberation d'Aliyah |
 
-Le donjon sert uniquement de decor a la scene finale. Il ne constitue pas un septieme niveau.
+Le niveau 0 ne compte pas parmi les six niveaux principaux. Le donjon sert uniquement de decor a la scene finale et ne constitue pas un niveau supplementaire.
 
 ## Fin de l'aventure
 
@@ -91,7 +93,7 @@ Le GDD ne doit pas ajouter :
 - de monde ouvert ;
 - de chemins narratifs alternatifs ;
 - de choix de difficulte ;
-- de septieme niveau dans le donjon ;
+- de niveau jouable dans le donjon ;
 - de contenu commercial, de boutique ou de vente ;
 - de violence graphique incompatible avec le public cible.
 
@@ -130,8 +132,9 @@ La fiche est valide si :
 
 - toutes les decisions correspondent au Concept Game ;
 - le mode solo est confirme ;
+- le Village des Bles reste le niveau 0 jouable sans golem ni cle ;
 - le jeu conserve exactement six niveaux principaux et un combat final ;
-- le Village des Bles et le donjon restent non jouables ;
+- le donjon reste non jouable ;
 - la fiche ne contient aucune valeur reservee a une etape ulterieure ;
 - aucune fonction commerciale n'est introduite ;
 - toutes les futures sections du GDD respectent ce perimetre.

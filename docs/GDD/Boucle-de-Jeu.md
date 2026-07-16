@@ -10,9 +10,9 @@ Les valeurs de mouvement, de combat et d'equilibrage seront definies dans les et
 
 ## Objectif permanent du joueur
 
-L'objectif global reste toujours le meme : traverser les six niveaux, recuperer les six cles, vaincre Tata Lisa et liberer Aliyah.
+L'objectif global reste toujours le meme : terminer le niveau 0 de tutoriel, traverser les six niveaux principaux, recuperer les six cles, vaincre Tata Lisa et liberer Aliyah.
 
-Dans un niveau, l'objectif immediat est de suivre le chemin principal jusqu'au golem, de le vaincre, d'ouvrir son coffre et de recuperer sa cle.
+Dans le niveau 0, l'objectif immediat est de suivre les pancartes de tutoriel jusqu'a la sortie du Village des Bles. Dans un niveau principal, il faut suivre le chemin jusqu'au golem, le vaincre, ouvrir son coffre et recuperer sa cle.
 
 Le joueur ne doit jamais avoir besoin de chercher un objectif cache ou un chemin alternatif pour progresser.
 
@@ -44,6 +44,25 @@ Un ennemi peut temporairement controler un passage par sa position ou ses attaqu
 
 Les golems et Tata Lisa sont les seuls ennemis obligatoires.
 
+## Boucle du niveau 0
+
+Le Village des Bles utilise une boucle speciale de tutoriel :
+
+1. Imran entre dans une courte zone sure.
+2. Une pancarte presente une commande deja disponible.
+3. Le message affiche la touche ou le bouton correspondant a l'appareil actif.
+4. Le joueur pratique la commande dans une situation simple.
+5. Une courte zone de respiration confirme la reussite.
+6. Imran atteint la pancarte suivante et recommence cette boucle.
+7. Apres la derniere mise en pratique, Imran atteint la sortie du village.
+8. La Foret enchantee est debloquee et la progression est sauvegardee.
+
+Le parcours reste lineaire. Il contient quelques plateformes et quelques ennemis ordinaires, mais aucun golem, aucun coffre de fin et aucune cle.
+
+Les pancartes du niveau 0 sont des pancartes de tutoriel. Elles expliquent les commandes et n'activent pas de checkpoint.
+
+Les commandes sont presentees dans cet ordre : deplacement, saut, attaque normale, Smash Tranchant et blocage. Le Dash et le Double saut restent absents du tutoriel, car ils ne sont pas encore debloques.
+
 ## Boucle complete d'un niveau
 
 Chaque niveau principal suit cet ordre :
@@ -51,8 +70,8 @@ Chaque niveau principal suit cet ordre :
 1. Imran entre dans le niveau avec trois coeurs et trois vies.
 2. Le joueur identifie le chemin principal et commence la progression.
 3. Une premiere partie combine plateformes, dangers et ennemis.
-4. Imran atteint la pancarte situee approximativement au milieu du niveau.
-5. Le joueur active la pancarte pour etablir le checkpoint temporaire.
+4. Imran atteint la pancarte de controle situee approximativement au milieu du niveau.
+5. Le joueur active la pancarte de controle pour etablir le checkpoint temporaire.
 6. Une seconde partie reprend la boucle courte avec une pression progressivement plus forte.
 7. Imran atteint l'arene du golem.
 8. Une courte presentation annonce le boss sans ralentir durablement le rythme.
@@ -68,7 +87,7 @@ La victoire contre le golem ne termine pas seule le niveau. L'ouverture du coffr
 
 ## Fonction du checkpoint
 
-La pancarte divise le niveau en deux parties et limite la repetition apres la perte d'une vie.
+La pancarte de controle divise le niveau principal en deux parties et limite la repetition apres la perte d'une vie.
 
 Avant son activation :
 
@@ -76,11 +95,11 @@ Avant son activation :
 
 Apres son activation :
 
-- la perte d'une vie replace Imran a la pancarte ;
+- la perte d'une vie replace Imran a la pancarte de controle ;
 - Imran revient avec trois coeurs ;
 - le checkpoint reste actif uniquement pendant le niveau en cours.
 
-La pancarte ne cree aucune sauvegarde permanente. Quitter le jeu pendant un niveau impose de recommencer ce niveau depuis le debut lors de la prochaine partie.
+La pancarte de controle ne cree aucune sauvegarde permanente. Quitter le jeu pendant un niveau principal impose de recommencer ce niveau depuis le debut lors de la prochaine partie.
 
 ## Boucle des combats de boss
 
@@ -101,6 +120,7 @@ Les phases, attaques, valeurs et ouvertures propres a chaque boss seront definie
 
 | Progression | Action principale | Recompense permanente |
 |---:|---|---|
+| Niveau 0 | Traverser le Village des Bles et apprendre les commandes de base | Acces a la Foret enchantee |
 | Niveau 1 | Traverser la Foret enchantee et vaincre son golem | Cle 1 |
 | Niveau 2 | Traverser la Grotte mysterieuse et vaincre son golem | Cle 2 et Dash |
 | Niveau 3 | Traverser le Lac gele et vaincre son golem | Cle 3 |
@@ -143,6 +163,8 @@ Le rythme d'un niveau alterne :
 - presentation et combat du golem ;
 - ouverture du coffre et recompense.
 
+Le niveau 0 remplace le checkpoint, le golem et le coffre par une succession plus courte : pancarte, pratique, respiration et nouvelle pancarte.
+
 Les respirations servent a laisser le joueur observer le decor, comprendre la prochaine difficulte et recuperer apres une sequence intense.
 
 Les sequences narratives restent courtes pendant la progression. Les cinematiques principales se concentrent au debut et a la fin de l'aventure. Leur contenu detaille sera defini pendant l'etape 13.
@@ -173,6 +195,10 @@ Un ennemi est vaincu lorsque sa condition de defaite est remplie. La destruction
 
 Le golem est vaincu lorsque sa barre de vie est vide. Le coffre devient alors accessible.
 
+### Victoire du niveau 0
+
+Le niveau 0 est termine lorsqu'Imran atteint la sortie du Village des Bles apres les pancartes de tutoriel. Cette sortie sauvegarde la fin du tutoriel et debloque la Foret enchantee sans ajouter de cle.
+
 ### Victoire d'un niveau
 
 Un niveau est termine lorsque :
@@ -192,8 +218,9 @@ L'aventure est terminee lorsque Tata Lisa est vaincue, que les six verrous sont 
 | Echec | Consequence |
 |---|---|
 | Imran perd ses trois coeurs | Une vie est perdue |
+| Une vie est perdue dans le niveau 0 | Reapparition au debut du tutoriel avec trois coeurs |
 | Une vie est perdue avant le checkpoint | Reapparition au debut du niveau avec trois coeurs |
-| Une vie est perdue apres le checkpoint | Reapparition a la pancarte avec trois coeurs |
+| Une vie est perdue apres le checkpoint | Reapparition a la pancarte de controle avec trois coeurs |
 | Les trois vies sont perdues | Game Over et reprise du niveau depuis le debut |
 | Le jeu est ferme pendant un niveau | Reprise du niveau depuis le debut lors du prochain lancement |
 | Le jeu est ferme apres une cle sauvegardee | Reprise au niveau suivant avec les capacites deja obtenues |
@@ -205,6 +232,7 @@ Un echec ne retire jamais une cle ou une capacite deja sauvegardee.
 
 - [Fiche generale du GDD](Fiche-Generale.md)
 - [Boucle de jeu du Concept Game](../Concept-Game/05-Gameplay/Boucle-de-Jeu.md)
+- [Tutoriel du niveau 0](../Concept-Game/05-Gameplay/Tutoriel-Niveau-0.md)
 - [Deplacements](../Concept-Game/05-Gameplay/Deplacements.md)
 - [Dash](../Concept-Game/05-Gameplay/Dash.md)
 - [Double saut](../Concept-Game/05-Gameplay/Double-Saut.md)
@@ -227,8 +255,9 @@ Un echec ne retire jamais une cle ou une capacite deja sauvegardee.
 Le document est valide si :
 
 - la boucle courte decrit clairement les actions repetees ;
-- la boucle d'un niveau couvre le debut, le checkpoint, le golem, le coffre et la sauvegarde ;
-- la boucle globale couvre les six niveaux et le combat final ;
+- la boucle du niveau 0 couvre les pancartes, la pratique et la sortie du Village ;
+- la boucle d'un niveau principal couvre le debut, le checkpoint, le golem, le coffre et la sauvegarde ;
+- la boucle globale couvre le niveau 0, les six niveaux principaux et le combat final ;
 - les conditions de victoire et d'echec sont explicites ;
 - les ennemis ordinaires peuvent etre evites lorsque le parcours le permet ;
 - seuls les boss sont toujours obligatoires ;

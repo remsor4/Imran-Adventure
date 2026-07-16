@@ -1,6 +1,7 @@
 # 05 — Gameplay
 
 - [Boucle de jeu](Boucle-de-Jeu.md)
+- [Tutoriel du niveau 0](Tutoriel-Niveau-0.md)
 - [Déplacements](Deplacements.md)
 - [Combat](Combat.md)
 - [Shadow Sword](Shadow-Sword.md)

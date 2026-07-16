@@ -17,11 +17,13 @@ Ce glossaire rassemble les termes que nous utiliserons pendant la conception et 
 | Donjon | Lieu ou Aliyah est retenue et qui sert uniquement de decor a la scene finale |
 | Double saut | Capacite obtenue apres le quatrieme golem et permettant un second saut dans les airs |
 | Game Over | Ecran affiche lorsque toutes les vies sont perdues, avant la reprise du niveau depuis le debut |
-| Golem | Gardien cree et controle par Tata Lisa, servant de boss a la fin de chacun des six niveaux |
+| Golem | Gardien cree et controle par Tata Lisa, servant de boss a la fin de chacun des six niveaux principaux |
 | HUD | Interface visible pendant le gameplay et affichant notamment les coeurs, les vies, les cles et la vie du boss |
 | Magie du Chaos | Energie violette instable utilisee par Tata Lisa et alimentee par la Pierre du Chaos |
-| Niveau | Une des six grandes zones jouables traversees par Imran |
-| Pancarte | Objet installe par Remi et Amelie, visible dans un niveau et servant a activer un checkpoint |
+| Niveau | Zone jouable traversee par Imran ; le niveau 0 de tutoriel precede les six niveaux principaux |
+| Niveau 0 | Tutoriel lineaire jouable situe dans le Village des Bles, sans golem ni cle |
+| Pancarte de controle | Objet installe par Remi et Amelie dans un niveau principal et servant a activer un checkpoint |
+| Pancarte de tutoriel | Objet du niveau 0 affichant une commande sans activer de checkpoint |
 | Pierre du Chaos | Pierre magique qui accorde ses pouvoirs a Tata Lisa et alimente son rituel |
 | Sauvegarde automatique | Enregistrement de la progression effectue par le jeu sans action manuelle du joueur |
 | Shadow Sword | Epee magique offerte a Imran par Remi et utilisee comme arme principale |

@@ -27,7 +27,7 @@ Le projet est realise uniquement par Rems et Codex. Le jeu ne sera pas vendu. Le
 | 9 | Boss et golems | A rediger |
 | 10 | Progression et equilibrage | A rediger |
 | 11 | Structure commune des niveaux | A rediger |
-| 12 | Detail des six niveaux et du combat final | A rediger |
+| 12 | Detail du niveau 0, des six niveaux principaux et du combat final | A rediger |
 | 13 | Narration, dialogues et cinematiques | A rediger |
 | 14 | Interface et accessibilite | A rediger |
 | 15 | Specifications artistiques et storyboards | A rediger |
@@ -55,7 +55,7 @@ Apres chaque etape paire validee, un audit croise des deux dernieres etapes est 
 | 1. Trouver le concept | Concept Game, vision, public, histoire et directions | Termine |
 | 2. Rediger le cahier des charges ou GDD | Redaction detaillee selon le plan ci-dessous | Prochaine phase |
 | 3. Realiser les esquisses | Storyboards, poses, decors, interface et cinematiques | Apres le GDD |
-| 4. Creer les niveaux | Plans, parcours, obstacles, ennemis et progression des six niveaux | Prepare dans le GDD, realise apres sa validation |
+| 4. Creer les niveaux | Plans, parcours, obstacles, ennemis et progression du niveau 0 et des six niveaux principaux | Prepare dans le GDD, realise apres sa validation |
 | 5. Realiser la programmation | Prototype Godot, tranche jouable puis jeu complet | Apres les esquisses et les plans de niveaux |
 | 6. Effectuer les tests et deployer le jeu | Tests personnels, corrections et export gratuit du jeu | Apres la programmation |
 | 7. Marketing et ventes | Aucune application | Exclu |
@@ -89,6 +89,7 @@ Livrables :
 - plateforme cible ;
 - camera 2D de profil ;
 - nombre de niveaux ;
+- place du niveau 0 avant les six niveaux principaux ;
 - conditions de debut et de fin ;
 - experience recherchee.
 
@@ -102,7 +103,7 @@ Livrables :
 
 - boucle courte : avancer, eviter, combattre et explorer ;
 - boucle de niveau : checkpoint, progression, golem, coffre et cle ;
-- boucle globale : six niveaux, six cles, Tata Lisa et liberation d'Aliyah ;
+- boucle globale : niveau 0, six niveaux principaux, six cles, Tata Lisa et liberation d'Aliyah ;
 - rythme entre plateforme, combat et narration ;
 - regles de victoire et d'echec.
 
@@ -229,7 +230,7 @@ Validation : la difficulte augmente sans pic injuste et sans bloquer le public c
 
 ### Etape 11 - Structure commune des niveaux
 
-Definir les regles appliquees aux six niveaux avant de detailler leur contenu.
+Definir les regles appliquees aux six niveaux principaux et l'exception du niveau 0 avant de detailler leur contenu.
 
 Livrables :
 
@@ -242,14 +243,15 @@ Livrables :
 - transitions entre niveaux ;
 - limites de camera et zones de securite.
 
-Validation : les six niveaux partagent une structure coherente sans devenir identiques.
+Validation : les six niveaux principaux partagent une structure coherente sans devenir identiques et le niveau 0 conserve sa fonction de tutoriel.
 
-### Etape 12 - Detail des six niveaux et du combat final
+### Etape 12 - Detail du niveau 0, des six niveaux principaux et du combat final
 
 Rediger les parcours dans l'ordre de l'aventure.
 
 Livrables :
 
+0. Village des Bles - tutoriel ;
 1. Foret enchantee ;
 2. Grotte mysterieuse ;
 3. Lac gele ;
@@ -259,6 +261,8 @@ Livrables :
 7. combat final devant le donjon.
 
 Chaque fiche precisera le parcours, les obstacles, les ennemis, le checkpoint, les apprentissages, le golem, le coffre, la cle et les criteres de validation.
+
+La fiche du niveau 0 remplacera le checkpoint, le golem, le coffre et la cle par les pancartes de tutoriel, les mises en pratique et la transition vers la Foret enchantee.
 
 Validation : chaque niveau peut etre transforme en plan puis en prototype sans decision structurelle manquante.
 
@@ -270,7 +274,7 @@ Livrables :
 
 - cinematique d'introduction au Village des Bles ;
 - enlevement d'Aliyah ;
-- depart d'Imran ;
+- reprise du controle dans le Village et depart jouable d'Imran ;
 - courts evenements entre les niveaux ;
 - apparition de Tata Lisa ;
 - destruction de la Pierre du Chaos et fuite de Tata Lisa ;
@@ -342,7 +346,7 @@ Livrables :
 - ordre de production ;
 - prototype minimal ;
 - tranche jouable de reference ;
-- jalons des six niveaux ;
+- jalon du niveau 0 et jalons des six niveaux principaux ;
 - phase de finition ;
 - retroplanning realiste pour un projet a deux ;
 - risques et solutions de repli.
@@ -374,7 +378,7 @@ L'ordre de production restera conforme au processus Gaming Campus :
 2. creer les plans detailles puis les prototypes des niveaux ;
 3. programmer un prototype Godot ;
 4. produire une tranche jouable de reference ;
-5. construire les six niveaux et le combat final ;
+5. construire le niveau 0, les six niveaux principaux et le combat final ;
 6. integrer les cinematiques, l'interface, l'art et le son ;
 7. effectuer les tests et les corrections ;
 8. exporter une version gratuite du jeu ;

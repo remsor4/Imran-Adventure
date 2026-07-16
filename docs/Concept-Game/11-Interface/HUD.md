@@ -79,12 +79,15 @@ Les messages utilisent un verbe court et l'icone de la touche actuelle.
 
 Exemples d'actions :
 
+- lire une pancarte de tutoriel ;
 - ouvrir un coffre ;
 - activer une pancarte ;
 - confirmer une action ;
 - utiliser une capacite pour la premiere fois.
 
 Le message apparait uniquement lorsque l'action est possible. Il disparait si Imran s'eloigne, si un combat commence ou si l'action est terminee.
+
+Dans le niveau 0, le message d'une pancarte affiche automatiquement la commande adaptee au dernier appareil utilise et au remappage actuel.
 
 ## Sauvegarde automatique
 
@@ -113,7 +116,7 @@ Ces retours restent courts et ne s'empilent pas au centre de l'ecran. Une inform
 - Il reste visible pendant les combats de boss.
 - Il est fige sous le menu Pause.
 - Il reapparait avant que le joueur retrouve le controle.
-- Son contraste reste suffisant dans les six environnements.
+- Son contraste reste suffisant dans le niveau 0 et les six environnements principaux.
 
 ## Validation du HUD
 

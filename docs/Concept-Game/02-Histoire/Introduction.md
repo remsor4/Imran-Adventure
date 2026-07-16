@@ -1,9 +1,11 @@
 # Introduction
 
-> **Statut :** Validé
+> **Statut :** Valide
 
-Imran et Aliyah vivent au Village des Blés. Avant de partir en exploration, Rémi confie la Shadow Sword à Imran et Amélie lui remet le Bouclier de lumière.
+Imran et Aliyah vivent au Village des Bles. Avant de partir en exploration, Remi confie la Shadow Sword a Imran et Amelie lui remet le Bouclier de lumiere.
 
-Pendant leur absence, Tata Lisa enlève Aliyah. Imran décide immédiatement de partir sauver sa petite sœur.
+Pendant leur absence, Tata Lisa enleve Aliyah. Imran decide immediatement de partir sauver sa petite soeur.
 
-Ces evenements sont presentes dans une cinematique. Le Village des Bles n'est pas une zone jouable et le joueur prend le controle d'Imran au debut de la Foret enchantee.
+Ces evenements sont presentes dans la cinematique d'introduction. A sa fin, le joueur prend le controle d'Imran dans le Village des Bles.
+
+Le Village constitue le niveau 0 jouable. Imran suit un parcours lineaire de tutoriel avant de quitter le village et d'entrer dans la Foret enchantee.

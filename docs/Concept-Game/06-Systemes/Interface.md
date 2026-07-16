@@ -50,13 +50,16 @@ Des messages courts peuvent apparaître lorsque le joueur doit effectuer une act
 
 Exemples :
 
+- lire une pancarte de tutoriel ;
 - ouvrir un coffre ;
 - activer une pancarte de contrôle ;
 - confirmer une nouvelle partie ;
 - utiliser une nouvelle capacité pour la première fois ;
 - reprendre après une sauvegarde.
 
-Les messages doivent indiquer clairement la touche ou le bouton correspondant à l'appareil utilisé.
+Les messages doivent indiquer clairement la touche ou le bouton correspondant a l'appareil utilise.
+
+Dans le niveau 0, chaque pancarte de tutoriel affiche la commande remappee correspondant au dernier appareil utilise.
 
 Ils disparaissent automatiquement lorsqu'ils ne sont plus nécessaires.
 
