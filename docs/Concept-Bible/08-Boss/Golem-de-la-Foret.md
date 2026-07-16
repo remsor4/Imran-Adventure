@@ -47,7 +47,7 @@ Après sa victoire, Imran peut ouvrir le coffre protégé par le golem et récup
 
 ## Défaite
 
-Lorsque le golem est vaincu, les fissures lumineuses de son corps perdent progressivement leur éclat et son cœur magique s'éteint.
+Lorsque le golem est vaincu les fissures lumineuses de son corps perdent progressivement leur éclat et son cœur magique s'éteint.
 
 Son corps se désassemble doucement en pierres, en racines et en feuilles, sans représentation violente. Le coffre qu'il protégeait devient alors accessible.
 
