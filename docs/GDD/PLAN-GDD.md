@@ -2,9 +2,9 @@
 
 > **Statut :** En cours
 >
-> **Derniere validation :** Etape 5
+> **Derniere validation :** Etape 6
 >
-> **Etape actuelle :** Etape 6 - En cours
+> **Etape actuelle :** Etape 7 - A rediger
 
 ## Reference
 
@@ -21,7 +21,7 @@ Le projet est realise uniquement par Rems et Codex. Le jeu ne sera pas vendu. Le
 | 3 | Boucle de jeu et experience du joueur | Valide |
 | 4 | Controles et priorites des actions | Valide |
 | 5 | Regles du joueur | Valide |
-| 6 | Combat et equipements | En cours |
+| 6 | Combat et equipements | Valide |
 | 7 | Systemes de jeu | A rediger |
 | 8 | Ennemis et intelligence artificielle | A rediger |
 | 9 | Boss et golems | A rediger |

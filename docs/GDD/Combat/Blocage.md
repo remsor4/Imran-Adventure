@@ -24,6 +24,16 @@ Un impact est bloque automatiquement si :
 
 La protection reste active pendant l'attente, le deplacement, le saut, la chute, le Double saut, le Dash et l'attaque normale. Elle est inactive uniquement pendant toute la preparation ou la charge du Smash Tranchant.
 
+## Dimensions visuelles du Bouclier
+
+- Le Bouclier de lumiere est affiche avec une largeur de `20 px` et une hauteur de `28 px` pendant le gameplay.
+- Sa hauteur represente environ `40 %` a `45 %` de la hauteur visuelle d'Imran.
+- Il reste place devant le torse, du cote vers lequel Imran regarde.
+- Il est retourne horizontalement lorsque l'orientation d'Imran change.
+- Ces proportions reprennent le bouclier visible dans la capture de reference de *Wonder Boy*.
+- L'illustration source conserve sa haute definition ; les dimensions indiquees correspondent a son affichage dans le gameplay.
+- La protection automatique depend de l'orientation d'Imran et non des limites exactes du visuel du Bouclier.
+
 ## Effet d'un impact bloque
 
 - Aucun coeur n'est retire.
@@ -57,6 +67,7 @@ La protection est valide si :
 - le meme projectile venant de dos inflige ses degats normaux ;
 - le meme projectile frontal inflige ses degats normaux pendant la preparation ou la charge du Smash Tranchant ;
 - la protection ne force pas l'arret du mouvement ou d'une action compatible ;
+- le Bouclier reste lisible a `20 x 28 px` sans masquer le visage ou l'animation d'Imran ;
 - un contact, une attaque de corps a corps ou un danger du decor reste dangereux ;
 - le retour visuel et sonore permet de comprendre l'impact bloque.
 
@@ -65,3 +76,4 @@ La protection est valide si :
 - [Bouclier de lumiere](../../Concept-Game/05-Gameplay/Bouclier-de-Lumiere.md)
 - [Reactions aux degats](../Joueur/Reactions-aux-Degats.md)
 - [Priorites des actions](../Controles/Priorites-des-Actions.md)
+- [Reference video du combat Wonder Boy](Reference-Video-Wonder-Boy-Combat.md)

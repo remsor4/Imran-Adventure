@@ -58,7 +58,9 @@ Une seule impulsion est appliquee par pression. Maintenir la commande ne declenc
 - Un plafond annule la vitesse vers le haut et provoque la chute.
 - Un degat peut interrompre la montee et appliquer le recul.
 - Le saut ne peut pas commencer pendant un etat verrouille ou une interaction.
-- La disponibilite du saut pendant une attaque sera definie pendant l'etape 6. Le Bouclier peut bloquer un projectile frontal pendant le saut.
+- Le saut ne peut pas commencer pendant l'animation d'une attaque normale au sol ou la charge du Smash Tranchant.
+- Une fois le saut commence, une attaque normale aerienne conserve la gravite, les vitesses horizontale et verticale ainsi que le controle gauche et droite.
+- Le Bouclier peut bloquer un projectile frontal pendant le saut.
 
 ## Criteres de validation
 

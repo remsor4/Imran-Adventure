@@ -35,6 +35,10 @@ L'interaction n'est prioritaire que si un message d'interaction est visible. San
 
 La protection du Bouclier ne figure pas dans cette liste, car elle est automatique et ne correspond a aucune commande.
 
+Le saut et l'attaque normale constituent une exception compatible. S'ils commencent exactement au meme instant au sol, le saut est applique en premier et l'attaque devient aerienne. L'attaque ne transforme donc pas cette combinaison en attaque immobile au sol.
+
+Pendant une attaque aerienne, les commandes gauche et droite restent acceptees. L'animation du coup ne remplace ni la vitesse horizontale, ni la vitesse verticale, ni la gravite du saut.
+
 ## Protection automatique du Bouclier
 
 Avant d'appliquer les degats d'un projectile ennemi, le jeu verifie l'orientation et l'absence de charge d'Imran. Un projectile venant de face est bloque automatiquement, meme pendant un mouvement, si Imran ne prepare pas le Smash Tranchant. Le Bouclier ne force jamais l'arret d'une action ou d'un mouvement.
@@ -47,10 +51,11 @@ Avant d'appliquer les degats d'un projectile ennemi, le jeu verifie l'orientatio
 | Degat recu | L'attaque, la charge, le Dash et l'interaction sont interrompus |
 | Interaction en cours | Le deplacement, le saut, le Dash et l'attaque sont bloques |
 | Dash en cours | Une nouvelle attaque et une interaction sont bloquees |
-| Attaque en cours | Un nouveau Dash et une interaction sont bloques |
-| Charge du Smash | Un Dash et une interaction sont bloques |
+| Attaque normale au sol | Le deplacement, le saut, le Double saut, le Dash, une nouvelle attaque et l'interaction sont bloques |
+| Preparation ou charge du Smash | Le deplacement, le saut, le Double saut, le Dash, une nouvelle attaque et l'interaction sont bloques |
+| Lancement du Smash | Le deplacement, le saut, le Double saut, le Dash, une nouvelle attaque et l'interaction sont bloques pendant `0.35 s` |
 
-La disponibilite du saut, du deplacement ou de l'attaque dans les airs sera precisee dans les etapes 5 et 6. Le present document s'applique uniquement lorsqu'une action est autorisee par l'etat du joueur.
+Une attaque normale aerienne conserve le deplacement horizontal, la vitesse verticale et la gravite. Le Smash reste strictement terrestre.
 
 ## Regle d'engagement
 
@@ -82,15 +87,12 @@ Pendant l'ouverture d'un coffre, le controle d'Imran reste bloque jusqu'a la fin
 
 ## Memoire courte des commandes
 
-Une commande de saut, d'attaque ou de Dash utilisee tres peu de temps avant la fin d'un etat incompatible peut etre conservee pendant une courte duree.
-
-- Une seule commande peut etre conservee.
-- La commande la plus recente remplace la precedente.
-- La commande expire si son action reste impossible.
-- Aucune commande maintenue pendant une cinematique ou un chargement n'est conservee.
-- La duree exacte sera definie et testee dans les etapes Joueur et Combat.
-
-Cette memoire limite les commandes perdues sans executer une action longtemps apres la pression du joueur.
+- Seule une commande de saut utilisee moins de `0.12 s` avant une reception peut etre conservee.
+- Cette commande declenche un saut normal des que le contact avec le sol devient valide.
+- Une commande de Dash recue dans les airs ou pendant un etat incompatible est ignoree.
+- Une commande d'attaque recue pendant une attaque normale ou le lancement du Smash est ignoree.
+- Une commande recue pendant un degat, une interaction, une mort, une cinematique ou un chargement est ignoree.
+- Aucune commande ignoree ne declenche une action retardee au retour du controle.
 
 ## Menus
 
@@ -109,6 +111,7 @@ Les priorites sont valides si :
 - la protection automatique ne demande aucune commande et ne modifie pas la priorite des actions ;
 - deux directions opposees produisent un resultat neutre ;
 - une action deja engagee ne peut pas etre annulee sans regle explicite ;
+- seule la commande de saut utilise une memoire de `0.12 s` avant la reception ;
 - les commandes maintenues pendant une cinematique ne declenchent rien au retour du controle ;
 - un changement de menu ne declenche aucune action de gameplay involontaire.
 

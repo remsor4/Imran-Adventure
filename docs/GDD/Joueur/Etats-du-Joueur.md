@@ -17,14 +17,14 @@ Lister les etats visibles d'Imran et les transitions autorisees entre ses action
 | Double saut | La capacite est disponible et sa commande est utilisee en l'air | Saut, Chute ou action aerienne autorisee |
 | Dash | Imran touche le sol, la capacite est disponible et sa commande est acceptee | Attente, Deplacement ou Chute si le support est perdu |
 | Attaque | Une attaque autorisee commence | Etat de mouvement compatible apres la fin de l'attaque |
-| Charge du Smash | La commande d'attaque est maintenue assez longtemps | Smash Tranchant, Degat ou Mort |
-| Smash Tranchant | La charge validee est relachee | Etat de mouvement compatible apres l'attaque |
+| Preparation ou charge du Smash | La commande d'attaque est maintenue au sol | Attaque normale avant `1.50 s`, Lancement du Smash, Degat ou Mort |
+| Lancement du Smash | La charge validee est relachee ou atteint `3.00 s` | Etat de mouvement compatible apres `0.35 s`, Degat ou Mort |
 | Interaction | Une cible valide accepte l'interaction | Attente apres la sequence |
 | Degat | Imran recoit un degat non bloque | Saut, Chute, Attente ou Mort |
 | Mort | Les trois coeurs sont perdus et une vie doit etre retiree | Reapparition ou Game Over |
 | Verrouille | Une scene, un chargement ou une interface retire le controle | Etat impose par la reprise |
 
-Les disponibilites exactes des attaques au sol et dans les airs seront definies pendant l'etape 6.
+L'attaque normale est disponible au sol, pendant un saut et pendant une chute. La preparation, la charge et le lancement du Smash sont strictement terrestres.
 
 ## Regles communes
 
