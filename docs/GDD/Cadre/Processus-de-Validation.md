@@ -24,6 +24,23 @@ Le projet ne prevoit aucun autre membre d'equipe.
 
 Une etape du plan commence uniquement lorsque l'etape precedente est validee.
 
+## Audit croise toutes les deux etapes
+
+Apres chaque etape paire validee, Codex audite les deux etapes qui viennent d'etre terminees avant de commencer l'etape suivante.
+
+L'audit controle :
+
+- la coherence entre les deux etapes ;
+- la conformite avec le Concept Game ;
+- la conformite avec le cadre du GDD ;
+- les statuts autorises ;
+- les liens internes ;
+- les termes et les valeurs ;
+- l'absence de contenu manquant ;
+- l'absence de lettres accentuees dans les nouveaux contenus.
+
+Codex presente les problemes trouves a Rems. Les corrections confirmees sont appliquees dans un commit de maintenance separe avant le debut de l'etape suivante.
+
 ## Modification d'une decision validee
 
 Lorsqu'une decision validee change :

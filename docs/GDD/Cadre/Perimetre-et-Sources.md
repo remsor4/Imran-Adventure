@@ -57,9 +57,10 @@ Le GDD ne contient pas :
 
 ## Emplacement principal dans le GDD
 
-| Type d'information | Dossier principal |
+| Type d'information | Emplacement principal |
 |---|---|
 | Cadre et conventions | `Cadre` |
+| Fiche generale du jeu | `Fiche-Generale.md` |
 | Commandes | `Controles` |
 | Deplacement et capacites d'Imran | `Joueur` |
 | Attaques, defense et degats | `Combat` |

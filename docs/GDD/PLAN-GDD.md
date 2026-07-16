@@ -1,6 +1,10 @@
 # Plan de redaction du GDD - Imran Adventure
 
-> **Statut :** Etape 2 valide - Etape 3 a demarrer
+> **Statut :** En cours
+>
+> **Derniere validation :** Etape 2
+>
+> **Prochaine etape :** Etape 3
 
 ## Reference
 
@@ -41,6 +45,8 @@ Pour chaque etape :
 4. rediger les documents concernes sans lettres accentuees ;
 5. verifier la coherence, les liens et les criteres de validation ;
 6. obtenir la validation de Rems avant de passer a l'etape suivante.
+
+Apres chaque etape paire validee, un audit croise des deux dernieres etapes est obligatoire avant de commencer l'etape suivante.
 
 ## Correspondance avec le processus Gaming Campus
 
