@@ -1,5 +1,7 @@
 # Dash
 
-> **Statut :** Validé
+> **Statut :** Valide
 
-Capacité obtenue après le deuxième golem. Elle permet un déplacement rapide sur une courte distance.
+Capacite obtenue apres le deuxieme golem. Elle permet un deplacement rapide sur une courte distance.
+
+Le Dash est utilisable uniquement lorsque Imran touche le sol. Une commande recue pendant un saut ou une chute ne produit aucun Dash.

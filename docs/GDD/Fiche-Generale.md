@@ -18,6 +18,7 @@ Cette fiche transforme la vision du Concept Game en contraintes generales pour t
 | Plateforme cible | PC |
 | Moteur | Godot Engine |
 | Perspective | Vue laterale en 2D |
+| Resolution de reference | `1920 x 1080`, format `16:9` |
 | Camera | Suivi lateral fluide donnant de la visibilite devant Imran |
 | Public principal | Enfants a partir de 7 ans |
 | Public secondaire | Joueurs recherchant une aventure familiale simple et lisible |
@@ -105,7 +106,7 @@ Toute proposition qui depasse ces limites exige une modification validee du Conc
 | Valeurs de deplacement et de saut | Etape 5 |
 | Valeurs de combat | Etape 6 |
 | Duree cible et courbe de difficulte | Etape 10 |
-| Resolution, affichage et options | Etape 14 |
+| Mise a l'echelle, modes d'affichage et options | Etape 14 |
 | Specifications des ressources visuelles | Etape 15 |
 | Specifications audio | Etape 16 |
 | Version de Godot, outils et retroplanning | Etape 17 |
