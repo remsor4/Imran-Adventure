@@ -90,7 +90,7 @@ Les basses continues sont limitees pour conserver le confort d'ecoute et la lisi
 
 ## Chateau de Tata Lisa
 
-Intention : autorite, vide et magie noire.
+Intention : autorite, vide et magie du Chaos.
 
 - vent dans les couloirs de pierre ;
 - portes lourdes, chaines et armures qui vibrent ;

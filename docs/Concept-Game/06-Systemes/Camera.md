@@ -1,6 +1,6 @@
 # Caméra
 
-> **Statut :** À valider
+> **Statut :** Valide
 
 ## Objectif du document
 
@@ -75,7 +75,9 @@ Au début du combat, une courte mise en scène peut présenter le golem ou Tata 
 
 Pendant le combat, la caméra ne doit pas effectuer de zoom ou de déplacement soudain pouvant gêner le joueur.
 
-Après la victoire, elle se recentre sur Imran et le coffre du niveau.
+Apres la victoire contre un golem, elle se recentre sur Imran et le coffre du niveau.
+
+Apres la victoire contre Tata Lisa, elle se recentre sur Imran et la porte du donjon avant la liberation d'Aliyah.
 
 ## Effets de caméra
 

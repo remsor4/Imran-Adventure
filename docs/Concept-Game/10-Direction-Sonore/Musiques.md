@@ -29,7 +29,7 @@ L'esprit musical de *Wonder Boy: The Dragon's Trap* peut servir de reference de 
 | Imran | Court motif ascendant, courageux et chaleureux | Menu, depart, victoire et fin |
 | Famille | Variation douce et lente du motif d'Imran | Village, Aliyah, reunion finale |
 | Golems | Rythme lourd et regulier | Reveil et combats des six gardiens |
-| Chaos | Motif descendant et instable | Tata Lisa, Chateau et magie noire |
+| Chaos | Motif descendant et instable | Tata Lisa, Chateau et magie du Chaos |
 | Lumiere | Accord clair et ouvert | Bouclier, cle, liberation et victoire |
 
 Les motifs restent assez courts pour etre transformes selon les zones sans perdre leur identite.
@@ -45,7 +45,7 @@ Les motifs restent assez courts pour etre transformes selon les zones sans perdr
 | Lac gele | Calme froid et mouvement glissant | Cloches douces, cordes aeriennes, piano leger |
 | Desert oublie | Voyage, chaleur et ruines anciennes | Cordes pincees, tambours sur cadre, flute basse |
 | Volcan | Danger, poids et progression | Tambours graves, cuivres, cordes rythmiques |
-| Chateau de Tata Lisa | Tension royale et magie noire | Orgue doux, cordes graves, choeur discret |
+| Chateau de Tata Lisa | Tension royale et magie du Chaos | Orgue doux, cordes graves, choeur discret |
 | Golem | Force, observation et combat | Percussions lourdes adaptees au biome |
 | Tata Lisa | Chaos, theatre et affrontement final | Cordes rapides, cuivres, choeur et impacts magiques |
 | Cle obtenue | Recompense courte et lumineuse | Harpe, cloche et accord dore |

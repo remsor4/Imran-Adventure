@@ -16,7 +16,8 @@ L'interface combine des panneaux simples, des contours sombres et quelques detai
 - Les cadres utilisent peu d'ornements et laissent respirer le contenu.
 - Les fonds de panneau sont opaques ou fortement assombris pour garantir la lecture.
 - Les decorations ne doivent jamais ressembler a un bouton actif.
-- La magie violette est reservee a Tata Lisa, au Chateau et aux effets de corruption.
+- Le violet sombre, instable et en forme de flamme est reserve a Tata Lisa, au Chateau et aux effets de corruption.
+- Le violet lavande, fin et stable, peut etre utilise pour le tranchant et les cristaux de la Shadow Sword.
 
 ## Formes
 
@@ -30,8 +31,10 @@ L'interface combine des panneaux simples, des contours sombres et quelques detai
 
 Deux familles maximum sont utilisees :
 
-1. Une police de titre fantasy, ronde et lisible, pour les grands titres et le logo.
+1. Une police de titre fantasy, ronde et lisible, pour les grands titres des ecrans.
 2. Une police sans serif simple pour les boutons, les messages et les options.
+
+Le logo utilise sa propre typographie medievale validee, avec des empattements sculptes et une lecture claire.
 
 Regles typographiques :
 
@@ -54,7 +57,7 @@ Les icones utilisent un contour commun, une silhouette simple et un detail centr
 | Dash | Botte ou silhouette avec deux lignes de vitesse |
 | Double saut | Deux ailes ou deux chevrons verticaux |
 | Sauvegarde | Livre ferme avec petite etoile |
-| Bouclier | Bouclier dore entoure de lumiere |
+| Bouclier | Bouclier en bois miel avec soleil dore et halo de lumiere |
 | Action | Symbole du bouton accompagne d'un verbe court |
 
 Une icone importante ne depend jamais uniquement de sa couleur. Sa silhouette ou son symbole doit suffire a l'identifier.

@@ -4,9 +4,13 @@
 
 ## Rôle
 
-Tata Lisa est la principale antagoniste d'**Imran Adventure**. Elle maîtrise la magie noire, crée les six golems et enlève Aliyah afin de lui voler sa beauté.
+Tata Lisa est la principale antagoniste d'**Imran Adventure**. Elle utilise la magie du Chaos, cree les six golems et enleve Aliyah afin de lui voler sa beaute.
+
+Tata Lisa n'a aucun lien familial avec Imran, Aliyah, Remi ou Amelie. `Tata Lisa` est uniquement le surnom sous lequel cette sorciere est connue dans le royaume de Vitrolles.
 
 Elle enferme Aliyah dans le donjon de son château, protégé par six verrous magiques.
+
+Le sort destine a voler la beaute d'Aliyah exige un rituel complexe et plusieurs jours de preparation. Cette duree explique pourquoi Aliyah est encore prisonniere lorsque Imran atteint le chateau. Elle cree une urgence narrative sans imposer de compte a rebours au joueur.
 
 ## Apparence
 
@@ -26,7 +30,7 @@ Son apparence repose sur :
 - des bordures dorées et plusieurs bijoux ornés de pierres violettes ;
 - la Pierre du Chaos portée autour de son cou comme bijou principal ;
 - une longue robe fantasy assortie à son voile ;
-- une magie noire prenant la forme d'une flamme violette.
+- une magie du Chaos prenant la forme d'une flamme violette.
 
 Son design est théâtral, autoritaire et menaçant, tout en conservant un style cartoon adapté aux enfants à partir de 7 ans.
 
@@ -46,7 +50,7 @@ Les pouvoirs de Tata Lisa proviennent de la **Pierre du Chaos**, une pierre magi
 
 Cette pierre lui permet notamment :
 
-- d'utiliser la magie noire ;
+- d'utiliser la magie du Chaos ;
 - de créer et de contrôler les six golems ;
 - de placer des protections magiques ;
 - de lancer des attaques magiques ;
@@ -57,6 +61,8 @@ La Pierre du Chaos est représentée par le grand bijou violet placé au centre 
 ## Affrontement final
 
 Après la défaite du sixième golem, Tata Lisa affronte Imran devant la porte du donjon afin de l'empêcher d'utiliser les six clés et de sauver Aliyah.
+
+Lorsqu'elle est vaincue, la Pierre du Chaos se brise. Tata Lisa perd les pouvoirs que la pierre lui accordait, puis prend la fuite. Son sort sur les six verrous disparait, mais les verrous physiques doivent encore etre ouverts avec les six cles.
 
 ## Référence visuelle
 

@@ -54,7 +54,7 @@ La difficulté des rencontres augmente progressivement au cours de l’aventure.
 - Chaque nouveau comportement est découvert avant d’être combiné avec d’autres menaces.
 - Les niveaux suivants associent progressivement les ennemis terrestres, aériens et à distance.
 - Les capacités débloquées par Imran peuvent être nécessaires pour gérer certaines rencontres plus avancées.
-- Dans les deux derniers niveaux, les zombies remplacent les squelettes afin de représenter la montée en puissance de la magie noire de Tata Lisa.
+- Dans les deux derniers niveaux, les zombies remplacent les squelettes afin de representer la montee en puissance de la magie du Chaos de Tata Lisa.
 - L’augmentation de la difficulté doit venir de nouvelles combinaisons et d’une pression plus importante, sans rendre les comportements imprévisibles.
 
 ## Rôle des environnements

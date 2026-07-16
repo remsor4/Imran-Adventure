@@ -10,9 +10,13 @@ Il reste volontairement simple afin d'être facile à comprendre pour les enfant
 
 ## Sauvegarde automatique
 
-La partie est sauvegardée automatiquement après chaque victoire contre un boss, une fois la clé du niveau récupérée.
+La partie est sauvegardee automatiquement apres chaque victoire contre un golem, une fois la cle du niveau recuperee.
 
 Un indicateur visuel doit informer le joueur lorsque la sauvegarde est en cours ou vient d'être terminée.
+
+Apres la recuperation de la sixieme cle, la sauvegarde place le point de reprise devant la porte du donjon, avant le combat contre Tata Lisa.
+
+Une sauvegarde finale est effectuee apres la liberation d'Aliyah et avant les credits. Elle marque l'aventure comme terminee.
 
 ## Données conservées
 
@@ -23,6 +27,8 @@ La sauvegarde conserve :
 - les clés récupérées ;
 - le Dash, après la victoire contre le deuxième golem ;
 - le Double saut, après la victoire contre le quatrième golem ;
+- l'acces au combat final, apres la recuperation de la sixieme cle ;
+- l'etat `Aventure terminee`, apres la liberation d'Aliyah ;
 - la progression générale de l'aventure.
 
 Les cœurs et les vies ne sont pas conservés entre deux niveaux, car ils sont automatiquement restaurés après chaque boss.
@@ -45,6 +51,8 @@ Lors du prochain lancement, il recommence le niveau depuis le début avec :
 - trois vies ;
 - les capacités déjà débloquées lors des niveaux précédents.
 
+La sixieme cle constitue une exception : si elle a deja ete sauvegardee, `Continuer` replace Imran devant la porte du donjon avec trois coeurs et trois vies, juste avant le combat contre Tata Lisa.
+
 ## Game Over
 
 Si Imran perd ses trois vies, un écran Game Over apparaît.
@@ -60,13 +68,17 @@ Le menu principal propose :
 - **Continuer**, pour reprendre depuis le dernier niveau débloqué ;
 - **Nouvelle partie**, pour effacer la progression existante et recommencer l'aventure depuis le début.
 
+Lorsque la sauvegarde porte l'etat `Aventure terminee`, `Continuer` est remplace par `Revoir la fin`. Cette action rejoue la liberation d'Aliyah et les credits sans relancer le combat final.
+
 Avant l'effacement d'une sauvegarde, le jeu demande une confirmation au joueur afin d'éviter toute suppression accidentelle.
 
 ## Résumé des règles
 
 | Situation | Résultat |
 |---|---|
-| Boss vaincu et clé récupérée | Sauvegarde automatique |
+| Golem vaincu et cle recuperee | Sauvegarde automatique |
+| Sixieme cle recuperee | Sauvegarde et reprise devant la porte du donjon |
+| Tata Lisa vaincue et Aliyah liberee | Sauvegarde finale `Aventure terminee` |
 | Pancarte activée | Point de réapparition temporaire |
 | Vie perdue | Retour à la pancarte activée avec trois cœurs |
 | Trois vies perdues | Game Over et reprise au début du niveau |

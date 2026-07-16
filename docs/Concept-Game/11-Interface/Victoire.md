@@ -10,14 +10,15 @@ Conclure l'aventure apres la defaite de Tata Lisa, celebrer le sauvetage d'Aliya
 
 La conclusion respecte l'ordre suivant :
 
-1. La magie de Tata Lisa disparait.
-2. Les six verrous du donjon se desactivent.
-3. Imran utilise les six cles et ouvre la porte.
-4. Aliyah est liberee.
-5. Remi et Amelie reviennent de leur exploration.
-6. La famille est reunie.
-7. L'ecran de victoire apparait.
-8. Les credits commencent apres validation du joueur.
+1. La Pierre du Chaos se brise.
+2. Tata Lisa perd ses pouvoirs et prend la fuite.
+3. Sa magie et la protection magique des six verrous disparaissent.
+4. Imran utilise les six cles, ouvre les verrous et ouvre la porte.
+5. Aliyah est liberee.
+6. Remi et Amelie reviennent de leur exploration.
+7. La famille est reunie.
+8. L'ecran de victoire apparait.
+9. Les credits commencent apres validation du joueur.
 
 Le HUD reste masque pendant toute la sequence.
 

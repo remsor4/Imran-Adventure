@@ -30,6 +30,7 @@ Lorsqu'aucune sauvegarde n'existe, `Nouvelle partie` recoit le focus initial. `C
 
 - Charge l'unique emplacement de sauvegarde.
 - Reprend au debut du dernier niveau debloque.
+- Apres la sixieme cle, reprend devant la porte du donjon juste avant Tata Lisa.
 - Restaure trois coeurs et trois vies.
 - Conserve les cles et capacites des niveaux termines.
 - Affiche le nom du niveau repris avant le chargement.

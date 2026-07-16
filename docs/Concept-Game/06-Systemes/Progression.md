@@ -11,3 +11,5 @@
 | Golem 5 | Clé 5 |
 | Golem 6 | Clé 6 |
 | Tata Lisa | Accès au donjon et sauvetage d'Aliyah |
+
+Le donjon sert uniquement de decor a la scene finale et n'ajoute aucun niveau jouable apres Tata Lisa.

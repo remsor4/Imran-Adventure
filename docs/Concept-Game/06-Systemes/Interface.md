@@ -1,6 +1,6 @@
 # Interface
 
-> **Statut :** À valider
+> **Statut :** Valide
 
 ## Objectif du document
 

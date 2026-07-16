@@ -4,4 +4,6 @@
 
 Après le sixième golem, Imran arrive devant la porte du donjon avec les six clés. Tata Lisa apparaît avant l'ouverture de la porte et engage le combat final.
 
-Une fois vaincue, Imran utilise les clés, ouvre les six verrous et libère Aliyah. Rémi et Amélie reviennent de leur exploration et découvrent que leur fils a sauvé sa sœur.
+Une fois Tata Lisa vaincue, la Pierre du Chaos se brise. La sorciere perd tous les pouvoirs que la pierre lui accordait et prend la fuite. La protection magique des verrous disparait avec ses pouvoirs.
+
+Imran utilise alors les six cles, ouvre les six verrous et libere Aliyah. Remi et Amelie reviennent de leur exploration et decouvrent que leur fils a sauve sa soeur.
