@@ -63,7 +63,8 @@ Une icone importante ne depend jamais uniquement de sa couleur. Sa silhouette ou
 
 - Les coeurs et les vies occupent une zone stable dans le coin superieur gauche.
 - Les cles et capacites restent groupes dans une seconde zone discrete.
-- Le centre de l'ecran reste libre pendant l'exploration et les combats.
+- Une barre de vie rouge avec contour sombre et valeur numerique est centree en haut pendant les combats de boss.
+- Le centre de l'ecran reste libre en dehors de cette barre et des messages temporaires.
 - Les informations temporaires apparaissent sans masquer Imran ou un danger.
 - Le HUD peut reduire son contraste lorsqu'aucune information ne change, mais il redevient visible des qu'une valeur est modifiee.
 

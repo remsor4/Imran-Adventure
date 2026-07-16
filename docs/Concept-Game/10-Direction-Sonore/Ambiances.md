@@ -1,6 +1,6 @@
 # Ambiances sonores
 
-> **Statut :** A valider
+> **Statut :** Valide
 
 ## Objectif
 

@@ -33,13 +33,16 @@ Il doit permettre au joueur de connaître :
 - le nombre de cœurs restants ;
 - le nombre de vies restantes ;
 - le nombre de clés récupérées ;
-- les capacités débloquées.
+- les capacités débloquées ;
+- la vie restante du boss pendant chaque affrontement.
 
 Les cœurs et les vies doivent rester visibles pendant l'exploration et les combats.
 
 Le compteur de clés peut être affiché de manière discrète, puisqu'une seule clé est obtenue à la fin de chaque niveau.
 
 Les icônes du Dash et du Double saut doivent apparaître après leur déblocage afin de rappeler au joueur qu'elles sont disponibles.
+
+Pendant un combat de boss, une barre de vie horizontale est centree en haut de l'ecran. Elle affiche aussi la valeur numerique actuelle afin de rester comprehensible sans dependre uniquement de la couleur.
 
 ## Messages contextuels
 

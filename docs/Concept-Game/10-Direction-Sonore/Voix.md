@@ -1,6 +1,6 @@
 # Voix
 
-> **Statut :** A valider
+> **Statut :** Valide
 
 ## Objectif
 

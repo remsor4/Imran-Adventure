@@ -1,6 +1,6 @@
 # Musiques
 
-> **Statut :** A valider
+> **Statut :** Valide
 
 ## Objectif
 
