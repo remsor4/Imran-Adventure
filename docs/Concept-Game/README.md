@@ -1,6 +1,6 @@
-# Concept Bible — Imran Adventure
+# Concept Game — Imran Adventure
 
-La Concept Bible décrit la vision créative du jeu sans entrer dans les valeurs chiffrées, l'équilibrage détaillé ou l'implémentation technique.
+Le Concept Game décrit la vision créative du jeu sans entrer dans les valeurs chiffrées, l'équilibrage détaillé ou l'implémentation technique.
 
 ## Sommaire
 

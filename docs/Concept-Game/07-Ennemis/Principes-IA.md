@@ -79,7 +79,7 @@ Les comportements sont conçus pour être compris par les enfants à partir de 7
 
 ## Séparation avec le GDD
 
-La Concept Bible définit uniquement l’intention générale de l’intelligence artificielle.
+Le Concept Game définit uniquement l’intention générale de l’intelligence artificielle.
 
 Les éléments suivants seront précisés dans le GDD :
 
