@@ -2,9 +2,9 @@
 
 > **Statut :** En cours
 >
-> **Derniere validation :** Etape 2
+> **Derniere validation :** Etape 3
 >
-> **Prochaine etape :** Etape 3
+> **Prochaine etape :** Etape 4
 
 ## Reference
 
@@ -18,7 +18,7 @@ Le projet est realise uniquement par Rems et Codex. Le jeu ne sera pas vendu. Le
 |---:|---|---|
 | 1 | Cadre du GDD | Valide |
 | 2 | Fiche generale du jeu | Valide |
-| 3 | Boucle de jeu et experience du joueur | A rediger |
+| 3 | Boucle de jeu et experience du joueur | Valide |
 | 4 | Controles et priorites des actions | A rediger |
 | 5 | Regles du joueur | A rediger |
 | 6 | Combat et equipements | A rediger |
