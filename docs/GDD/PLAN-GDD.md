@@ -4,7 +4,7 @@
 >
 > **Derniere validation :** Etape 4
 >
-> **Etape actuelle :** Audit des etapes 3 et 4
+> **Prochaine etape :** Etape 5
 
 ## Reference
 

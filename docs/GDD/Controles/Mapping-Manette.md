@@ -46,7 +46,8 @@ Le bouton droit sert au Dash pendant le gameplay et au retour dans les menus. Le
 
 - Des directions opposees sur le stick ou la croix produisent une direction horizontale neutre.
 - Une entree maintenue pendant une cinematique doit etre relachee avant de pouvoir declencher une action.
-- Si la manette est deconnectee, le jeu ouvre Pause et affiche un message clair.
+- Si la manette est deconnectee pendant le gameplay actif, le jeu ouvre Pause et affiche un message clair.
+- Pendant un chargement, une transition non interactive, le Game Over ou la victoire, aucune Pause ne s'ouvre. Le message apparait au prochain ecran interactif compatible.
 - Le joueur peut reprendre avec le clavier ou reconnecter une manette.
 - Une manette reconnectee peut etre utilisee sans redemarrer le jeu.
 
