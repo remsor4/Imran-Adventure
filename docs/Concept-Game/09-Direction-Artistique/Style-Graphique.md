@@ -1,6 +1,6 @@
 # Style graphique
 
-> **Statut :** A valider
+> **Statut :** Valide
 
 ## Intention generale
 

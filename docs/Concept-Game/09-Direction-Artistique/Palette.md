@@ -1,6 +1,6 @@
 # Palette
 
-> **Statut :** A valider
+> **Statut :** Valide
 
 ## Objectif
 

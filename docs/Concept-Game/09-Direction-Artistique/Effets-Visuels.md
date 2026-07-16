@@ -1,6 +1,6 @@
 # Effets visuels
 
-> **Statut :** A valider
+> **Statut :** Valide
 
 ## Objectif
 

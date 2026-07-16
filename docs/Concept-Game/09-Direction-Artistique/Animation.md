@@ -1,6 +1,6 @@
 # Animation
 
-> **Statut :** A valider
+> **Statut :** Valide
 
 ## Objectif
 

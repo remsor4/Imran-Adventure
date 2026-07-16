@@ -1,6 +1,6 @@
 # Interface visuelle
 
-> **Statut :** A valider
+> **Statut :** Valide
 
 ## Objectif
 

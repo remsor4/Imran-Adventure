@@ -1,6 +1,6 @@
 # Logo
 
-> **Statut :** A valider
+> **Statut :** Reporte
 
 ## Intention
 
