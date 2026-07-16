@@ -27,6 +27,6 @@ Chaque golem reprend ce modèle commun, mais ses matériaux, ses couleurs et ses
 - **Lac gelé :** glace, neige, cristaux gelés et énergie bleue.
 - **Désert oublié :** grès, sable, fragments de ruines et lumière dorée.
 - **Volcan :** roche volcanique, magma, fissures de lave et énergie rouge-orangée.
-- **Château de Tata Lisa :** pierre noire, obsidienne et magie noire.
+- **Château de Tata Lisa :** pierre noire, obsidienne, armure de chevalier, épée et magie violette.
 
 Cette continuité visuelle montre que les six gardiens proviennent de la même magie, tandis que leurs variations renforcent l'identité de chaque région.
