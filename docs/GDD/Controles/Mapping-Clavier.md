@@ -24,6 +24,8 @@ Il n'existe aucune commande de course. Imran conserve la vitesse de deplacement 
 
 Le Double saut partage la commande du saut. Le Smash Tranchant partage la commande de l'attaque normale.
 
+La commande `Interaction` sert notamment a ouvrir un coffre et a utiliser volontairement un feu de camp. La proximite d'un feu ne declenche jamais le soin automatiquement.
+
 Le Bouclier de lumiere ne possede aucune commande. Il bloque automatiquement un projectile ennemi venant du cote vers lequel Imran regarde, meme pendant un mouvement.
 
 ## Menus
@@ -85,4 +87,5 @@ Le mapping clavier est valide si :
 - [Smash Tranchant](../../Concept-Game/05-Gameplay/Smash-Tranchant.md)
 - [Bouclier de lumiere](../../Concept-Game/05-Gameplay/Bouclier-de-Lumiere.md)
 - [Coffres](../../Concept-Game/05-Gameplay/Coffres.md)
+- [Feux de camp](../../Concept-Game/05-Gameplay/Feux-de-Camp.md)
 - [Options](../../Concept-Game/11-Interface/Options.md)

@@ -60,7 +60,9 @@ Les familles exactes d'ennemis et le placement des obstacles seront finalises pe
 
 ## Fin
 
-Le niveau 0 est termine lorsque Imran atteint la sortie du Village des Bles. La Foret enchantee devient alors accessible et la progression est sauvegardee automatiquement.
+Un feu de camp laisse par Remi et Amelie est place dans la derniere zone sure du Village des Bles. Il permet a Imran de retrouver ses trois coeurs avant de quitter le tutoriel.
+
+Le niveau 0 est termine lorsque Imran atteint la sortie du Village des Bles apres ce feu de camp. La Foret enchantee devient alors accessible et la progression est sauvegardee automatiquement.
 
 ## Criteres de validation
 
@@ -71,6 +73,7 @@ Le tutoriel est coherent si :
 - une situation de pratique suit chaque pancarte ;
 - les commandes affichees correspondent a l'appareil actif et au remappage ;
 - aucun golem, coffre de fin ou cle n'apparait ;
+- le feu de camp final permet de commencer le niveau 1 avec trois coeurs ;
 - le Dash et le Double saut sont expliques puis pratiques dans des situations sures ;
 - le Bouclier est enseigne sans commande de blocage et fonctionne pendant les mouvements ;
 - la sortie conduit clairement a la Foret enchantee.
@@ -83,3 +86,4 @@ Le tutoriel est coherent si :
 - [Shadow Sword](Shadow-Sword.md)
 - [Bouclier de lumiere](Bouclier-de-Lumiere.md)
 - [Points de controle](Points-de-Controle.md)
+- [Feux de camp](Feux-de-Camp.md)

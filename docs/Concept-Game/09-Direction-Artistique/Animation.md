@@ -96,6 +96,19 @@ Les animations de decor restent lentes et peu contrastees :
 
 Les mouvements de l'arriere-plan ne doivent jamais ressembler a une plateforme, un ennemi ou un projectile.
 
+### Feu de camp
+
+Le feu de camp utilise des formes simples et des elements separes afin de faciliter son integration et son animation dans Godot.
+
+- Le trepied, les buches et les pierres restent immobiles.
+- La marmite, son anse et la chaine peuvent effectuer un leger balancement.
+- Les flammes utilisent une courte boucle image par image avec plusieurs formes distinctes.
+- Les braises restent discretes et ne doivent pas ressembler a un projectile.
+- Aucun reste de repas ne doit etre ajoute devant le feu.
+- La silhouette generale doit rester lisible pendant les scenes narratives et le gameplay.
+
+La reference visuelle validee est disponible dans le document [Feux de camp](../05-Gameplay/Feux-de-Camp.md).
+
 ## Transitions et interface
 
 - Les menus utilisent des transitions courtes et douces.

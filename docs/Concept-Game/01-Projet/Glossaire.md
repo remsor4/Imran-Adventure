@@ -17,6 +17,7 @@ Ce glossaire rassemble les termes que nous utiliserons pendant la conception et 
 | Donjon | Lieu ou Aliyah est retenue et qui sert uniquement de decor a la scene finale |
 | Double saut | Capacite disponible des le debut et permettant un second saut dans les airs |
 | Game Over | Ecran affiche lorsque toutes les vies sont perdues, avant la reprise du niveau depuis le debut |
+| Feu de camp | Installation laissee par Remi et Amelie et permettant a Imran de restaurer ses coeurs avant un golem ou a la fin du niveau 0 |
 | Golem | Gardien cree et controle par Tata Lisa, servant de boss a la fin de chacun des six niveaux principaux |
 | HUD | Interface visible pendant le gameplay et affichant notamment les coeurs, les vies, les cles et la vie du boss |
 | Magie du Chaos | Energie violette instable utilisee par Tata Lisa et alimentee par la Pierre du Chaos |
