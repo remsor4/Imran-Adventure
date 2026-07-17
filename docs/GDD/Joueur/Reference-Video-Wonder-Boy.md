@@ -31,7 +31,7 @@ Le flux analyse sert uniquement a mesurer les rapports de taille, de distance et
 | Hauteur du saut normal | Environ `80 px` | Environ `89 px` |
 | Duree du saut normal | Environ `0.70 a 0.75 s` | Environ `0.71 s` |
 | Temps jusqu'au sommet | Environ `0.35 a 0.40 s` | Environ `0.37 s` |
-| Position horizontale suivie par la camera | Proche du centre avant le defilement | A reprendre pendant l'etape 7 - Systemes de jeu |
+| Position horizontale suivie par la camera | Proche du centre avant le defilement | `45 %` vers la droite et `55 %` vers la gauche |
 
 Les valeurs cibles conservent les rapports de la video tout en utilisant les equations de mouvement du GDD.
 
@@ -63,6 +63,7 @@ Ils restent des propositions propres a Imran Adventure et devront etre verifies 
 
 - Les mesures sont visuelles et ne donnent pas acces au code du jeu de reference.
 - La camera se deplace pendant certaines courses ; sa vitesse a ete prise en compte dans l'estimation horizontale.
+- Une [reference camera dediee](../Systemes/Reference-Video-Wonder-Boy-Camera.md) fixe le changement de cadrage apres un demi-tour a `0.60 s`.
 - Les animations modifient legerement la taille visible du personnage selon la pose.
 - Les valeurs finales devront etre confirmees par un prototype a `1920 x 1080`.
 

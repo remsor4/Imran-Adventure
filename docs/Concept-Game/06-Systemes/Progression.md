@@ -16,3 +16,5 @@
 Le Dash et le Double saut sont disponibles des le debut du niveau 0. Le niveau ne contient aucun golem, aucune cle et aucune capacite a debloquer.
 
 Le donjon sert uniquement de decor a la scene finale et n'ajoute aucun niveau jouable apres Tata Lisa.
+
+La progression reste entierement lineaire. Un niveau termine ne peut pas etre rejoue depuis la sauvegarde en cours et aucune selection de niveau n'est proposee.

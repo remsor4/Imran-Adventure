@@ -1,6 +1,6 @@
 # GDD - Systemes
 
-> **Statut :** En cours
+> **Statut :** Valide
 
 ## Objectif
 
@@ -8,15 +8,15 @@ Definir les regles communes de l'aventure afin que chaque echec, reprise, sauveg
 
 ## Documents
 
-| Ordre | Document | Statut initial |
+| Ordre | Document | Statut |
 |---:|---|---|
 | 1 | [Coeurs et vies](Coeurs-et-Vies.md) | Valide |
 | 2 | [Game Over](Game-Over.md) | Valide |
-| 3 | [Checkpoints](Checkpoints.md) | A rediger |
-| 4 | [Coffres et cles](Coffres-et-Cles.md) | A rediger |
-| 5 | [Sauvegarde](Sauvegarde.md) | A rediger |
-| 6 | [Progression](Progression.md) | A rediger |
-| 7 | [Camera](Camera.md) | A rediger |
+| 3 | [Checkpoints](Checkpoints.md) | Valide |
+| 4 | [Coffres et cles](Coffres-et-Cles.md) | Valide |
+| 5 | [Sauvegarde](Sauvegarde.md) | Valide |
+| 6 | [Progression](Progression.md) | Valide |
+| 7 | [Camera](Camera.md) | Valide |
 
 ## Ordre de validation
 

@@ -42,6 +42,7 @@ Apres la victoire finale, la sauvegarde est marquee `Aventure terminee`.
 - `Continuer` est remplace par `Revoir la fin`.
 - Cette action rejoue la liberation d'Aliyah et les credits sans relancer le combat final.
 - Aucune Nouvelle Partie Plus ni selection de niveau n'est ajoutee.
+- Aucun niveau termine ne peut etre rejoue depuis la sauvegarde en cours.
 - `Nouvelle partie` reste disponible avec une confirmation d'effacement.
 
 ## Nouvelle partie

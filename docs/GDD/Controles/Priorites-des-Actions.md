@@ -83,9 +83,13 @@ Une interaction commence uniquement si :
 - Imran n'est pas mort, touche, en Dash ou en attaque ;
 - aucun menu ou contexte verrouille n'est actif.
 
-Pendant l'ouverture d'un coffre, le controle d'Imran reste bloque jusqu'a la fin de la courte sequence d'ouverture et de recompense.
+Pendant l'ouverture d'un coffre, le controle d'Imran reste bloque jusqu'a l'apparition et a l'ajout automatique de la cle. Aucune seconde interaction n'est necessaire.
 
 Pres d'un feu de camp, le soin commence uniquement apres une pression volontaire sur la commande `Interaction`. La simple entree dans sa zone ne produit aucun effet. Le controle d'Imran reste bloque pendant la courte animation de repos et les coeurs sont ensuite ramenes a `3`, sans modifier les vies restantes.
+
+Apres la victoire contre Tata Lisa, une interaction volontaire devant la porte du donjon lance l'ouverture automatique des six verrous. Le controle reste bloque pendant cette sequence et aucune commande supplementaire n'est demandee.
+
+Une pancarte de controle n'utilise pas la commande `Interaction`. Elle s'active automatiquement lorsque Imran traverse sa zone et ne bloque aucune action en cours.
 
 ## Memoire courte des commandes
 
@@ -126,5 +130,6 @@ Les priorites sont valides si :
 - [Bouclier de lumiere](../../Concept-Game/05-Gameplay/Bouclier-de-Lumiere.md)
 - [Coffres](../../Concept-Game/05-Gameplay/Coffres.md)
 - [Feux de camp](../../Concept-Game/05-Gameplay/Feux-de-Camp.md)
+- [Checkpoints](../Systemes/Checkpoints.md)
 - [Pause](../../Concept-Game/11-Interface/Pause.md)
 - [Options](../../Concept-Game/11-Interface/Options.md)

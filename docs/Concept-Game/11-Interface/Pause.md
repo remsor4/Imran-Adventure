@@ -24,6 +24,8 @@ Suspendre l'action et donner acces aux fonctions utiles sans modifier automatiqu
 
 `Reprendre` recoit le focus initial a chaque ouverture normale.
 
+Le menu ne contient aucune commande de sauvegarde manuelle. La progression permanente est enregistree uniquement par les declencheurs automatiques du jeu.
+
 ## Reprendre
 
 - Ferme immediatement le menu.

@@ -1,99 +1,73 @@
-# Caméra
+# Camera
 
 > **Statut :** Valide
 
-## Objectif du document
+## Objectif
 
-Décrire le comportement visuel attendu de la caméra dans ce jeu de plateforme 2D.
+La camera accompagne Imran sans devenir une difficulte supplementaire. Elle privilegie toujours la lisibilite des plateformes, des ennemis, des dangers et des attaques.
 
-La caméra doit accompagner le joueur sans attirer inutilement son attention. Elle doit toujours privilégier la lisibilité des plateformes, des ennemis, des pièges et des attaques.
+## Cadre general
 
-## Principes généraux
+- Vue laterale en 2D au format `16:9`.
+- Resolution de reference `1920 x 1080`.
+- Zoom constant pendant l'exploration.
+- Aucune rotation.
+- Respect permanent des limites du niveau.
 
-La caméra adopte une vue latérale en 2D.
+## Suivi horizontal
 
-Elle doit :
+- La camera suit Imran de maniere fluide.
+- Vers la droite, Imran vise `45 %` de la largeur, soit `864 px`.
+- Vers la gauche, Imran vise `55 %` de la largeur, soit `1056 px`.
+- Le decalage maximal autour du centre est de `96 px`.
+- Apres un demi-tour, le cadrage change progressivement en `0.60 s`.
+- Cette duree modifie uniquement la camera et ne ralentit jamais Imran.
 
-- suivre Imran de manière fluide ;
-- éviter les mouvements brusques ;
-- conserver Imran et les dangers proches dans une zone clairement visible ;
-- anticiper légèrement la direction dans laquelle le joueur avance ;
-- rester stable pendant les petits sauts et les déplacements courts ;
-- respecter les limites de chaque niveau ;
-- ne jamais révéler des zones situées en dehors du décor jouable.
+## Suivi vertical
 
-Le niveau de zoom doit rester cohérent pendant l'exploration afin que le joueur puisse facilement évaluer les distances.
+- Le centre visuel d'Imran vise `80 %` de la hauteur, soit `864 px`.
+- La zone de confort s'etend de `70 %` a `84 %`, soit de `756 px` a environ `907 px`.
+- Le saut normal de `89 px` reste dans cette zone et ne deplace pas la camera.
+- Une variation de hauteur plus importante declenche un suivi progressif.
+- La camera montre le sol ou la prochaine plateforme importante pendant une chute.
 
-## Suivi du joueur
-
-Pendant les déplacements normaux, la caméra suit Imran horizontalement avec un léger décalage vers l'avant.
-
-Ce décalage permet au joueur de voir :
-
-- les plateformes qui arrivent ;
-- les ennemis placés devant lui ;
-- les pièges du chemin principal ;
-- les projectiles provenant de la direction de progression.
-
-Le suivi vertical doit être plus stable que le suivi horizontal. La caméra ne doit pas monter et descendre à chaque petit saut.
-
-Lors des passages comportant une forte variation de hauteur, elle peut se repositionner progressivement afin de conserver Imran et la prochaine plateforme importante à l'écran.
-
-Après une réapparition au début du niveau ou à une pancarte de contrôle, la caméra se replace immédiatement autour d'Imran avant de reprendre son suivi normal.
-
-## Lisibilité des obstacles
-
-La caméra doit offrir suffisamment d'espace devant Imran pour que le joueur puisse identifier les obstacles avant de les atteindre.
-
-Elle doit notamment permettre de voir clairement :
-
-- les bords des plateformes ;
-- les trous ;
-- les pièges ;
-- les ennemis au sol ;
-- les chauves-souris et autres menaces aériennes ;
-- les flèches tirées par les archers ;
-- les éléments nécessaires au Dash ou au Double saut.
-
-Aucun élément de décor situé au premier plan ne doit cacher durablement Imran ou un danger important.
-
-Dans les passages plus étroits ou verticaux, le cadrage peut être adapté, mais les changements doivent rester progressifs et faciles à comprendre.
-
-## Arènes de boss
-
-Lorsqu'Imran entre dans une arène de boss, la caméra se verrouille dans les limites de l'arène.
+## Lisibilite
 
 Le cadrage doit permettre de voir :
 
-- Imran ;
-- le boss ;
-- les attaques importantes ;
-- les limites de la zone de combat ;
-- les éléments dangereux du décor.
+- les bords des plateformes et les trous ;
+- les ennemis au sol et les menaces aeriennes ;
+- les projectiles venant de la direction de progression ;
+- les zones utiles au Dash et au Double saut ;
+- les pancartes, coffres, feux de camp et objets interactifs ;
+- les limites des arenes et des zones dangereuses.
 
-Au début du combat, une courte mise en scène peut présenter le golem ou Tata Lisa. Cette présentation doit rester brève afin de ne pas interrompre inutilement le rythme du jeu.
+Aucun decor au premier plan ne doit cacher durablement Imran ou un danger important.
 
-Pendant le combat, la caméra ne doit pas effectuer de zoom ou de déplacement soudain pouvant gêner le joueur.
+## Reapparition
 
-Apres la victoire contre un golem, elle se recentre sur Imran et le coffre du niveau.
+- La camera est correctement placee avant que l'image jouable apparaisse.
+- Apres une mort, elle se replace immediatement au debut du niveau ou au checkpoint.
+- Aucun trajet entre le point de mort et le point de reapparition n'est montre.
 
-Apres la victoire contre Tata Lisa, elle se recentre sur Imran et la porte du donjon avant la liberation d'Aliyah.
+## Boss
 
-## Effets de caméra
+- Chaque arene tient entierement dans un cadrage fixe `16:9`.
+- Une courte presentation peut deplacer la camera avant le combat.
+- La camera se verrouille avant de rendre le controle.
+- Aucun suivi, zoom ou recentrage ne se produit pendant le combat.
+- Imran, le boss, ses attaques et les bords de l'arene restent visibles.
+- Apres un golem, la camera cadre Imran et le coffre.
+- Apres Tata Lisa, elle cadre Imran et la porte du donjon.
 
-Les effets de caméra doivent rester limités afin de préserver le confort des jeunes joueurs.
+## Secousses
 
-Un léger tremblement peut accompagner :
+- Une attaque lourde de boss peut produire `6 px` pendant `0.12 s`.
+- La defaite d'un boss peut produire `12 px` pendant `0.25 s`.
+- Les attaques normales, les degats ordinaires et les ennemis communs ne secouent pas la camera.
+- Les effets ne depassent jamais la valeur maximale active.
+- Une option permettra de reduire les secousses.
 
-- une attaque lourde d'un boss ;
-- la destruction d'un golem ;
-- un impact important ;
-- la défaite de Tata Lisa.
+## Regle de conception
 
-Ces effets doivent être courts, lisibles et ne jamais empêcher le joueur de voir une attaque ou un obstacle.
-
-## Règle de conception
-
-La caméra ne doit jamais devenir une difficulté supplémentaire.
-
-Son rôle est d'aider le joueur à comprendre l'espace, à anticiper les dangers et à profiter des animations et des environnements.
+La camera aide le joueur a comprendre l'espace, anticiper les dangers et profiter des animations. Elle ne doit jamais constituer une difficulte supplementaire.

@@ -25,7 +25,7 @@ Le stick gauche ne modifie pas la vitesse d'Imran. Une inclinaison suffisante ve
 
 Le Bouclier de lumiere ne possede aucun bouton. Il bloque automatiquement un projectile ennemi venant du cote vers lequel Imran regarde, meme pendant un mouvement.
 
-La commande `Interagir` sert notamment a ouvrir un coffre et a utiliser volontairement un feu de camp. La proximite d'un feu ne declenche jamais le soin automatiquement.
+La commande `Interagir` sert notamment a ouvrir un coffre, a utiliser volontairement un feu de camp et a ouvrir les six verrous du donjon apres Tata Lisa. La proximite d'un feu ne declenche jamais le soin automatiquement.
 
 ## Menus
 

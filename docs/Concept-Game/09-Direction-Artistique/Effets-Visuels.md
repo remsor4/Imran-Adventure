@@ -46,6 +46,21 @@ Definir des effets spectaculaires mais lisibles, adaptes a un jeune public. Chaq
 - La couleur rouge peut renforcer l'alerte sans remplir tout l'ecran.
 - Aucun sang, blessure detaillee ou effet gore n'est utilise.
 
+### Pancarte de controle
+
+- Le symbole produit une courte impulsion lumineuse doree lors de la premiere activation.
+- Quelques particules simples accompagnent cette impulsion sans masquer Imran.
+- Une faible lueur doree reste ensuite visible pendant toute la tentative.
+- Retraverser la zone ne rejoue ni l'impulsion, ni les particules.
+
+### Coffres et cles
+
+- Chaque coffre reprend les materiaux, les couleurs et les motifs du golem qui le protege.
+- Les variantes correspondent a la Foret, la Grotte, la Glace, le Desert, le Volcan et le Chateau.
+- L'ouverture montre uniquement le mouvement du couvercle et la cle qui sort du coffre.
+- Aucun rayon, aucune lumiere doree et aucun effet lumineux ne sont utilises pendant cette sequence.
+- La cle conserve une silhouette nette afin de rester lisible sans effet lumineux.
+
 ## Ennemis et boss
 
 - Une attaque ennemie affiche sa zone de depart avant de devenir dangereuse.
@@ -71,7 +86,9 @@ Les particules d'ambiance restent moins lumineuses et plus lentes que les projec
 
 ## Effets d'ecran
 
-- Les secousses restent courtes et proportionnelles a l'impact.
+- Une attaque lourde de boss peut secouer la camera de `6 px` pendant `0.12 s`.
+- La defaite d'un boss peut secouer la camera de `12 px` pendant `0.25 s`.
+- Les attaques normales, les degats ordinaires et les ennemis communs ne secouent pas la camera.
 - Les flashs plein ecran sont evites ou fortement attenues.
 - Le ralentissement visuel est reserve aux moments importants.
 - Le vignettage ne doit pas cacher les bords des plateformes.

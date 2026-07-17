@@ -87,8 +87,8 @@ Le joueur doit distinguer un degat subi, un projectile bloque automatiquement et
 | Evenement | Son attendu |
 |---|---|
 | Coffre disponible | Petit reflet sonore discret |
-| Ouverture du coffre | Bois, metal et montee magique |
-| Cle revelee | Accord clair avec tintement dore |
+| Ouverture du coffre | Mecanisme, bois ou metal et matiere correspondant au golem |
+| Cle revelee | Tintement bref et clair, sans montee magique |
 | Cle recuperee | Motif court de victoire |
 | Pancarte du Dash comprise | Impulsion rapide suivie d'un accord positif |
 | Pancarte du Double saut comprise | Deux notes ascendantes et effet aerien |
@@ -98,7 +98,8 @@ La musique de recompense peut remplacer une partie des effets pour eviter une ac
 
 ## Points de controle et sauvegarde
 
-- Une pancarte activee utilise un son de bois et une petite confirmation lumineuse.
+- Une pancarte activee utilise un son de bois leger suivi d'une confirmation breve, douce et clairement reconnaissable.
+- Le son d'activation est joue une seule fois pendant la tentative, meme si Imran retraverse la zone.
 - Une reapparition a la pancarte utilise le meme motif sous une forme plus douce.
 - La sauvegarde automatique utilise un signal court, calme et distinct de la recuperation d'un objet.
 - La fin de sauvegarde confirme clairement que le joueur peut continuer.
