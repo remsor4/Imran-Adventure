@@ -20,7 +20,7 @@ Lister les etats visibles d'Imran et les transitions autorisees entre ses action
 | Preparation ou charge du Smash | La commande d'attaque est maintenue au sol | Attaque normale avant `1.50 s`, Lancement du Smash, Degat ou Mort |
 | Lancement du Smash | La charge validee est relachee ou atteint `3.00 s` | Etat de mouvement compatible apres `0.35 s`, Degat ou Mort |
 | Interaction | Une cible valide accepte l'interaction | Attente apres la sequence |
-| Degat | Imran recoit un degat non bloque | Saut, Chute, Attente ou Mort |
+| Degat | Imran recoit un degat non bloque | Etat de mouvement compatible apres `0.33 s`, ou Mort |
 | Mort | Les trois coeurs sont perdus et une vie doit etre retiree | Reapparition ou Game Over |
 | Verrouille | Une scene, un chargement ou une interface retire le controle | Etat impose par la reprise |
 

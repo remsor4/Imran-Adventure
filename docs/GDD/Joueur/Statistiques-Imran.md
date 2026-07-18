@@ -33,8 +33,8 @@ Le visuel d'Imran peut depasser legerement du collider principal. Sa zone vulner
 | Coeurs au debut d'un niveau | `3` |
 | Vies au debut d'un niveau | `3` |
 | Degat ordinaire recu | `1 coeur` |
-| Invulnerabilite apres un degat | `1.00 s` |
-| Duree de reaction a un degat | `0.20 s` |
+| Invulnerabilite apres un degat | `1.30 s` |
+| Duree de reaction a un degat | `0.33 s` |
 
 Une attaque ennemie ordinaire, un contact dangereux ou un piege non mortel retire `1 coeur`. Une exception future devra etre annoncee et validee dans la fiche de la source concernee.
 
@@ -89,8 +89,9 @@ Il n'existe aucune vitesse de course distincte.
 | Element | Valeur |
 |---|---:|
 | Vitesse horizontale initiale | `220 px/s` loin de la source |
-| Vitesse verticale initiale | `280 px/s` vers le haut |
-| Duree sans controle | `0.20 s` |
+| Vitesse verticale initiale au sol | `280 px/s` vers le haut |
+| Vitesse verticale initiale dans les airs | `0 px/s`, puis reprise de la gravite |
+| Duree sans controle | `0.33 s` |
 
 ## Combat et equipements
 
@@ -150,5 +151,6 @@ Les statistiques sont valides si :
 - [Dash](../../Concept-Game/05-Gameplay/Dash.md)
 - [Double saut](../../Concept-Game/05-Gameplay/Double-Saut.md)
 - [Reference video Wonder Boy](Reference-Video-Wonder-Boy.md)
+- [Reference video des degats recus](Reference-Video-Wonder-Boy-Degats-Imran.md)
 - [Reference video du Dash Godot](Reference-Video-Dash-Godot.md)
 - [Reference video du combat Wonder Boy](../Combat/Reference-Video-Wonder-Boy-Combat.md)

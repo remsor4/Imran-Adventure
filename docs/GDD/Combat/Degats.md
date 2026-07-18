@@ -34,7 +34,8 @@ Une attaque future d'ennemi ou de boss utilise `1 coeur` par defaut. Une excepti
 4. Si le contact reste valide, `1 coeur` est retire.
 5. L'action en cours est interrompue et la reaction aux degats commence.
 6. Le recul et l'invulnerabilite sont appliques.
-7. La perte du dernier coeur declenche l'etat `Mort`.
+7. Un projectile ennemi non bloque disparait au point d'impact apres avoir applique son degat.
+8. La perte du dernier coeur declenche l'etat `Mort`.
 
 ## Sources ordinaires
 
@@ -59,6 +60,8 @@ La regle de `1 coeur` s'applique par defaut :
 - Plusieurs sources touchant Imran pendant la meme image ne retirent jamais plus de `1 coeur` avant le debut de l'invulnerabilite.
 - Un danger continu attend la fin de l'invulnerabilite avant de pouvoir retirer un nouveau coeur.
 - Un projectile bloque ne declenche ni degat, ni recul, ni invulnerabilite.
+- Un projectile non bloque applique la meme reaction de `0.33 s` et la meme invulnerabilite de `1.30 s` que les autres sources ordinaires.
+- Un degat recu dans les airs interrompt la trajectoire verticale en cours avant la retombee d'Imran.
 - Une chute hors du niveau ou un danger declare mortel utilise les regles de vies et de reapparition de l'etape 7.
 - Pause suspend la resolution temporelle des reactions deja commencees.
 
@@ -71,6 +74,8 @@ Les degats sont valides si :
 - une attaque ennemie ordinaire non bloquee retire `1 coeur` a Imran ;
 - une meme attaque ne touche jamais deux fois la meme cible pendant une seule fenetre active ;
 - un projectile frontal bloque ne retire aucun coeur ;
+- un projectile non bloque disparait apres avoir applique un seul degat ;
+- un degat aerien interrompt la trajectoire en cours et applique le recul valide ;
 - les effets d'impact ne produisent aucun degat supplementaire.
 
 ## Sources
@@ -81,3 +86,4 @@ Les degats sont valides si :
 - [Invulnerabilite](Invulnerabilite.md)
 - [Recul](Recul.md)
 - [Reactions aux degats](../Joueur/Reactions-aux-Degats.md)
+- [Reference video des degats recus](../Joueur/Reference-Video-Wonder-Boy-Degats-Imran.md)

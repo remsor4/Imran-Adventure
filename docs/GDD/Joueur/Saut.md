@@ -56,7 +56,7 @@ Une seule impulsion est appliquee par pression. Maintenir la commande ne declenc
 
 - Une plateforme traversable est ignoree pendant la montee et devient solide pendant la chute.
 - Un plafond annule la vitesse vers le haut et provoque la chute.
-- Un degat peut interrompre la montee et appliquer le recul.
+- Un degat aerien interrompt la montee ou la chute, annule la vitesse verticale en cours, applique le recul horizontal puis laisse Imran retomber sous l'effet de la gravite.
 - Le saut ne peut pas commencer pendant un etat verrouille ou une interaction.
 - Le saut ne peut pas commencer pendant l'animation d'une attaque normale au sol ou la charge du Smash Tranchant.
 - Une fois le saut commence, une attaque normale aerienne conserve la gravite, les vitesses horizontale et verticale ainsi que le controle gauche et droite.
@@ -80,4 +80,5 @@ Le saut est valide si :
 - [Deplacement](Deplacement.md)
 - [Priorites des actions](../Controles/Priorites-des-Actions.md)
 - [Reference video Wonder Boy](Reference-Video-Wonder-Boy.md)
+- [Reference video des degats recus](Reference-Video-Wonder-Boy-Degats-Imran.md)
 - [Deplacements du Concept Game](../../Concept-Game/05-Gameplay/Deplacements.md)

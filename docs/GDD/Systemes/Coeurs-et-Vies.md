@@ -24,7 +24,7 @@ Definir la perte des coeurs, la perte des vies et les seules situations qui rest
 - Une attaque ordinaire non bloquee retire `1 coeur` selon les regles du dossier Combat.
 - Le HUD est mis a jour immediatement.
 - Tant qu'il reste au moins un coeur, Imran conserve sa vie actuelle.
-- L'invulnerabilite de `1.00 s` empeche plusieurs pertes consecutives immediates.
+- L'invulnerabilite de `1.30 s` empeche plusieurs pertes consecutives immediates.
 - Un projectile bloque par le Bouclier ne retire aucun coeur.
 
 ## Absence de soin pendant l'exploration

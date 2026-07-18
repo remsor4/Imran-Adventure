@@ -10,18 +10,18 @@ Empecher plusieurs pertes de coeur consecutives apres un degat non bloque tout e
 
 | Element | Valeur |
 |---|---:|
-| Duree totale | `1.00 s` |
+| Duree totale | `1.30 s` |
 | Debut | Image ou le coeur est retire |
-| Duree de reaction sans controle | `0.20 s` |
-| Temps restant avec controle | `0.80 s` |
+| Duree de reaction sans controle | `0.33 s` |
+| Temps restant avec controle | `0.97 s` |
 
 ## Regles
 
 - L'invulnerabilite commence au moment exact ou un degat retire un coeur.
-- Pendant `1.00 s`, toute nouvelle source ordinaire est ignoree.
+- Pendant `1.30 s`, toute nouvelle source ordinaire est ignoree.
 - Une source ignoree ne retire aucun coeur et ne relance jamais la duree.
-- Le controle revient apres les `0.20 s` de reaction si Imran possede encore au moins un coeur.
-- Imran peut ensuite se deplacer, sauter, attaquer et utiliser ses capacites pendant les `0.80 s` restantes.
+- Le controle revient apres les `0.33 s` de reaction si Imran possede encore au moins un coeur.
+- Imran peut ensuite se deplacer, sauter, attaquer et utiliser ses capacites pendant les `0.97 s` restantes.
 - Les collisions avec le decor restent actives pendant toute la duree.
 - L'invulnerabilite ne permet pas de traverser un mur, un ennemi solide ou une limite de niveau.
 - La mort annule immediatement l'invulnerabilite en cours.
@@ -50,10 +50,10 @@ Empecher plusieurs pertes de coeur consecutives apres un degat non bloque tout e
 
 L'invulnerabilite est validee si :
 
-- un premier degat retire un coeur et demarre `1.00 s` de protection ;
+- un premier degat retire un coeur et demarre `1.30 s` de protection ;
 - une nouvelle attaque pendant cette duree ne retire aucun coeur ;
 - une attaque ignoree ne remet pas le compteur a zero ;
-- le controle revient apres `0.20 s` ;
+- le controle revient apres `0.33 s` ;
 - les collisions du decor restent normales ;
 - Pause ne consomme aucune partie de la duree.
 
@@ -62,4 +62,5 @@ L'invulnerabilite est validee si :
 - [Degats](Degats.md)
 - [Recul](Recul.md)
 - [Reactions aux degats](../Joueur/Reactions-aux-Degats.md)
+- [Reference video des degats recus](../Joueur/Reference-Video-Wonder-Boy-Degats-Imran.md)
 - [Statistiques d'Imran](../Joueur/Statistiques-Imran.md)

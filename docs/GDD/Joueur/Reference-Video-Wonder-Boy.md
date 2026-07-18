@@ -54,16 +54,17 @@ Les elements suivants ne peuvent pas etre mesures dans cette plage de la video :
 - memoire de la commande de saut ;
 - hauteur variable selon le relachement ;
 - vitesse maximale de chute ;
-- duree exacte d'invulnerabilite apres un degat ;
-- recul exact apres un degat.
 
 Ils restent des propositions propres a Imran Adventure et devront etre verifies dans le prototype Godot. Le Double saut est ajuste a `450 px/s` pour rester legerement plus bas que le saut normal. Le Dash possede maintenant une [reference video dediee](Reference-Video-Dash-Godot.md).
+
+La reaction, l'invulnerabilite et le recul apres un degat ont ensuite ete analyses avec des [captures Wonder Boy dediees](Reference-Video-Wonder-Boy-Degats-Imran.md).
 
 ## Limites de l'analyse
 
 - Les mesures sont visuelles et ne donnent pas acces au code du jeu de reference.
 - La camera se deplace pendant certaines courses ; sa vitesse a ete prise en compte dans l'estimation horizontale.
 - Une [reference camera dediee](../Systemes/Reference-Video-Wonder-Boy-Camera.md) fixe le changement de cadrage apres un demi-tour a `0.60 s`.
+- Une [reference de degats dediee](Reference-Video-Wonder-Boy-Degats-Imran.md) fixe une reaction de `0.33 s`, une invulnerabilite de `1.30 s` et le comportement du recul aerien.
 - Les animations modifient legerement la taille visible du personnage selon la pose.
 - Les valeurs finales devront etre confirmees par un prototype a `1920 x 1080`.
 

@@ -16,6 +16,7 @@ Cette section definit les valeurs et les regles de mouvement d'Imran. Elle decri
 - [Double saut](Double-Saut.md)
 - [Reactions aux degats](Reactions-aux-Degats.md)
 - [Reference video Wonder Boy](Reference-Video-Wonder-Boy.md)
+- [Reference video des degats recus](Reference-Video-Wonder-Boy-Degats-Imran.md)
 - [Reference video du Dash Godot](Reference-Video-Dash-Godot.md)
 
 ## Principes
@@ -38,6 +39,7 @@ Cette section definit les valeurs et les regles de mouvement d'Imran. Elle decri
 - [Boucle de jeu](../Boucle-de-Jeu.md)
 - [Controles](../Controles/README.md)
 - [Reference video Wonder Boy](Reference-Video-Wonder-Boy.md)
+- [Reference video des degats recus](Reference-Video-Wonder-Boy-Degats-Imran.md)
 - [Reference video du Dash Godot](Reference-Video-Dash-Godot.md)
 - [Reference video du combat Wonder Boy](../Combat/Reference-Video-Wonder-Boy-Combat.md)
 - [Deplacements du Concept Game](../../Concept-Game/05-Gameplay/Deplacements.md)
