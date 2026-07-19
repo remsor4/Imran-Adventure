@@ -10,8 +10,8 @@ Definir des ennemis simples a comprendre, previsibles et assez differents pour f
 
 | Ordre | Document | Statut |
 |---:|---|---|
-| 1 | [Regles communes](Regles-Communes.md) | En cours |
-| 2 | [Slimes](Slimes.md) | A rediger |
+| 1 | [Regles communes](Regles-Communes.md) | Valide |
+| 2 | [Slimes](Slimes.md) | Valide |
 | 3 | [Chauves-souris](Chauves-Souris.md) | A rediger |
 | 4 | [Squelettes](Squelettes.md) | A rediger |
 | 5 | [Serpents](Serpents.md) | A rediger |
@@ -48,3 +48,6 @@ L'etape 8 est validee si :
 - [Invulnerabilite](../Combat/Invulnerabilite.md)
 - [Boucle de jeu](../Boucle-de-Jeu.md)
 - [Camera](../Systemes/Camera.md)
+- [Reference video des collisions entre ennemis](Reference-Video-Wonder-Boy-Collisions-Ennemis.md)
+- [Reference video du bond unique des Slimes](Reference-Video-Wonder-Boy-Bonds-Slimes.md)
+- [Reference video de la detection horizontale des Slimes](Reference-Video-Wonder-Boy-Detection-Slimes.md)

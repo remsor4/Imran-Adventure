@@ -1,6 +1,6 @@
 # Regles communes des ennemis
 
-> **Statut :** En cours
+> **Statut :** Valide
 
 ## Objectif
 
@@ -106,10 +106,109 @@ Definir le cadre partage par tous les ennemis ordinaires avant de fixer les vale
 - Si Imran retourne dans la zone, le combat reprend avec les points de vie restants de l'ennemi.
 - Les points de vie sont entierement restaures uniquement lors du rechargement des ennemis apres une perte de vie, un Game Over, un abandon, une fermeture du jeu ou un nouveau chargement du niveau.
 
-## Points a definir ensemble
+## Collision entre Imran et un ennemi ordinaire
 
-- collisions entre Imran, les ennemis et le decor ;
-- nombre maximal d'attaques simultanees ;
+- Un ennemi ordinaire vivant ne forme jamais un mur physique pour Imran.
+- Imran peut traverser le volume de deplacement de l'ennemi sans etre bloque ou pousse.
+- Le contact entre la zone dangereuse de l'ennemi et la zone vulnerable d'Imran retire `1 coeur` si Imran n'est pas invulnerable.
+- Le recul horizontal de `220 px/s` eloigne immediatement Imran de la source du contact.
+- Pendant les `1.30 s` d'invulnerabilite, Imran peut traverser l'ennemi sans recevoir un nouveau degat.
+- Un ennemi ne peut ni transporter Imran, ni le coincer contre un mur, ni modifier directement son orientation.
+- Imran ne peut jamais utiliser un ennemi comme plateforme.
+- La zone dangereuse et les degats de contact sont desactives immediatement lorsque l'ennemi entre dans l'etat `Defaite`.
+- Les attaques d'Imran utilisent leurs propres zones d'impact et ne rendent pas le corps de l'ennemi solide.
+- Cette regle concerne les ennemis ordinaires. Une exception eventuelle pour un boss devra etre annoncee et validee dans sa propre fiche.
+
+Cette regle adapte le comportement observe dans les captures Wonder Boy : le contact declenche un degat et un recul, puis l'invulnerabilite permet au joueur de ne pas rester bloque dans l'ennemi.
+
+## Collisions entre ennemis ordinaires
+
+- Les ennemis ordinaires ne sont jamais solides entre eux.
+- Deux ennemis de la meme famille ou de familles differentes peuvent se traverser et se superposer.
+- Une collision entre leurs volumes de deplacement ne modifie ni leur vitesse, ni leur direction, ni leur action en cours.
+- Les ennemis ne se poussent pas, ne se bloquent pas et ne se transportent jamais entre eux.
+- Un simple contact entre deux ennemis ne provoque aucun degat, aucun recul et aucune reaction.
+- Chaque ennemi conserve son comportement, sa trajectoire, ses points de vie et sa zone de rencontre de maniere independante.
+- Le placement des rencontres doit limiter les superpositions prolongees afin de conserver des silhouettes et des attaques lisibles.
+- Cette regle ne fixe pas encore le comportement d'une attaque ou d'un projectile ennemi touchant un autre ennemi.
+
+Cette regle reproduit le comportement observe dans la capture Wonder Boy dediee : des ennemis identiques ou differents se superposent puis se separent sans collision physique ni reaction.
+
+## Attaques entre ennemis
+
+- Une attaque ennemie ne peut jamais retirer de point de vie a un autre ennemi.
+- Les attaques de contact et de corps a corps ignorent les zones vulnerables des autres ennemis.
+- Un projectile ennemi traverse les autres ennemis sans produire d'impact, de recul ou de degat.
+- Le passage a travers un autre ennemi ne ralentit pas le projectile et ne reduit pas sa portee restante.
+- Un projectile ennemi disparait uniquement lorsqu'il touche Imran, son Bouclier, un element solide du decor ou lorsqu'il atteint sa limite de portee ou de duree.
+- Un ennemi place entre Imran et un projectile ne peut jamais servir de protection.
+- Les ennemis ne peuvent ni s'interrompre, ni se vaincre, ni modifier leurs points de vie entre eux.
+- Aucun retour visuel ou sonore d'impact n'est produit lorsqu'une attaque traverse un autre ennemi.
+
+## Collisions avec le decor
+
+- Aucun ennemi ordinaire ne peut traverser un mur, un sol, un plafond ou un obstacle defini comme solide.
+- Un ennemi terrestre repose sur les sols et est arrete par les murs solides.
+- Lorsqu'un ennemi terrestre retombe sur une plateforme traversable, celle-ci le supporte comme elle supporte Imran.
+- Un ennemi terrestre peut traverser une plateforme traversable pendant une montee autorisee, puis retomber dessus.
+- Un ennemi volant est arrete par les murs, les plafonds, les sols et les obstacles entierement solides.
+- Un ennemi volant traverse les plateformes traversables sans modifier sa trajectoire.
+- Une collision avec un element solide annule uniquement la composante du mouvement dirigee vers cet element.
+- Une collision avec le decor ne provoque aucun degat automatique a l'ennemi.
+- Le chemin normal, l'attaque et le retour a la position initiale doivent rester compatibles avec les limites solides de la zone de rencontre.
+- Si un obstacle rend la position initiale inaccessible, l'ennemi s'arrete au dernier point valide sans se teleporter et attend qu'un chemin soit de nouveau disponible.
+
+## Bords de plateformes et gouffres
+
+- Un ennemi terrestre ne tombe jamais accidentellement d'une plateforme ou dans un gouffre.
+- Pendant une patrouille, il detecte le bord, s'arrete puis fait demi-tour selon le rythme de sa famille.
+- Pendant une poursuite, il s'arrete avant le bord si Imran se trouve de l'autre cote d'un espace infranchissable.
+- Il ne quitte jamais sa plateforme uniquement pour continuer une poursuite ou rejoindre la derniere position visible d'Imran.
+- Pendant un retour, il utilise uniquement un chemin praticable qui reste dans sa zone de rencontre.
+- Un mouvement terrestre normal ne franchit jamais un trou, meme si Imran reste visible de l'autre cote.
+- Seul un mouvement volontaire propre a une famille, comme le bond d'un Slime, peut franchir un espace.
+- Un tel mouvement exige une zone d'atterrissage praticable, visible et situee dans la zone de rencontre.
+- Si aucune zone d'atterrissage valide n'existe, l'attaque ou le franchissement ne commence pas.
+- Une charge ou une attaque terrestre incapable de franchir un vide s'arrete avant le bord.
+
+Cette regle reprend le comportement de reference Wonder Boy valide pour le projet et empeche un ennemi de se vaincre ou de quitter sa rencontre sans action d'Imran.
+
+## Limite des attaques simultanees
+
+- Un maximum de `3 ennemis ordinaires` peut preparer ou executer une attaque en meme temps.
+- Cette limite augmente la pression et encourage Imran a eliminer les ennemis au lieu de tous les contourner.
+- Elle ne transforme pas les ennemis en condition obligatoire de fin du niveau : un passage reste possible si le joueur trouve une trajectoire sure.
+- Un ennemi occupe un emplacement des le debut de la preparation visible de son attaque.
+- Une attaque de corps a corps libere son emplacement a la fin de sa phase dangereuse.
+- Une attaque produisant un projectile conserve son emplacement jusqu'a la disparition du projectile.
+- Une attaque annulee ou un ennemi vaincu libere immediatement son emplacement.
+- Lorsque les `3 emplacements` sont occupes, les autres ennemis peuvent se deplacer, poursuivre ou se repositionner, mais ils ne commencent aucune preparation d'attaque.
+- Un ennemi en attente ne memorise jamais une attaque instantanee : lorsqu'un emplacement se libere, il respecte encore sa ligne de vue, sa preparation et son delai normal.
+- La limite est commune a toutes les familles d'ennemis ordinaires presentes dans la meme rencontre.
+- Les boss et les dangers du decor ne sont pas inclus dans cette limite et possederont leurs propres regles.
+
+## Declenchement simultane des attaques
+
+- Aucun intervalle minimal n'est impose entre deux preparations ennemies.
+- Jusqu'a `3 ennemis` peuvent commencer leur preparation sur la meme image si les emplacements sont disponibles.
+- Commencer simultanement ne supprime jamais le signe visuel et sonore propre a chaque attaque.
+- Chaque attaque conserve sa preparation complete avant de devenir dangereuse.
+- Les attaques declenchees sur la meme image restent independantes et peuvent se terminer a des moments differents.
+- Une quatrieme attaque ne peut jamais commencer tant que les `3 emplacements` restent occupes.
+- La camera et les effets doivent conserver Imran et les trois signes d'attaque suffisamment lisibles.
+
+## Priorite d'attribution des emplacements
+
+- Un ennemi deja en preparation ou en phase dangereuse conserve son emplacement jusqu'a sa liberation normale.
+- Lorsqu'un ou plusieurs emplacements sont disponibles, seuls les ennemis respectant encore leur detection, leur ligne de vue et leur delai d'attaque peuvent les demander.
+- Si plus d'ennemis sont disponibles que d'emplacements libres, les ennemis les plus proches d'Imran sont prioritaires.
+- La distance est mesuree entre le centre d'Imran et le centre de chaque ennemi au moment de l'attribution.
+- Si deux ennemis se trouvent a une distance equivalente, celui qui attend une autorisation d'attaque depuis le plus longtemps est prioritaire.
+- Le temps d'attente commence lorsque toutes les conditions propres a l'attaque deviennent valides.
+- Perdre Imran de vue, quitter la zone de detection ou devenir incapable d'attaquer annule ce temps d'attente.
+- Un ennemi non selectionne continue son deplacement autorise, mais ne commence aucune preparation.
+- Lorsqu'un emplacement se libere, les distances et les conditions sont de nouveau verifiees avant toute attribution.
+- Une attribution ne permet jamais de supprimer ou de raccourcir la preparation visuelle et sonore de l'attaque.
 
 ## Sources
 
@@ -119,3 +218,5 @@ Definir le cadre partage par tous les ennemis ordinaires avant de fixer les vale
 - [Coeurs et vies](../Systemes/Coeurs-et-Vies.md)
 - [Checkpoints](../Systemes/Checkpoints.md)
 - [Reference video des reactions ennemies](Reference-Video-Wonder-Boy-Reactions-Ennemies.md)
+- [Reference video des collisions entre ennemis](Reference-Video-Wonder-Boy-Collisions-Ennemis.md)
+- [Reference video des degats recus par Imran](../Joueur/Reference-Video-Wonder-Boy-Degats-Imran.md)
