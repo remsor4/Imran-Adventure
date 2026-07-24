@@ -12,8 +12,8 @@ Definir des ennemis simples a comprendre, previsibles et assez differents pour f
 |---:|---|---|
 | 1 | [Regles communes](Regles-Communes.md) | Valide |
 | 2 | [Slimes](Slimes.md) | Valide |
-| 3 | [Chauves-souris](Chauves-Souris.md) | A rediger |
-| 4 | [Squelettes](Squelettes.md) | A rediger |
+| 3 | [Chauves-souris](Chauves-Souris.md) | Valide |
+| 4 | [Squelettes](Squelettes.md) | Valide |
 | 5 | [Serpents](Serpents.md) | A rediger |
 | 6 | [Zombies](Zombies.md) | A rediger |
 
@@ -51,3 +51,5 @@ L'etape 8 est validee si :
 - [Reference video des collisions entre ennemis](Reference-Video-Wonder-Boy-Collisions-Ennemis.md)
 - [Reference video du bond unique des Slimes](Reference-Video-Wonder-Boy-Bonds-Slimes.md)
 - [Reference video de la detection horizontale des Slimes](Reference-Video-Wonder-Boy-Detection-Slimes.md)
+- [Reference video des plongees des Chauves-souris](Reference-Video-Wonder-Boy-Plongees-Chauves-Souris.md)
+- [Reference video de la patrouille et du tir du Squelette archer](Reference-Video-Patrouille-Squelette-Archer.md)
