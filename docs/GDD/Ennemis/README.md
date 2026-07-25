@@ -1,6 +1,6 @@
 # GDD - Ennemis et intelligence artificielle
 
-> **Statut :** En cours
+> **Statut :** Valide
 
 ## Objectif
 
@@ -14,8 +14,9 @@ Definir des ennemis simples a comprendre, previsibles et assez differents pour f
 | 2 | [Slimes](Slimes.md) | Valide |
 | 3 | [Chauves-souris](Chauves-Souris.md) | Valide |
 | 4 | [Squelettes](Squelettes.md) | Valide |
-| 5 | [Serpents](Serpents.md) | A rediger |
-| 6 | [Zombies](Zombies.md) | A rediger |
+| 5 | [Serpents](Serpents.md) | Valide |
+| 6 | [Zombies](Zombies.md) | Valide |
+| 7 | [Combinaisons et progression](Combinaisons-et-Progression.md) | Valide |
 
 ## Ordre de validation
 

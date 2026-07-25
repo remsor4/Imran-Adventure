@@ -14,16 +14,19 @@ Definir le premier ennemi terrestre simple d'Imran Adventure. Le Slime apprend a
 - Sa defaite utilise un eclatement cartoon court, sans gore.
 - Son apparence change selon l'environnement, mais son comportement general reste reconnaissable.
 
-## Variantes visuelles
+## Variantes visuelles disponibles
 
-| Niveau | Variante |
-|---|---|
-| Foret enchantee | Slime vegetal |
-| Grotte mysterieuse | Slime rocheux ou cristallin |
-| Lac gele | Slime glace |
-| Desert oublie | Slime de sable |
-| Volcan | Slime de lave |
-| Chateau de Tata Lisa | Slime sombre |
+| Environnement | Variante | Utilisation actuelle |
+|---|---|---|
+| Village des Bles | Slime de base entierement bleu | Utilisee |
+| Foret enchantee | Slime vegetal | Utilisee |
+| Grotte mysterieuse | Slime rocheux ou cristallin | Reserve artistique non utilisee |
+| Lac gele | Slime glace | Utilisee |
+| Desert oublie | Slime de sable | Utilisee |
+| Volcan | Slime de lave | Utilisee |
+| Chateau de Tata Lisa | Slime sombre | Reserve artistique non utilisee |
+
+La progression ennemie validee exclut les Slimes de la Grotte mysterieuse et du Chateau de Tata Lisa. Leurs deux variantes restent disponibles comme reserves artistiques, mais elles ne sont pas placees dans la progression actuelle.
 
 Ces variantes sont visuelles et sonores. Une difference de statistiques ou de comportement devra etre annoncee et validee explicitement avant son ajout.
 
