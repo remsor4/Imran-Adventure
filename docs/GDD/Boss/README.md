@@ -10,8 +10,8 @@ Definir les regles communes et les sept combats obligatoires afin que chaque bos
 
 | Ordre | Document | Statut |
 |---:|---|---|
-| 1 | [Regles communes](Regles-Communes.md) | En cours |
-| 2 | [Golem de la Foret](Golem-Foret.md) | A rediger |
+| 1 | [Regles communes](Regles-Communes.md) | Valide |
+| 2 | [Golem de la Foret](Golem-Foret.md) | En cours |
 | 3 | [Golem de la Grotte](Golem-Grotte.md) | A rediger |
 | 4 | [Golem du Lac gele](Golem-Lac.md) | A rediger |
 | 5 | [Golem du Desert](Golem-Desert.md) | A rediger |
@@ -73,3 +73,5 @@ L'etape 9 est validee si :
 - [Reference video des degats des boss](Reference-Video-Wonder-Boy-Degats-Boss.md)
 - [Reference video des dimensions des boss](Reference-Video-Wonder-Boy-Dimensions-Boss.md)
 - [Reference video des collisions avec le corps des boss](Reference-Video-Wonder-Boy-Collisions-Boss.md)
+- [Reference video du rythme des attaques de boss](Reference-Video-Wonder-Boy-Rythme-Boss.md)
+- [Reference video de la defaite d'un boss](Reference-Video-Wonder-Boy-Defaite-Boss.md)

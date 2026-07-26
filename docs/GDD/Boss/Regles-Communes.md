@@ -1,6 +1,6 @@
 # Regles communes des boss
 
-> **Statut :** En cours
+> **Statut :** Valide
 
 ## Objectif
 
@@ -134,10 +134,32 @@ Le combat commence selon la sequence suivante :
 - Une meme attaque conserve les memes signaux visuel et sonore a chaque utilisation.
 - Recevoir un degat pendant la preparation ne relance ni l'animation, ni le son.
 - Les signaux exacts sont definis dans la fiche de chaque golem.
+- Lorsque la phase dangereuse d'une attaque se termine, le golem entre dans une phase de recuperation.
+- Cette recuperation utilise une animation qui le ramene a sa posture neutre.
+- La recuperation commune des six golems dure `0.30 s`.
+- Aucune nouvelle attaque ne peut commencer pendant cette recuperation.
+- Une pause neutre distincte commence lorsque la recuperation est terminee.
+- Le golem reste dans sa posture neutre pendant cette pause.
+- La pause neutre commune des six golems dure `1.80 s`.
+- L'intervalle total entre la fin d'une phase dangereuse et la preparation suivante dure donc `2.10 s`.
+- La preparation de l'attaque suivante commence uniquement apres la fin de la pause.
+- Le golem reste vulnerable pendant la recuperation et la pause neutre.
+- Son danger de contact permanent reste actif pendant ces deux periodes.
+- Recevoir un degat ne raccourcit, ne prolonge et ne relance ni la recuperation, ni la pause.
+- Un projectile deja lance continue normalement pendant la recuperation et la pause.
+- Sa trajectoire, sa vitesse, ses degats et sa duree de vie ne sont pas modifies par le changement d'etat du golem.
+- Il disparait uniquement lors de sa collision valide ou a la fin de sa duree de vie.
+- Recevoir un degat ne supprime pas les projectiles deja lances.
+- La duree maximale de chaque projectile doit se terminer avant la preparation de l'attaque suivante.
+- La recuperation et la pause sont dimensionnees pour garantir cette disparition.
+- Deux phases dangereuses consecutives ne peuvent donc jamais se superposer.
+- La disparition anticipee d'un projectile ne raccourcit pas la recuperation ou la pause en cours.
+- L'etat `Etourdi`, une perte de vie ou la phase de defaite les suppriment selon les regles deja validees.
 - Atteindre `0 point de vie` interrompt immediatement le cycle et declenche l'etat `Etourdi`.
 - Une perte de vie d'Imran reinitialise le cycle du golem.
 - La tentative suivante recommence donc avec la premiere attaque apres la presentation de `3.00 s`.
-- Les durees de preparation, de danger, de recuperation et de pause seront mesurees dans la fiche de chaque golem.
+- Les durees de preparation et de danger sont mesurees dans la fiche de chaque golem.
+- La recuperation de `0.30 s` et la pause de `1.80 s` restent communes aux six golems.
 - Tata Lisa possede sa propre logique de selection des attaques, definie dans sa fiche.
 
 ## Points de vie des golems valides
@@ -185,6 +207,40 @@ Le combat commence selon la sequence suivante :
 - Une nouvelle perte de coeur reste impossible tant que l'invulnerabilite d'Imran est active.
 - Les collisions du boss avec le decor et les limites de son arene restent independantes de cette regle.
 
+## Perte de vie et reinitialisation de l'arene validees
+
+- La perte du dernier coeur d'Imran interrompt immediatement le combat contre le golem.
+- Une vie est retiree selon les regles communes des coeurs et des vies.
+- S'il reste au moins une vie, Imran reapparait au debut du niveau ou au checkpoint temporaire actif.
+- Il ne reapparait jamais directement dans l'arene fermee.
+- Sa nouvelle vie commence avec `3 coeurs`.
+- Le golem retrouve sa valeur maximale de points de vie.
+- Son cycle est replace sur sa premiere attaque.
+- Tous ses projectiles, dangers temporaires et effets de combat disparaissent.
+- La barre de vie du boss est masquee.
+- La fermeture de l'arene revient a son etat initial et permet une nouvelle entree.
+- Le feu de camp redevient disponible selon les regles deja validees.
+- Aucun degat ou autre progres temporaire du combat precedent n'est conserve.
+- Lorsque Imran entre de nouveau dans l'arene, la fermeture et la presentation complete de `3.00 s` sont rejouees.
+- Si aucune vie ne reste, le Game Over remplace cette reapparition selon ses propres regles.
+- La reinitialisation du combat final contre Tata Lisa sera verifiee dans sa fiche.
+
+## Victoire et arene de recompense validees
+
+- Le Smash Tranchant final declenche la phase de defaite du golem.
+- La barre reste visible a `0` pendant l'etat `Etourdi`, puis disparait lorsque la phase de defaite commence.
+- Tous les dangers, projectiles et contacts dangereux du golem restent desactives.
+- Le golem ne peut plus bloquer, pousser ou blesser Imran.
+- La fermeture de l'arene reste active apres la defaite.
+- Imran ne peut donc pas quitter l'arene sans recuperer la cle.
+- Le coffre passe de l'etat `Protege` a l'etat `Disponible` apres la fin de la sequence de defaite.
+- Aucune interaction avec le coffre n'est possible pendant cette sequence.
+- Lorsque le controle revient, l'arene constitue une zone sure sans ennemi ni danger.
+- Imran doit rejoindre le coffre et utiliser la commande `Interaction`.
+- L'ouverture du coffre ajoute automatiquement la cle, declenche la sauvegarde et termine le niveau selon les regles deja validees.
+- La victoire contre le golem seule ne termine jamais le niveau.
+- Le combat final contre Tata Lisa ne possede aucun coffre et suit une conclusion distincte.
+
 ## Dimensions de la barre de vie validees
 
 - La barre de vie utilise une taille visible totale de `192 x 24 px`.
@@ -222,12 +278,27 @@ Le combat commence selon la sequence suivante :
 - Le Smash sert ici de declencheur cinematographique et non de source de degats.
 - La fin du combat reste bloquee tant que cette finition n'a pas ete effectuee.
 
-## Decisions restant a prendre
+## Sequence commune de defaite des golems validee
 
-- rythme des attaques ;
-- comportement de l'arene apres la victoire ou la perte d'une vie ;
-- sequence commune de defaite des golems ;
-- exceptions propres a Tata Lisa.
+- Le contact du Smash Tranchant final declenche immediatement la sequence de defaite.
+- Le golem produit d'abord un eclat visuel bref.
+- Sa silhouette se fragmente ensuite en particules liees a son element.
+- Les particules se dispersent puis disparaissent completement.
+- Aucun corps, obstacle ou danger du golem ne reste dans l'arene.
+- Aucune piece et aucun objet de soin ne sont produits.
+- Le coffre constitue l'unique recompense materielle du combat.
+- Le coffre devient disponible uniquement apres la disparition des dernieres particules.
+- Le controle d'Imran revient au meme moment dans une arene sure.
+- La sequence complete dure exactement `1.00 s`.
+- Cette duree commence au contact du Smash Tranchant final.
+- Elle se termine a la disparition des dernieres particules.
+- Le coffre devient disponible et le controle d'Imran revient a la fin de cette seconde.
+- Cette structure est adaptee de la fin de combat observee dans la capture Wonder Boy.
+- Tata Lisa possede une sequence de defaite distincte.
+
+## Exception reportee
+
+Les particularites de Tata Lisa seront definies et validees dans sa propre fiche. Elles ne remettent pas en cause les regles communes des six golems.
 
 ## Criteres de validation
 
@@ -251,3 +322,5 @@ Les regles communes seront validees si :
 - [Reference video des degats des boss](Reference-Video-Wonder-Boy-Degats-Boss.md)
 - [Reference video des dimensions des boss](Reference-Video-Wonder-Boy-Dimensions-Boss.md)
 - [Reference video des collisions avec le corps des boss](Reference-Video-Wonder-Boy-Collisions-Boss.md)
+- [Reference video du rythme des attaques de boss](Reference-Video-Wonder-Boy-Rythme-Boss.md)
+- [Reference video de la defaite d'un boss](Reference-Video-Wonder-Boy-Defaite-Boss.md)
