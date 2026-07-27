@@ -87,14 +87,15 @@ Le joueur doit distinguer un degat subi, un projectile bloque automatiquement et
 | Evenement | Son attendu |
 |---|---|
 | Coffre disponible | Petit reflet sonore discret |
-| Ouverture du coffre | Mecanisme, bois ou metal et matiere correspondant au golem |
-| Cle revelee | Tintement bref et clair, sans montee magique |
-| Cle recuperee | Motif court de victoire |
+| Ouverture du coffre et revelation de la cle | Son commun de `2.00 s` combinant mecanisme, montee magique et tintement final |
+| Cle recuperee | Aucun son supplementaire avant le signal distinct de sauvegarde |
 | Pancarte du Dash comprise | Impulsion rapide suivie d'un accord positif |
 | Pancarte du Double saut comprise | Deux notes ascendantes et effet aerien |
 | Six verrous ouverts | Six reactions courtes puis accord final |
 
-La musique de recompense peut remplacer une partie des effets pour eviter une accumulation excessive.
+Les six coffres utilisent le meme asset original : `assets/audio/sfx/ouverture-coffre-commune.wav`. Aucun son de matiere propre au niveau et aucun second tintement de cle ne sont ajoutes.
+
+La musique de recompense peut remplacer une partie des autres effets pour eviter une accumulation excessive.
 
 ## Points de controle et sauvegarde
 

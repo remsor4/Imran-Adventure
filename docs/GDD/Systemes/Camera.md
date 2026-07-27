@@ -74,13 +74,33 @@ Aucun decor au premier plan ne doit cacher durablement Imran, une plateforme ou 
 ## Arenes de boss
 
 - Chaque arene est concue pour tenir entierement dans le cadrage fixe `16:9`.
+- Les zones de combat des sept boss mesurent `1280 px` de largeur utile.
+- Dans la resolution de reference `1920 x 1080`, cette largeur est centree horizontalement.
+- La limite gauche utile apparait a `x = 320 px` et la limite droite utile a `x = 1600 px`.
+- Le sol principal des sept arenes apparait a `y = 896 px`.
 - Une courte presentation peut deplacer la camera avant le debut du combat.
 - La camera rejoint ensuite son cadrage final et se verrouille avant de rendre le controle.
 - Elle ne suit plus Imran pendant le combat.
 - Imran, le boss, ses attaques importantes et tous les bords de la zone restent visibles.
 - La barre de vie du boss reste centree en haut de l'ecran.
 - Aucun zoom ni recentrage ne se produit pendant le combat.
-- Apres un golem, la camera cadre Imran et le coffre.
+- Le coffre du golem reste hors du cadre pendant le combat.
+- Apres la defaite, Imran avance lui-meme par le passage situe a droite.
+- La zone de recompense des six golems commence apres les `1280 px` de combat et mesure `640 px`.
+- La longueur totale accessible de chaque arene de golem atteint donc `1920 px`.
+- Le centre du coffre se trouve a la position locale `x = 1824 px`.
+- Au decalage maximal de `640 px`, le coffre apparait a `x = 1504 px` dans l'ecran.
+- La camera reste fixe tant que le centre d'Imran ne depasse pas la position locale `x = 1280 px`.
+- Elle commence son defilement uniquement lorsqu'il franchit cette limite.
+- Elle effectue alors un recentrage horizontal de `128 px` pendant `0.50 s`.
+- Imran passe progressivement de `x = 1600 px` a `x = 1472 px` dans l'ecran.
+- Le joueur conserve le controle pendant ce recentrage.
+- La camera suit ensuite Imran vers la droite avec un decalage maximal de `640 px`.
+- Elle ne revient jamais vers la zone de combat deja depassee.
+- Le decalage maximal deja atteint ne diminue jamais.
+- Le bord gauche de l'ecran empeche Imran de quitter le cadre visible.
+- Le coffre apparait progressivement pendant ce deplacement.
+- Ces valeurs de defilement sont identiques pour les six golems.
 - Apres Tata Lisa, la camera cadre Imran et la porte du donjon.
 
 ## Effets de camera

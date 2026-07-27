@@ -33,6 +33,91 @@ Le combat commence selon la sequence suivante :
 - Aucune tentative ne commence directement au milieu ou a la fin de la presentation.
 - Tata Lisa possede une presentation distincte qui sera definie dans sa propre fiche.
 
+## Fermeture magique des arenes des golems validee
+
+- Les six arenes de golem utilisent deux barrieres magiques identiques.
+- La barriere gauche ferme l'entree derriere Imran.
+- La barriere droite bloque le passage vers la zone de recompense.
+- Elles constituent des limites solides mais ne retirent aucun coeur.
+- Imran, les ennemis, les boss et les projectiles ne peuvent pas les traverser.
+- Elles empechent egalement une attaque lancee depuis l'exterieur d'entrer dans l'arene.
+- Leur couleur reprend l'element et la palette du golem affronte.
+- Leur apparence commune est celle de murs d'energie semi-transparents.
+- Des particules elementaires animees circulent continuellement dans cette energie.
+- Le decor situe derriere les barrieres reste visible sans affaiblir la lecture des limites.
+- Les collisions solides restent identiques quelle que soit la densite visible des particules.
+- La structure visuelle reste commune aux douze barrieres afin de rendre leur fonction immediate.
+- Leurs collisions deviennent actives des le declenchement de la fermeture.
+- Les deux murs visibles montent depuis le sol jusqu'en haut de l'ecran en `0.50 s`.
+- Leurs animations commencent au meme instant, pendant le debut de la presentation du golem.
+- Une fois leur hauteur complete atteinte, les barrieres conservent leur animation continue de particules.
+- Leur largeur visible et solide commune mesure `32 px`.
+- Leur bord interieur reste aligne avec la limite correspondante de l'arene.
+- Leur epaisseur ne reduit pas l'espace utile du combat.
+- Les barrieres ne produisent aucun son pendant leur apparition ou leur disparition.
+- Elles ne produisent aucun bourdonnement continu lorsqu'elles sont actives.
+- Leur fermeture est communiquee uniquement par leur animation, leur couleur et leurs particules.
+- Les six paires de barrieres utilisent une energie semi-transparente et des particules liees au theme du golem.
+- Leur palette et leurs particules suivent le tableau commun :
+
+| Golem | Couleur de l'energie | Particules |
+|---|---|---|
+| Foret | Vert | Petites feuilles et fragments de racines |
+| Grotte | Violet | Fragments d'amethyste |
+| Lac gele | Bleu glacier | Cristaux de glace et flocons |
+| Desert | Dore et ambre | Grains de sable et fragments de gres |
+| Volcan | Rouge-orange | Braises et fragments de basalte |
+| Chateau | Violet sombre | Fragments d'obsidienne et eclats de metal sombre |
+
+- Les particules sont uniquement visuelles et ne possedent aucune collision.
+- Leur densite ne peut jamais masquer Imran, le boss, un projectile ou un avertissement d'attaque.
+- La structure, les dimensions et le fonctionnement des barrieres restent identiques pour les six themes.
+- La barriere gauche reste active pendant la presentation, le combat, l'etat `Etourdi`, la defaite et l'acces au coffre.
+- Elle disparait uniquement lorsque la cle est recuperee et que le niveau se termine.
+- La barriere droite reste active pendant la presentation, le combat, l'etat `Etourdi` et la premiere moitie de la defaite.
+- Elle redescend pendant les `0.50 s` finales de la sequence commune de defaite.
+- Sa collision reste active pendant cette descente.
+- Elle disparait completement et ouvre le passage au retour du controle.
+- Apres une perte de vie, les deux barrieres reviennent a leur etat inactif afin de permettre une nouvelle entree dans l'arene.
+- La fermeture du combat final contre Tata Lisa sera definie separement.
+
+## Largeur commune des arenes de boss validee
+
+- Les zones de combat des six golems et de Tata Lisa possedent une largeur utile commune de `1280 px`.
+- Cette largeur correspond exactement a `20 grilles` de `64 px`.
+- La mesure commence a la limite interieure gauche de la zone de combat et se termine a sa limite interieure droite.
+- Les barrieres, les murs et leurs epaisseurs visibles ne reduisent pas ces `1280 px` utiles.
+- Les couloirs d'entree, les zones de recompense et les espaces de transition ne sont pas inclus dans cette largeur.
+- Les sept arenes de boss utilisent un sol unique et entierement plat.
+- Aucune arene de boss ne contient de plateforme, de pente, de fosse ni d'obstacle de deplacement.
+- Cette regle s'applique aux six golems et a Tata Lisa.
+- Le theme, la matiere du sol, les plafonds et les decorations peuvent varier selon le boss.
+- Les decorations restent hors des zones de collision et ne modifient jamais la surface jouable.
+- Aucune fiche de boss ne peut modifier cette largeur sans une nouvelle validation commune.
+
+## Hauteur commune du sol des arenes validee
+
+- Dans la resolution de reference `1920 x 1080`, le sol principal des sept arenes de boss se trouve a `y = 896 px`.
+- Cette hauteur commune s'applique aux six golems et a Tata Lisa.
+- Les pieds d'Imran et la base visuelle du boss reposent sur cette ligne lorsqu'ils sont au sol.
+- Aucune plateforme ni aucun element de collision ne se trouve au-dessus de cette ligne.
+- Aucune fosse ni aucune interruption ne coupe le sol de l'arene.
+- Les decorations peuvent apparaitre au-dessus de cette ligne sans modifier les collisions.
+- La camera conserve ce repere vertical pendant le combat.
+- Aucune fiche de boss ne peut modifier cette hauteur principale sans une nouvelle validation commune.
+
+## Cadrage horizontal commun des arenes valide
+
+- Dans la resolution de reference `1920 x 1080`, les `1280 px` utiles de chaque arene sont centres horizontalement.
+- La limite gauche utile apparait a `x = 320 px` dans l'ecran.
+- La limite droite utile apparait a `x = 1600 px` dans l'ecran.
+- Ce cadrage s'applique aux six golems et a Tata Lisa.
+- La camera reste fixe sur ce cadrage pendant la presentation, le combat actif, l'etat `Etourdi` et la sequence de defaite.
+- Aucun suivi, recentrage ou zoom ne se produit pendant ces etats.
+- Les positions locales propres a chaque fiche sont converties a l'ecran en ajoutant `320 px`.
+- Le defilement vers une zone de recompense commence uniquement apres la fin du combat et suit ses regles propres.
+- Aucune fiche de boss ne peut decaler ce cadrage de combat sans une nouvelle validation commune.
+
 ## Regles deja acquises
 
 - Les sept combats de boss sont obligatoires.
@@ -42,6 +127,9 @@ Le combat commence selon la sequence suivante :
 - Un projectile frontal peut etre bloque automatiquement par le Bouclier de lumiere.
 - Une perte de vie restaure le boss a sa vie maximale et a sa premiere phase.
 - La barre de vie est centree en haut de l'ecran pendant le combat.
+- Toutes les zones de combat de boss mesurent `1280 px` de largeur utile.
+- Le sol principal des sept arenes de boss se trouve a `y = 896 px`.
+- Les zones de combat apparaissent entre `x = 320 px` et `x = 1600 px` dans le cadre de reference.
 - Un golem vaincu rend son coffre accessible.
 - Tata Lisa vaincue perd ses pouvoirs lorsque la Pierre du Chaos se brise.
 
@@ -231,15 +319,39 @@ Le combat commence selon la sequence suivante :
 - La barre reste visible a `0` pendant l'etat `Etourdi`, puis disparait lorsque la phase de defaite commence.
 - Tous les dangers, projectiles et contacts dangereux du golem restent desactives.
 - Le golem ne peut plus bloquer, pousser ou blesser Imran.
-- La fermeture de l'arene reste active apres la defaite.
-- Imran ne peut donc pas quitter l'arene sans recuperer la cle.
+- La barriere gauche reste active apres la defaite.
+- Imran ne peut donc pas quitter le niveau sans recuperer la cle.
+- Le coffre reste entierement hors du cadre de combat, dans une zone de recompense situee a droite.
+- La zone de recompense des six golems commence a la position locale `x = 1280 px`.
+- Elle mesure exactement `640 px`, soit `10 grilles` de `64 px`.
+- La longueur totale accessible du combat et de la recompense atteint donc `1920 px`.
+- Le sol de la recompense prolonge le repere commun place a `y = 896 px`.
+- Le centre du coffre de chaque golem se trouve a la position locale `x = 1824 px`.
+- Chaque coffre reste ainsi a `96 px` de la limite finale placee a `x = 1920 px`.
 - Le coffre passe de l'etat `Protege` a l'etat `Disponible` apres la fin de la sequence de defaite.
 - Aucune interaction avec le coffre n'est possible pendant cette sequence.
-- Lorsque le controle revient, l'arene constitue une zone sure sans ennemi ni danger.
-- Imran doit rejoindre le coffre et utiliser la commande `Interaction`.
+- La barriere droite disparait completement au retour du controle.
+- Lorsque le controle revient, l'arene et la zone de recompense constituent un espace sur sans ennemi ni danger.
+- Imran doit avancer lui-meme vers la droite.
+- La camera reste fixe tant que le centre d'Imran ne depasse pas la position locale `x = 1280 px`.
+- Le defilement commence uniquement lorsque son centre franchit cette limite.
+- Imran apparait alors a environ `x = 1600 px` dans l'ecran.
+- La camera effectue un recentrage horizontal de `128 px` pendant `0.50 s`.
+- Imran est ainsi replace progressivement a `x = 1472 px` dans l'ecran.
+- Le joueur conserve le controle pendant ce recentrage.
+- La camera suit ensuite la marche vers la droite en maintenant cette position de reference.
+- Son decalage horizontal maximal mesure `640 px`.
+- Ce defilement progresse uniquement vers la droite et ne revient jamais vers la zone abandonnee.
+- Le decalage maximal deja atteint ne diminue jamais.
+- La camera ne change jamais sa position verticale.
+- Le bord gauche de l'ecran empeche Imran de quitter le cadre visible.
+- Le coffre apparait progressivement pendant ce deplacement.
+- Imran doit ensuite rejoindre le coffre et utiliser la commande `Interaction`.
+- L'interaction devient disponible lorsque le centre d'Imran se trouve a `56 px` ou moins du coffre.
+- Cette distance est identique pour les six coffres.
 - L'ouverture du coffre ajoute automatiquement la cle, declenche la sauvegarde et termine le niveau selon les regles deja validees.
 - La victoire contre le golem seule ne termine jamais le niveau.
-- Le combat final contre Tata Lisa ne possede aucun coffre et suit une conclusion distincte.
+- Le combat final contre Tata Lisa ne possede aucun coffre, aucune zone de recompense de `640 px` et suit une conclusion distincte.
 
 ## Dimensions de la barre de vie validees
 
@@ -281,9 +393,15 @@ Le combat commence selon la sequence suivante :
 ## Sequence commune de defaite des golems validee
 
 - Le contact du Smash Tranchant final declenche immediatement la sequence de defaite.
-- Le golem produit d'abord un eclat visuel bref.
-- Sa silhouette se fragmente ensuite en particules liees a son element.
-- Les particules se dispersent puis disparaissent completement.
+- Les six golems utilisent le meme decoupage temporel :
+
+| Periode | Animation commune |
+|---|---|
+| `0.00 a 0.20 s` | Le coeur magique produit un dernier eclat, puis le coeur et les fissures s'eteignent. |
+| `0.20 a 0.70 s` | Le corps se fragmente en materiaux lies au theme du golem. |
+| `0.70 a 1.00 s` | Les fragments deviennent des particules elementaires puis disparaissent. |
+
+- Les materiaux, les couleurs et les sons exacts restent propres au theme de chaque golem.
 - Aucun corps, obstacle ou danger du golem ne reste dans l'arene.
 - Aucune piece et aucun objet de soin ne sont produits.
 - Le coffre constitue l'unique recompense materielle du combat.

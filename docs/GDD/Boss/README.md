@@ -11,9 +11,9 @@ Definir les regles communes et les sept combats obligatoires afin que chaque bos
 | Ordre | Document | Statut |
 |---:|---|---|
 | 1 | [Regles communes](Regles-Communes.md) | Valide |
-| 2 | [Golem de la Foret](Golem-Foret.md) | En cours |
-| 3 | [Golem de la Grotte](Golem-Grotte.md) | A rediger |
-| 4 | [Golem du Lac gele](Golem-Lac.md) | A rediger |
+| 2 | [Golem de la Foret](Golem-Foret.md) | Valide |
+| 3 | [Golem de la Grotte](Golem-Grotte.md) | Valide |
+| 4 | [Golem du Lac gele](Golem-Lac.md) | Valide |
 | 5 | [Golem du Desert](Golem-Desert.md) | A rediger |
 | 6 | [Golem du Volcan](Golem-Volcan.md) | A rediger |
 | 7 | [Golem du Chateau](Golem-Chateau.md) | A rediger |
@@ -43,6 +43,15 @@ Definir les regles communes et les sept combats obligatoires afin que chaque bos
 - Un feu de camp permet de restaurer volontairement les coeurs avant chaque golem.
 - Une perte de vie restaure le boss a sa vie maximale et a sa premiere phase.
 - La barre de vie du boss est centree en haut de l'ecran pendant le combat.
+- Toutes les zones de combat de boss mesurent `1280 px` de largeur utile.
+- Le sol principal des sept arenes de boss se trouve a `y = 896 px`.
+- Les zones de combat apparaissent entre `x = 320 px` et `x = 1600 px` dans le cadre de reference.
+- Les barrieres des six golems utilisent une energie semi-transparente et des particules adaptees a leur theme.
+- Les zones de recompense des six golems mesurent `640 px`.
+- Le centre des six coffres se trouve a la position locale `x = 1824 px`.
+- Le defilement vers les six coffres utilise le meme recentrage de `128 px` en `0.50 s`.
+- La distance d'interaction commune des six coffres est de `56 px`.
+- Les six golems utilisent le meme decoupage de defaite de `1.00 s`, adapte a leur theme.
 - La victoire contre un golem rend son coffre accessible.
 - La victoire contre Tata Lisa brise la Pierre du Chaos et lance la conclusion.
 

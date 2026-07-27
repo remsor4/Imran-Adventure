@@ -1,6 +1,6 @@
 # Golem de la Foret
 
-> **Statut :** En cours
+> **Statut :** Valide
 
 ## Objectif
 
@@ -31,7 +31,7 @@ Definir le premier gardien du jeu comme un combat d'apprentissage lisible. Le jo
 | 3 | Coup de poing direct | Gerer la distance et le placement |
 
 - Apres le coup de poing direct, le cycle reprend avec le projectile vegetal frontal.
-- Les comportements detailles, les valeurs et les signaux des trois attaques restent a definir.
+- Les comportements, les valeurs et les signaux des trois attaques sont valides dans les sections suivantes.
 
 ## Attaque 1 - Projectile vegetal frontal
 
@@ -129,7 +129,6 @@ Definir le premier gardien du jeu comme un combat d'apprentissage lisible. Le jo
 - L'attaque retire `1 coeur` lors d'un impact valide.
 - Le Bouclier de lumiere ne bloque pas cette attaque de sol.
 - L'attaque doit pouvoir etre evitee sans utiliser obligatoirement le Dash ou le Double saut.
-- Les dimensions de la zone dangereuse et sa duree active restent a definir.
 
 ### Signal visuel au sol valide
 
@@ -284,9 +283,48 @@ Definir le premier gardien du jeu comme un combat d'apprentissage lisible. Le jo
 - Le coffre contient la premiere cle.
 - La recuperation de la cle sauvegarde la progression et termine le niveau.
 
+### Coffre, cle et transition
+
+> **Statut :** Valide
+
+- Le coffre se trouve dans une zone de recompense situee hors du cadre de combat, a droite.
+- Il ne doit jamais etre visible pendant la presentation ou le combat.
+- Il utilise du bois, des racines, des feuilles et des motifs naturels.
+- Il ne produit aucun rayon, aucune lumiere doree et aucun effet lumineux.
+- Il passe a l'etat `Disponible` a la fin de la sequence de defaite du golem.
+- Imran doit se placer a `56 px` ou moins du coffre puis utiliser la commande `Interaction`.
+- Cette interaction lance une sequence de `2.00 s`.
+- Le deplacement, le saut, le Dash et les attaques restent bloques pendant cette sequence.
+- Le couvercle s'ouvre et la premiere cle sort du coffre.
+- De `0.00 a 0.75 s`, le couvercle et son mecanisme s'ouvrent.
+- De `0.75 a 1.50 s`, la premiere cle sort progressivement du coffre.
+- De `1.50 a 2.00 s`, elle reste visible au-dessus du coffre.
+- Aucune seconde interaction et aucune collision de ramassage ne sont necessaires.
+- La cle est ajoutee automatiquement a la progression a la fin des `2.00 s`.
+- La sauvegarde automatique commence immediatement apres cet ajout.
+- Les coeurs et les vies sont restaures a `3`.
+- Le niveau suivant devient la Grotte mysterieuse.
+- La transition attend la confirmation de la sauvegarde.
+- La barriere magique verte disparait avec la fin du niveau.
+- Le coffre utilise le son commun `assets/audio/sfx/ouverture-coffre-commune.wav`.
+- Ce son commence avec l'interaction et dure pendant les `2.00 s` de la sequence.
+- Aucun son supplementaire propre au bois, aux racines, aux feuilles ou a la premiere cle n'est ajoute.
+- Le controle reste bloque apres la fin des `2.00 s`.
+- Une fois la sauvegarde confirmee, un fondu au noir commence.
+- La barriere disparait pendant ce fondu avec le reste de l'arene.
+- La Grotte mysterieuse est chargee pendant l'ecran noir.
+- Imran ne reprend pas le controle dans l'arene de la Foret.
+- Le fondu au noir dure exactement `0.75 s`.
+- L'arene de la Foret est retiree uniquement lorsque l'ecran est entierement noir.
+- L'ecran reste noir tant que la Grotte mysterieuse n'est pas prete.
+- La Grotte mysterieuse apparait ensuite avec un fondu depuis le noir de `0.75 s`.
+- Le controle d'Imran reste bloque pendant ce fondu.
+- Il est rendu lorsque la Grotte est entierement visible.
+- Imran commence ce niveau avec `3 coeurs` et `3 vies`.
+
 ## Arene
 
-> **Statut :** En cours
+> **Statut :** Valide
 
 ### Structure validee
 
@@ -294,7 +332,7 @@ Definir le premier gardien du jeu comme un combat d'apprentissage lisible. Le jo
 - Elle ne contient aucune plateforme surelevee.
 - Elle ne contient aucune pente, aucun trou et aucun passage traversable.
 - Aucun piege et aucun danger environnemental ne peuvent blesser Imran.
-- Les limites laterales sont solides et empechent Imran ainsi que le golem de quitter l'espace de combat.
+- La limite gauche et le passage droit ferme empechent Imran ainsi que le golem de quitter l'espace de combat.
 - L'onde de racines peut utiliser tout point valide de ce sol.
 - Les projectiles disparaissent lorsqu'ils rencontrent une limite solide.
 - Les trois attaques restent evitables sans utiliser le decor comme protection.
@@ -304,10 +342,203 @@ Definir le premier gardien du jeu comme un combat d'apprentissage lisible. Le jo
 - Imran commence la presentation avec son centre a `128 px`.
 - Le Golem de la Foret commence avec son centre a `1024 px`.
 - Le golem est tourne vers la gauche et fait face a Imran.
-- Le coffre possede son centre a `1184 px`, derriere le golem.
 - La distance initiale entre les centres d'Imran et du golem est de `896 px`.
 - Le projectile apparait devant le poing du golem et sa portee de `800 px` lui permet encore d'atteindre la zone d'Imran.
 - Le coffre reste inaccessible tant que la sequence de defaite du golem n'est pas terminee.
+
+### Camera validee
+
+- La camera reste fixe pendant la presentation, le combat, l'etat `Etourdi` et la sequence de defaite.
+- Le cadrage de combat montre simultanement Imran, le golem et les limites de la zone de combat.
+- Le coffre reste entierement hors du cadre, a droite.
+- Elle ne suit ni Imran, ni le golem.
+- Elle ne se recentre pas lorsque le golem conserve une nouvelle position apres son coup de poing.
+- A la resolution de reference `1920 x 1080`, la largeur utile de `1280 px` est centree horizontalement.
+- La limite gauche utile se trouve donc a `320 px` de l'ecran.
+- La limite droite utile se trouve a `1600 px` de l'ecran.
+- Les positions initiales du combat apparaissent a l'ecran aux coordonnees horizontales suivantes :
+
+| Element | Position locale | Position a l'ecran |
+|---|---:|---:|
+| Imran | `128 px` | `448 px` |
+| Golem | `1024 px` | `1344 px` |
+
+### Defilement vers la recompense valide
+
+- A la fin de la sequence de defaite, le passage situe a droite devient accessible.
+- Le controle d'Imran revient, mais la camera ne se deplace pas automatiquement.
+- Imran doit avancer lui-meme vers la droite.
+- La camera commence alors a defiler horizontalement avec lui.
+- La position verticale et le cadrage vertical restent fixes.
+- Le coffre apparait progressivement pendant ce deplacement.
+- Si Imran reste immobile dans la zone de combat, le coffre reste hors champ.
+- Le defilement s'arrete lorsque la zone de recompense et le coffre sont entierement cadres.
+- Aucun ennemi, projectile ou danger n'apparait pendant ce trajet.
+- La zone de recompense commence apres la limite droite du combat, a `x = 1280 px`.
+- Elle mesure exactement `640 px`, soit `10` grilles logiques.
+- La longueur totale accessible de l'arene et de sa zone de recompense atteint donc `1920 px`.
+- Son sol prolonge le sol plat du combat et reste place a `y = 896 px`.
+- Elle ne contient aucune plateforme, aucun trou, aucun piege et aucun ennemi.
+- Le coffre possede son centre a la position locale `x = 1824 px`.
+- Il reste a `96 px` de la limite droite finale placee a `x = 1920 px`.
+- Le coffre est entierement hors du cadre de combat, dont la vue initiale se termine a la position locale `x = 1600 px`.
+- Lorsque la camera atteint son decalage maximal de `640 px`, le coffre apparait a `x = 1504 px` dans l'ecran.
+- La camera reste fixe tant que le centre d'Imran ne depasse pas la position locale `x = 1280 px`.
+- Le defilement commence uniquement lorsque son centre franchit cette limite et entre dans la zone de recompense.
+- Imran se trouve donc temporairement au bord droit du cadre de combat avant le debut du mouvement de camera.
+- Lors du declenchement, Imran apparait a environ `x = 1600 px` dans l'ecran.
+- La camera effectue alors un recentrage horizontal de `128 px` pendant `0.50 s`.
+- Imran est ainsi replace progressivement a `x = 1472 px` dans l'ecran.
+- Le joueur conserve le controle pendant ce recentrage.
+- Apres ces `0.50 s`, la camera suit la marche d'Imran vers la droite et le maintient a cette position de reference.
+- Le decalage horizontal de la camera ne peut jamais depasser `640 px`.
+- La camera ne change jamais sa position verticale.
+- Le decalage maximal deja atteint ne diminue jamais.
+- Si Imran repart vers la gauche, la camera reste donc a sa position actuelle.
+- Imran peut se deplacer vers la gauche dans la portion encore visible de l'arene.
+- Le bord gauche de l'ecran l'empeche de quitter le cadre.
+- La camera ne montre plus une zone abandonnee une fois qu'elle l'a depassee.
+
+### Cadrage vertical valide
+
+- La surface praticable du sol se trouve a `y = 896 px` dans l'ecran de reference `1920 x 1080`.
+- Cette position reste fixe pendant toute la sequence de l'arene.
+- Les pieds d'Imran et la base du golem reposent sur cette ligne.
+- Avec sa hauteur visuelle de `64 px`, Imran occupe verticalement la zone comprise entre `832 px` et `896 px`.
+- Avec sa hauteur visuelle de `152 px`, le golem occupe verticalement la zone comprise entre `744 px` et `896 px`.
+- Le premier projectile vegetal possede son centre a `y = 880 px`.
+- Le second projectile vegetal possede son centre a `y = 856 px`.
+- L'onde de racines peut atteindre `y = 832 px`.
+- Le coup de poing possede son centre a `y = 848 px` et couvre la zone comprise entre `824 px` et `872 px`.
+- Les `184 px` situes sous la surface du sol servent au premier plan et a l'epaisseur visuelle du terrain, sans creer une zone jouable supplementaire.
+- Ce cadrage reprend l'intention de composition observee dans la reference Wonder Boy tout en respectant la grille logique du projet.
+
+### Fermeture de la zone de combat validee
+
+- Deux barrieres magiques identiques ferment la zone de combat.
+- La premiere apparait derriere Imran, sur la limite gauche.
+- La seconde apparait devant le passage vers la recompense, sur la limite droite.
+- Les deux barrieres utilisent une energie verte correspondant au Golem de la Foret.
+- Elles forment des murs d'energie semi-transparents.
+- Des particules vertes et de petites formes rappelant des feuilles circulent dans chaque mur.
+- Le decor reste visible a travers leur energie.
+- La densite des particules permet cependant d'identifier clairement deux limites infranchissables.
+- Elles ne retirent aucun coeur lors d'un contact.
+- Imran, le golem et les projectiles ne peuvent pas les traverser.
+- Un projectile vegetal du golem disparait lorsqu'il entre en collision avec une barriere.
+- Leurs collisions deviennent actives immediatement lorsque le combat est declenche.
+- Leurs energies visibles montent depuis le sol place a `y = 896 px` jusqu'en haut de l'ecran.
+- Les deux apparitions commencent au meme instant et durent exactement `0.50 s`.
+- Elles se deroulent pendant le debut de la presentation de `3.00 s`.
+- Les barrieres conservent ensuite leur hauteur complete et leur mouvement continu de particules.
+- Leur largeur visible et solide mesure `32 px`.
+- Le bord interieur de la barriere gauche se trouve a la position locale `x = 0 px`.
+- Elle s'etend vers l'exterieur de la zone de combat, entre `x = -32 px` et `x = 0 px`.
+- Le bord interieur de la barriere droite se trouve a la position locale `x = 1280 px`.
+- Elle s'etend vers la zone de recompense, entre `x = 1280 px` et `x = 1312 px`.
+- Les barrieres ne reduisent donc pas les `1280 px` de largeur utile du combat.
+- Leur apparition et leur maintien ne produisent aucun son.
+- Aucun bourdonnement continu n'accompagne leurs particules.
+- La barriere gauche reste active jusqu'a la recuperation de la premiere cle et la fin du niveau.
+- La barriere droite reste active pendant la presentation, le combat, l'etat `Etourdi` et la sequence de defaite.
+- La barriere droite commence a redescendre lorsque la sequence de defaite atteint `0.50 s`.
+- Cette descente dure exactement `0.50 s`.
+- Elle conserve sa collision solide pendant toute la descente.
+- Sa collision est desactivee lorsqu'elle disparait completement a `1.00 s`.
+- Le passage vers la zone de recompense devient donc accessible au retour du controle.
+- Cette disparition reste silencieuse comme son apparition.
+- Apres une perte de vie, les deux barrieres disparaissent pendant la reinitialisation et peuvent etre activees de nouveau lors de la tentative suivante.
+
+## Presentation du Golem de la Foret
+
+> **Statut :** Validee
+
+### Deroulement visuel valide
+
+- Avant le declenchement, le golem reste immobile devant le passage qui conduit au coffre cache.
+- Sa posture et sa mousse le font ressembler a une ancienne statue de pierre.
+- Il ne possede aucune zone dangereuse ou vulnerable pendant cet etat.
+- La presentation commence lorsque Imran franchit le point d'entree de l'arene.
+- Les commandes d'Imran sont bloquees pendant toute la presentation.
+- La sequence dure exactement `3.00 s`.
+
+| Periode | Animation |
+|---|---|
+| `0.00 a 1.00 s` | Les racines qui entourent le golem commencent a bouger. |
+| `1.00 a 2.00 s` | Les yeux, le coeur magique et les fissures vertes s'allument progressivement. |
+| `2.00 a 3.00 s` | Le golem se redresse et prend sa posture de garde face a Imran. |
+
+- La barriere magique verte monte silencieusement pendant les `0.50 s` du debut de cette sequence.
+- Le golem ne se deplace pas horizontalement pendant son reveil.
+- La barre de vie apparait lorsque la presentation atteint `3.00 s`.
+- Le controle d'Imran revient au meme instant.
+- Le golem devient vulnerable et son corps devient dangereux a cet instant.
+- La preparation du premier projectile vegetal peut alors commencer.
+- Une commande effectuee avant la fin des `3.00 s` reste ignoree.
+- Une nouvelle tentative rejoue cette sequence complete depuis l'etat de statue.
+
+### Signal sonore valide
+
+- Un grondement grave commence au debut de la presentation.
+- Il reste continu pendant les `3.00 s`.
+- Son intensite augmente progressivement pendant le reveil du golem.
+- Il accompagne successivement le mouvement des racines, l'illumination magique et le redressement.
+- Aucun son distinct de barriere ne se superpose a ce grondement.
+- Le grondement s'arrete lorsque la barre de vie apparait et que le controle d'Imran revient.
+- Aucun cri ou rugissement supplementaire n'est joue a la fin de la presentation.
+
+### Assets visuels a produire
+
+- pose immobile de statue couverte de mousse ;
+- animation des racines autour du corps ;
+- illumination progressive des yeux ;
+- illumination progressive du coeur et des fissures vertes ;
+- redressement complet du golem ;
+- transition vers la posture de garde ;
+- particules de mousse, feuilles et poussiere liberees pendant le reveil.
+
+## Defaite du Golem de la Foret
+
+> **Statut :** Validee
+
+### Deroulement visuel valide
+
+- La sequence commence au contact du Smash Tranchant final avec le golem etourdi.
+- Elle dure exactement `1.00 s`.
+- La barre de vie disparait au debut de cette sequence.
+- Le golem, ses fragments et ses particules ne possedent plus aucune zone dangereuse ou solide.
+
+| Periode | Animation |
+|---|---|
+| `0.00 a 0.20 s` | Le coeur vert produit un dernier eclat, puis sa lumiere et celle des fissures s'eteignent. |
+| `0.20 a 0.70 s` | Le corps se fragmente doucement en pierres, racines et feuilles. |
+| `0.70 a 1.00 s` | Les fragments se transforment en particules vertes qui se dispersent et disparaissent. |
+
+- La disparition reste non violente et adaptee au public vise.
+- Aucun corps, fragment solide ou obstacle ne reste dans l'arene.
+- Aucune piece et aucun objet de soin ne sont produits.
+- La camera conserve son cadrage fixe pendant toute la sequence.
+- Le coffre devient disponible lorsque la sequence atteint `1.00 s`.
+- Le controle d'Imran revient au meme instant.
+- La barriere magique verte reste active jusqu'a la recuperation de la cle.
+
+### Signal sonore valide
+
+- Un eclat magique bref accompagne la derniere lumiere du coeur entre `0.00 s` et `0.20 s`.
+- Des craquements de pierre et de racines accompagnent la fragmentation entre `0.20 s` et `0.70 s`.
+- Un bruissement de feuilles accompagne la dispersion entre `0.70 s` et `1.00 s`.
+- Tous les sons de defaite s'arretent a la disparition des dernieres particules.
+- Aucun son d'explosion violent n'est utilise.
+- Le son d'ouverture du coffre reste distinct et ne commence qu'apres le retour du controle.
+
+### Assets visuels a produire
+
+- dernier eclat du coeur magique vert ;
+- extinction du coeur et des fissures ;
+- fragmentation du corps en pierres, racines et feuilles ;
+- transition des fragments vers des particules vertes ;
+- dispersion et disparition des particules ;
+- pose finale vide permettant de retirer completement le golem.
 
 ## Criteres de validation
 
@@ -318,6 +549,7 @@ La fiche sera validee si :
 - les trois attaques peuvent etre evitees sans utiliser obligatoirement le Dash ou le Double saut ;
 - le joueur peut atteindre la tete avec la Shadow Sword ;
 - aucune situation ne produit un degat inevitable ;
+- le coffre reste invisible pendant le combat puis est revele par le defilement a droite ;
 - la victoire respecte les regles communes des golems.
 
 ## Sources
@@ -325,3 +557,7 @@ La fiche sera validee si :
 - [Regles communes des boss](Regles-Communes.md)
 - [Golem de la Foret du Concept Game](../../Concept-Game/08-Boss/Golem-de-la-Foret.md)
 - [Niveau 1 - Foret](../Niveaux/Niveau-1-Foret.md)
+- [Coffres et cles](../Systemes/Coffres-et-Cles.md)
+- [Camera](../Systemes/Camera.md)
+- [Statistiques d'Imran](../Joueur/Statistiques-Imran.md)
+- [Effets sonores](../../Concept-Game/10-Direction-Sonore/Effets-Sonores.md)

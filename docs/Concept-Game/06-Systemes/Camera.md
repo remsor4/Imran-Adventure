@@ -57,7 +57,10 @@ Aucun decor au premier plan ne doit cacher durablement Imran ou un danger import
 - La camera se verrouille avant de rendre le controle.
 - Aucun suivi, zoom ou recentrage ne se produit pendant le combat.
 - Imran, le boss, ses attaques et les bords de l'arene restent visibles.
-- Apres un golem, la camera cadre Imran et le coffre.
+- Le coffre reste cache hors du cadre pendant le combat.
+- Apres la defaite, Imran avance lui-meme vers la droite.
+- La camera defile alors a sens unique et revele progressivement la zone de recompense puis le coffre.
+- Elle ne revient pas vers la zone de combat deja depassee.
 - Apres Tata Lisa, elle cadre Imran et la porte du donjon.
 
 ## Secousses
