@@ -2,7 +2,9 @@
 
 > **Statut :** En cours
 >
-> **Etape actuelle :** Etape 9 en cours
+> **Etape actuelle :** Etape 9 validee
+>
+> **Prochaine etape :** Etape 10 - Progression et equilibrage
 
 Le GDD decrit le fonctionnement precis du jeu : regles, valeurs, comportements, niveaux et equilibrage.
 

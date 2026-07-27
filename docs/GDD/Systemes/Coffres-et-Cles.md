@@ -66,9 +66,9 @@ Chaque coffre reprend le theme visuel et les principaux materiaux du golem qui l
 | 1 | Golem de la Foret | Bois, racines, feuilles et motifs naturels |
 | 2 | Golem de la Grotte | Roche, minerai et formes de cristaux |
 | 3 | Golem du Lac | Bois bleu sombre, metal gris bleute sous le givre, cristaux de glace aux angles et serrure bleu glacier |
-| 4 | Golem du Desert | Gres, sable et motifs de ruines anciennes |
-| 5 | Golem du Volcan | Basalte, roche volcanique et fissures de magma |
-| 6 | Golem du Chateau | Pierre sombre, metal et motifs du Chateau |
+| 4 | Golem du Desert | Bois brun sombre, gres ocre, bronze, symboles graves, sable fin et serrure en cristal ambre |
+| 5 | Golem du Volcan | Bois noirci, basalte, metal sombre, obsidienne, cendre, fissures non lumineuses et serrure rouge-orange |
+| 6 | Golem du Chateau | Bois noir, pierre anthracite, metal sombre, obsidienne, motifs de chevalier et serrure en cristal violet |
 
 Les six variantes utilisent le meme fonctionnement, les memes etats, la meme structure d'animation et le meme son. Seuls leur habillage et leurs materiaux visibles changent.
 

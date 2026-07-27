@@ -1,6 +1,6 @@
 # GDD - Boss et golems
 
-> **Statut :** En cours
+> **Statut :** Valide
 
 ## Objectif
 
@@ -14,10 +14,10 @@ Definir les regles communes et les sept combats obligatoires afin que chaque bos
 | 2 | [Golem de la Foret](Golem-Foret.md) | Valide |
 | 3 | [Golem de la Grotte](Golem-Grotte.md) | Valide |
 | 4 | [Golem du Lac gele](Golem-Lac.md) | Valide |
-| 5 | [Golem du Desert](Golem-Desert.md) | A rediger |
-| 6 | [Golem du Volcan](Golem-Volcan.md) | A rediger |
-| 7 | [Golem du Chateau](Golem-Chateau.md) | A rediger |
-| 8 | [Tata Lisa](Tata-Lisa.md) | A rediger |
+| 5 | [Golem du Desert](Golem-Desert.md) | Valide |
+| 6 | [Golem du Volcan](Golem-Volcan.md) | Valide |
+| 7 | [Golem du Chateau](Golem-Chateau.md) | Valide |
+| 8 | [Tata Lisa](Tata-Lisa.md) | Valide |
 
 ## Ordre de validation
 
