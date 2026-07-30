@@ -60,9 +60,25 @@ Lorsqu'un test revele une situation trop exigeante, les corrections sont appliqu
 
 Une valeur validee ne peut etre modifiee qu'apres avoir verifie que les quatre premieres corrections sont insuffisantes.
 
+## Progression des ennemis ordinaires
+
+L'ordre d'introduction, les paires, les groupes de trois et les combinaisons interdites sont definis dans [Combinaisons et progression des ennemis](../Ennemis/Combinaisons-et-Progression.md).
+
+Cette fiche reste la source de verite pour :
+
+- la presentation de chaque famille seule ;
+- l'ordre d'apparition des familles ;
+- les combinaisons autorisees par niveau ;
+- l'introduction des premiers groupes de trois au niveau 4 ;
+- le remplacement des Squelettes par les Zombies aux niveaux 5 et 6.
+
+L'equilibrage utilise cette progression sans la recopier ni modifier le comportement d'une famille.
+
 ## Progression du Dash et du Double saut
 
 Le Dash et le Double saut restent disponibles des la premiere prise de controle. Ils ne sont jamais debloques plus tard.
+
+Le tableau suivant concerne les phases de plateforme et les rencontres avec les ennemis ordinaires. Les utilisations demandees pendant un combat de boss sont definies uniquement dans la fiche du boss concerne.
 
 Leur utilisation progresse par couches :
 
@@ -72,7 +88,7 @@ Leur utilisation progresse par couches :
 | Niveau 1 - Foret enchantee | Utilisations obligatoires simples sans ennemi actif pendant l'action |
 | Niveau 2 - Grotte mysterieuse | Utilisation avec un ennemi proche et une zone d'arrivee sure |
 | Niveau 3 - Lac gele | Alternance du Dash et du Double saut dans une meme section avec un appui stable entre les actions |
-| Niveau 4 - Desert oublie | Utilisation pendant des rencontres contenant des paires d'ennemis |
+| Niveau 4 - Desert oublie | Apprentissage de l'enchainement Dash au sol, saut et Double saut, puis utilisation pendant les paires et les premiers groupes de trois |
 | Niveau 5 - Volcan | Utilisation pendant les rencontres avec des Zombies |
 | Niveau 6 - Chateau de Tata Lisa | Maitrise complete avec les combinaisons finales autorisees |
 | Combat final - Tata Lisa | Utilisation libre selon les attaques sans introduire de nouvelle regle |
@@ -114,12 +130,14 @@ Les derniers niveaux deviennent plus difficiles par leurs situations sans deveni
 
 ## Densite simultanee des dangers
 
-Un danger actif est un element qui demande une reaction immediate du joueur, par exemple :
+Les limites de cette section concernent uniquement les phases de plateforme et les rencontres avec les ennemis ordinaires. Les arenes de boss suivent les dangers et les attaques valides dans leurs propres fiches.
 
-- une attaque ennemie en cours ;
-- un projectile actif ;
-- un ennemi constituant un danger de contact permanent ;
-- un obstacle de plateforme actuellement dangereux.
+Une source de danger active est un element qui demande une reaction immediate du joueur :
+
+- un ennemi ordinaire actuellement capable de blesser Imran compte comme `1 source`, meme si son corps et son attaque sont dangereux ;
+- les projectiles et les composants d'attaque produits par ce meme ennemi restent rattaches a sa source ;
+- un obstacle de plateforme actuellement dangereux compte comme `1 source` ;
+- un groupe de trois ennemis ordinaires occupe donc au maximum `3 sources`.
 
 La densite simultanee suit cette progression :
 
@@ -202,27 +220,9 @@ Regles de repartition :
 
 ## Profil de joueur de reference
 
-L'equilibrage utilise un joueur novice comme profil principal.
+Le profil novice et les objectifs de tolerance aux echecs sont definis uniquement dans le document [Tests d'equilibrage](Tests.md).
 
-Ce joueur :
-
-- connait les commandes apres avoir termine le niveau 0 ;
-- comprend les indications des pancartes ;
-- ne maitrise pas encore parfaitement le Dash et le Double saut ;
-- peut hesiter face a une nouvelle combinaison d'ennemis ;
-- n'est pas habitue aux jeux de plateforme exigeants ;
-- apprend principalement par l'observation, l'essai et la repetition.
-
-Le jeu ne doit pas exiger :
-
-- des reflexes propres a un joueur expert ;
-- une connaissance anticipee des attaques ;
-- une execution au pixel pres ;
-- une utilisation parfaite de toutes les actions des leur presentation.
-
-Un joueur experimente pourra progresser plus rapidement. Cette facilite supplementaire ne constitue pas un probleme d'equilibrage.
-
-Les objectifs de tolerance aux echecs sont definis dans le document [Tests d'equilibrage](Tests.md).
+La courbe de difficulte utilise ce profil sans recopier sa definition.
 
 ## Regles communes validees
 
