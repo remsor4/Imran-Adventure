@@ -1,0 +1,5 @@
+# Godot 4 project cache
+.godot/
+
+# Generated translation resources
+*.translation
