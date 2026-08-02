@@ -2,9 +2,9 @@
 
 > **Statut :** En cours
 >
-> **Etape actuelle :** Etape 10 validee
+> **Etape actuelle :** Etape 11 validee
 >
-> **Prochaine etape :** Etape 11 - Structure commune des niveaux
+> **Prochaine etape :** Etape 12 - Detail des niveaux
 
 Le GDD decrit le fonctionnement precis du jeu : regles, valeurs, comportements, niveaux et equilibrage.
 

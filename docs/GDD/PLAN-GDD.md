@@ -2,11 +2,11 @@
 
 > **Statut :** En cours
 >
-> **Derniere validation :** Etape 10
+> **Derniere validation :** Etape 11
 >
-> **Etape actuelle :** Etape 10 - Validee
+> **Etape actuelle :** Etape 11 - Validee
 >
-> **Prochaine etape :** Etape 11 - Structure commune des niveaux
+> **Prochaine etape :** Etape 12 - Detail des niveaux
 
 ## Reference
 
@@ -28,7 +28,7 @@ Le projet est realise uniquement par Rems et Codex. Le jeu ne sera pas vendu. Le
 | 8 | Ennemis et intelligence artificielle | Valide |
 | 9 | Boss et golems | Valide |
 | 10 | Progression et equilibrage | Valide |
-| 11 | Structure commune des niveaux | A rediger |
+| 11 | Structure commune des niveaux | Valide |
 | 12 | Detail du niveau 0, des six niveaux principaux et du combat final | A rediger |
 | 13 | Narration, dialogues et cinematiques | A rediger |
 | 14 | Interface et accessibilite | A rediger |
