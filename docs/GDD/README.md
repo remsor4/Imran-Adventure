@@ -2,9 +2,9 @@
 
 > **Statut :** En cours
 >
-> **Etape actuelle :** Etape 11 validee
+> **Etape actuelle :** Etape 12 validee
 >
-> **Prochaine etape :** Etape 12 - Detail des niveaux
+> **Prochaine etape :** Etape 13 - Narration, dialogues et cinematiques
 
 Le GDD decrit le fonctionnement precis du jeu : regles, valeurs, comportements, niveaux et equilibrage.
 

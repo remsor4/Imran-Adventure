@@ -2,11 +2,13 @@
 
 > **Statut :** En cours
 >
-> **Derniere validation :** Etape 11
+> **Derniere validation :** Etape 12
 >
-> **Etape actuelle :** Etape 11 - Validee
+> **Dernier audit croise :** Etapes 11 et 12 - Conforme
 >
-> **Prochaine etape :** Etape 12 - Detail des niveaux
+> **Etape actuelle :** Etape 12 - Validee
+>
+> **Prochaine etape :** Etape 13 - Narration, dialogues et cinematiques
 
 ## Reference
 
@@ -29,7 +31,7 @@ Le projet est realise uniquement par Rems et Codex. Le jeu ne sera pas vendu. Le
 | 9 | Boss et golems | Valide |
 | 10 | Progression et equilibrage | Valide |
 | 11 | Structure commune des niveaux | Valide |
-| 12 | Detail du niveau 0, des six niveaux principaux et du combat final | A rediger |
+| 12 | Detail du niveau 0, des six niveaux principaux et du combat final | Valide |
 | 13 | Narration, dialogues et cinematiques | A rediger |
 | 14 | Interface et accessibilite | A rediger |
 | 15 | Specifications artistiques et storyboards | A rediger |
