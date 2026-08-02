@@ -110,10 +110,10 @@ La recuperation de la cle declenche la sauvegarde automatique, restaure les coeu
 - Le controle reste bloque apres la sequence d'ouverture.
 - La transition attend la confirmation reelle de la sauvegarde.
 - Apres cette confirmation, un fondu au noir commence.
-- Ce fondu dure exactement `0.75 s`.
+- Ce fondu dure exactement `0.50 s`.
 - Le niveau suivant est charge pendant cet ecran noir.
 - L'ecran reste noir tant que le niveau suivant n'est pas pret.
-- Une fois le chargement termine, le niveau suivant apparait avec un fondu depuis le noir de `0.75 s`.
+- Une fois le chargement termine, le niveau suivant apparait avec un fondu depuis le noir de `0.50 s`.
 - Le controle reste bloque pendant ce second fondu.
 - Le controle est rendu uniquement lorsque le nouvel ecran est entierement visible.
 - Imran commence alors avec `3 coeurs` et `3 vies`.

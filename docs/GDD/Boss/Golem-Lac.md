@@ -573,11 +573,11 @@ Definir le troisieme gardien comme un combat centre sur le positionnement et la 
 - Ce son commence avec l'interaction et accompagne toute la sequence de `2.00 s`.
 - Aucun son supplementaire propre au bois, au metal, au givre, aux cristaux ou a la troisieme cle n'est ajoute.
 - Le controle reste bloque apres la fin des `2.00 s`.
-- Une fois la sauvegarde confirmee, un fondu au noir de `0.75 s` commence.
+- Une fois la sauvegarde confirmee, un fondu au noir de `0.50 s` commence.
 - La barriere gauche disparait pendant ce fondu avec le reste de l'arene.
 - Le Desert oublie est charge pendant l'ecran noir.
 - L'ecran reste noir tant que le Desert oublie n'est pas pret.
-- Le Desert oublie apparait avec un fondu depuis le noir de `0.75 s`.
+- Le Desert oublie apparait avec un fondu depuis le noir de `0.50 s`.
 - Le controle revient lorsque ce niveau est entierement visible.
 - Imran commence le Desert oublie avec `3 coeurs` et `3 vies`.
 

@@ -562,11 +562,11 @@ Definir le sixieme et dernier golem comme l'epreuve finale des capacites d'Imran
 - Ce son commence avec l'interaction et accompagne toute la sequence de `2.00 s`.
 - Aucun son supplementaire propre au bois, a la pierre, au metal, a l'obsidienne, au cristal ou a la sixieme cle n'est ajoute.
 - Le controle reste bloque apres la fin des `2.00 s`.
-- Une fois la sauvegarde confirmee, un fondu au noir de `0.75 s` commence.
+- Une fois la sauvegarde confirmee, un fondu au noir de `0.50 s` commence.
 - La barriere gauche disparait pendant ce fondu avec le reste de l'arene.
 - La zone precedant le combat contre Tata Lisa est chargee pendant l'ecran noir.
 - L'ecran reste noir tant que cette zone n'est pas prete.
-- La nouvelle zone apparait avec un fondu depuis le noir de `0.75 s`.
+- La nouvelle zone apparait avec un fondu depuis le noir de `0.50 s`.
 - Le controle revient lorsque la zone est entierement visible.
 - Imran commence cette sequence avec `3 coeurs`, `3 vies` et les `6 cles`.
 - L'ouverture des six verrous reste impossible avant la victoire contre Tata Lisa.

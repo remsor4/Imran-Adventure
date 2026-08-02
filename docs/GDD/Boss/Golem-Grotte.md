@@ -520,11 +520,11 @@ Definir le deuxieme gardien du jeu comme un prolongement du premier combat. Le j
 - Ce son commence avec l'interaction et accompagne toute la sequence de `2.00 s`.
 - Aucun son supplementaire propre au bois, au metal, aux amethystes ou a la deuxieme cle n'est ajoute.
 - Le controle reste bloque apres la fin des `2.00 s`.
-- Une fois la sauvegarde confirmee, un fondu au noir de `0.75 s` commence.
+- Une fois la sauvegarde confirmee, un fondu au noir de `0.50 s` commence.
 - La barriere gauche disparait pendant ce fondu avec le reste de l'arene.
 - Le Lac gele est charge pendant l'ecran noir.
 - L'ecran reste noir tant que le Lac gele n'est pas pret.
-- Le Lac gele apparait avec un fondu depuis le noir de `0.75 s`.
+- Le Lac gele apparait avec un fondu depuis le noir de `0.50 s`.
 - Le controle revient lorsque ce niveau est entierement visible.
 - Imran commence le Lac gele avec `3 coeurs` et `3 vies`.
 

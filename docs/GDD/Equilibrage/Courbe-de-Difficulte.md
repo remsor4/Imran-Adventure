@@ -172,7 +172,7 @@ Les quantites suivantes constituent des plages de conception. Le placement exact
 
 | Sequence | Nombre cible |
 |---|---:|
-| Niveau 0 - Village des Bles | `5 a 7` |
+| Niveau 0 - Village des Bles | `2` |
 | Niveau 1 - Foret enchantee | `8 a 10` |
 | Niveau 2 - Grotte mysterieuse | `8 a 10` |
 | Niveau 3 - Lac gele | `8 a 10` |
@@ -183,6 +183,7 @@ Les quantites suivantes constituent des plages de conception. Le placement exact
 Regles communes :
 
 - un maximum de `2 sequences dangereuses` peut se suivre sans respiration ;
+- les `7 exercices` du niveau 0 comprennent `5 pratiques sures` et `2 rencontres dangereuses` ;
 - une respiration ne contient aucun ennemi actif et aucun danger immediat ;
 - une pancarte de tutoriel n'est jamais comptee comme une sequence dangereuse ;
 - le feu de camp et la presentation du boss ne sont pas comptes comme des sequences dangereuses ;

@@ -314,10 +314,10 @@ Definir le premier gardien du jeu comme un combat d'apprentissage lisible. Le jo
 - La barriere disparait pendant ce fondu avec le reste de l'arene.
 - La Grotte mysterieuse est chargee pendant l'ecran noir.
 - Imran ne reprend pas le controle dans l'arene de la Foret.
-- Le fondu au noir dure exactement `0.75 s`.
+- Le fondu au noir dure exactement `0.50 s`.
 - L'arene de la Foret est retiree uniquement lorsque l'ecran est entierement noir.
 - L'ecran reste noir tant que la Grotte mysterieuse n'est pas prete.
-- La Grotte mysterieuse apparait ensuite avec un fondu depuis le noir de `0.75 s`.
+- La Grotte mysterieuse apparait ensuite avec un fondu depuis le noir de `0.50 s`.
 - Le controle d'Imran reste bloque pendant ce fondu.
 - Il est rendu lorsque la Grotte est entierement visible.
 - Imran commence ce niveau avec `3 coeurs` et `3 vies`.
