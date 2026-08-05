@@ -2,9 +2,9 @@
 
 > **Statut :** En cours
 >
-> **Etape actuelle :** Etape 12 validee
+> **Etape actuelle :** Etape 13 validee
 >
-> **Prochaine etape :** Etape 13 - Narration, dialogues et cinematiques
+> **Prochaine etape :** Etape 14 - Interface et accessibilite
 
 Le GDD decrit le fonctionnement precis du jeu : regles, valeurs, comportements, niveaux et equilibrage.
 
@@ -26,5 +26,6 @@ Le GDD decrit le fonctionnement precis du jeu : regles, valeurs, comportements, 
 - [Systemes](Systemes/README.md)
 - [Interface](Interface/README.md)
 - [Equilibrage](Equilibrage/README.md)
+- [Narration](Narration/README.md)
 
-Les sections Narration, Direction-Artistique, Direction-Sonore et Production seront creees pendant les etapes correspondantes du plan.
+Les sections Direction-Artistique, Direction-Sonore et Production seront creees pendant les etapes correspondantes du plan.
