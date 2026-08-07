@@ -2,9 +2,9 @@
 
 > **Statut :** En cours
 >
-> **Etape actuelle :** Etape 13 validee
+> **Etape actuelle :** Etape 14 en cours
 >
-> **Prochaine etape :** Etape 14 - Interface et accessibilite
+> **Prochaine etape :** Etape 15 - Specifications artistiques et storyboards
 
 Le GDD decrit le fonctionnement precis du jeu : regles, valeurs, comportements, niveaux et equilibrage.
 

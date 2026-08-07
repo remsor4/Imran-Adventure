@@ -6,9 +6,9 @@
 >
 > **Dernier audit croise :** Etapes 11 et 12 - Conforme
 >
-> **Etape actuelle :** Etape 13 - Validee
+> **Etape actuelle :** Etape 14 - En cours
 >
-> **Prochaine etape :** Etape 14 - Interface et accessibilite
+> **Prochaine etape :** Etape 15 - Specifications artistiques et storyboards
 
 ## Reference
 
@@ -33,7 +33,7 @@ Le projet est realise uniquement par Rems et Codex. Le jeu ne sera pas vendu. Le
 | 11 | Structure commune des niveaux | Valide |
 | 12 | Detail du niveau 0, des six niveaux principaux et du combat final | Valide |
 | 13 | Narration, dialogues et cinematiques | Valide |
-| 14 | Interface et accessibilite | A rediger |
+| 14 | Interface et accessibilite | En cours |
 | 15 | Specifications artistiques et storyboards | A rediger |
 | 16 | Specifications sonores | A rediger |
 | 17 | Outils, organisation et retroplanning | A rediger |
